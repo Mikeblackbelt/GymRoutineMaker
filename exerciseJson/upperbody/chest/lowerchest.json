@@ -1,0 +1,9 @@
+{
+    "Compounds": {
+        "Bench Press": {
+            "Equipment": ["Barbell", "Bench"],
+            "MuscleGroups": {"lowerchest": 1, "upperchest": 0.9, "frontdelts": 0.7, "triceps": 0.6},
+
+        }
+    }
+}
