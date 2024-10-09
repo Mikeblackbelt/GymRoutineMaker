@@ -1,0 +1,34 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Farmer's Walk": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "forearms": 1.0,
+                    "traps": 0.5
+                }
+            }
+        },
+        "Isolation": {
+            "Wrist Curl": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "forearms": 1.0
+                }
+            },
+            "Reverse Wrist Curl": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "forearms": 1.0
+                }
+            },
+            "Reverse Curl": {
+                "Equipment": ["EZBar"],
+                "MuscleGroups": {
+                    "forearms": 0.8,
+                    "biceps": 0.5
+                }
+            }
+        }
+    }
+}

@@ -19,14 +19,14 @@
         },
         "Isolation": {
             "Dumbbell Curl": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbell"],
                 "MuscleGroups": {
                     "biceps": 1.0,
                     "forearms": 0.3
                 }
             },
             "Incline Curl": {
-                "Equipment": ["Dumbbells", "Incline Bench"],
+                "Equipment": ["Dumbell", "Incline Bench"],
                 "MuscleGroups": {
                     "biceps": 1.0,
                     "forearms": 0.3
@@ -47,7 +47,7 @@
                 }
             },
             "Hammer Curl": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbell"],
                 "MuscleGroups": {
                     "biceps": 1.0,
                     "forearms": 0.4

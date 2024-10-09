@@ -1,0 +1,36 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Squat": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "quads": 1.0,
+                    "glutes": 0.7,
+                    "hamstrings": 0.4
+                }
+            },
+            "Leg Press": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "quads": 1.0,
+                    "glutes": 0.5
+                }
+            },
+            "Lunge": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "quads": 1.0,
+                    "glutes": 0.6
+                }
+            }
+        },
+        "Isolation": {
+            "Leg Extension": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "quads": 1.0
+                }
+            }
+        }
+    }
+}

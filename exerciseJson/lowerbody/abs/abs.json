@@ -1,0 +1,41 @@
+{
+    "Exercises": {
+        "Compound": {
+          
+        },
+        "Isolation": {
+            "Cable Crunch": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "abs": 1.0
+                }
+            },
+            "Decline Sit-Up": {
+                "Equipment": ["Decline Bench"],
+                "MuscleGroups": {
+                    "abs": 1.0
+                }
+            },
+            "Hanging Leg Raise": {
+                "Equipment": ["Pull-up Bar"],
+                "MuscleGroups": {
+                    "abs": 1.0,
+                    "hipflexors": 0.6
+                }
+            },
+            "Ab Wheel Rollout": {
+                "Equipment": ["Ab Wheel"],
+                "MuscleGroups": {
+                    "abs": 1.0,
+                    "hipflexors": 0.5
+                }
+            },
+            "V-Up": {
+                "Equipment": [],
+                "MuscleGroups": {
+                    "abs": 1.0
+                }
+            }
+        }
+    }
+}

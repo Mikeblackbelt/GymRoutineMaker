@@ -2,11 +2,27 @@
     "Exercises": {
         "Compound": {
             "T-Bar Row": {
-                "Equipment": ["T-Bar Row Machine"],
+                "Equipment": ["Machine"],
                 "MuscleGroups": {
                     "upperback": 1.0,
                     "lats": 0.6,
                     "biceps": 0.4
+                },
+                "Seal Row": {
+                    "Equipment": ["Bench", "Barbell"],
+                    "MuscleGroups": {
+                        "upperback": 1.0,
+                        "lats": 0.7,
+                        "biceps": 0.4
+                    }
+                },
+                "Barbell Row": {
+                    "Equipment": ["Barbell"],
+                    "MuscleGroups": {
+                        "upperback": 1.0,
+                        "lats": 0.7,
+                        "biceps": 0.5
+                    }
                 }
             }
         },
@@ -20,7 +36,7 @@
                 }
             },
             "Shrug": {
-                "Equipment": ["Dumbbells", "Barbell"],
+                "Equipment": ["Dumbbell"],
                 "MuscleGroups": {
                     "traps": 1.0,
                     "upperback": 0.4

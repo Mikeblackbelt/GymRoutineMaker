@@ -1,0 +1,60 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Deadlift": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "hamstrings": 0.8,
+                    "glutes": 0.7,
+                    "lowerback": 0.6,
+                    "upperback": 0.4
+                }
+            },
+            "Romanian Deadlift": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0,
+                    "glutes": 0.7,
+                    "lowerback": 0.5
+                }
+            },
+            "Good Morning": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0,
+                    "lowerback": 0.7,
+                    "glutes": 0.5
+                }
+            },
+            "Glute-Ham Raise": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0,
+                    "glutes": 0.6
+                }
+            },
+            "Dumbbell Single Leg Romanian Deadlift": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0,
+                    "glutes": 0.6,
+                    "lowerback": 0.4
+                }
+            }
+        },
+        "Isolation": {
+            "Leg Curl": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0
+                }
+            },
+            "Lying Leg Curl": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0
+                }
+            }
+        }
+    }
+}

@@ -7,11 +7,11 @@
                     "triceps": 1.0,
                     "upperchest": 0.5,
                     "lowerchest": 0.7,
-                    "frontdelts": 0.4
+                    "frontdelts": 0.45
                 }
             },
             "Skull Crushers": {
-                "Equipment": ["EZ Bar"],
+                "Equipment": ["EZBar"],
                 "MuscleGroups": {
                     "triceps": 1.0,
                     "upperchest": 0.3,

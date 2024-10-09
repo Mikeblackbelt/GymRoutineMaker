@@ -9,32 +9,31 @@
                     "traps": 0.4
                 }
             },
-            "Bent-Over Barbell Row": {
-                "Equipment": ["Barbell"],
+            "Chin up": {
+                "Equipment": ["Pull-Up Bar"],
                 "MuscleGroups": {
-                    "lats": 1.0,
-                    "upperback": 0.6,
-                    "biceps": 0.4
+                    "lats": 0.9,
+                    "biceps": 0.7
                 }
             },
             "Lat Pulldown": {
-                "Equipment": ["Cable"],
+                "Equipment": ["Machine"],
                 "MuscleGroups": {
                     "lats": 1.0,
                     "biceps": 0.4,
                     "traps": 0.3
                 }
-            }
-        },
-        "Isolation": {
+            },
             "Single-Arm Dumbbell Row": {
-                "Equipment": ["Dumbbells", "Bench"],
+                "Equipment": ["Dumbbell", "Bench"],
                 "MuscleGroups": {
                     "lats": 1.0,
                     "upperback": 0.5,
                     "biceps": 0.4
                 }
-            },
+            }
+        },
+        "Isolation": {
             "Cable Row": {
                 "Equipment": ["Cable"],
                 "MuscleGroups": {
@@ -48,6 +47,12 @@
                 "MuscleGroups": {
                     "lats": 1.0,
                     "traps": 0.4
+                }
+            },
+            "Dumbbell Pullover": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "lats": 1.0
                 }
             }
         }

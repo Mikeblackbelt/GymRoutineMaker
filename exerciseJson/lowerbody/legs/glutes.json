@@ -1,0 +1,42 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Hip Thrust": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "glutes": 1.0,
+                    "hamstrings": 0.6
+                }
+            },
+            "Step-Up": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "glutes": 0.8,
+                    "quads": 0.6
+                }
+            }
+        },
+        "Isolation": {
+            "Glute Bridge": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "glutes": 1.0,
+                    "hamstrings": 0.5
+                }
+            },
+            "Dumbbell Glute Bridge": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "glutes": 1.0,
+                    "hamstrings": 0.5
+                }
+            },
+            "Cable Kickback": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "glutes": 1.0
+                }
+            }
+        }
+    }
+}

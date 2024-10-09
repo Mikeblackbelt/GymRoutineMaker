@@ -11,7 +11,7 @@
                 }
             },
             "Incline Dumbbell Press": {
-                "Equipment": ["Dumbbells", "Incline Bench"],
+                "Equipment": ["Dumbbell", "Incline Bench"],
                 "MuscleGroups": {
                     "upperchest": 1.0,
                     "lowerchest": 0.5,
@@ -20,12 +20,21 @@
                 }
             },
             "Decline Push-Ups": {
-                "Equipment": ["Bodyweight", "Decline Surface"],
+                "Equipment": [],
                 "MuscleGroups": {
                     "upperchest": 0.8,
                     "lowerchest": 0.4,
                     "frontdelts": 0.5,
                     "triceps": 0.3
+                }
+            },
+            "Incline chest Press": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "upperchest": 1.0,
+                    "lowerchest": 0.4,
+                    "frontdelts": 0.6,
+                    "triceps": 0.5
                 }
             }
         },
@@ -40,19 +49,10 @@
                 }
             },
             "Dumbbell Fly (Incline)": {
-                "Equipment": ["Dumbbells", "Incline Bench"],
+                "Equipment": ["Dumbbell", "Incline Bench"],
                 "MuscleGroups": {
                     "upperchest": 0.9,
                     "lowerchest": 0.4,
-                    "frontdelts": 0.3,
-                    "triceps": 0.2
-                }
-            },
-            "Pec Deck (Incline)": {
-                "Equipment": ["Pec Deck Machine"],
-                "MuscleGroups": {
-                    "upperchest": 0.8,
-                    "lowerchest": 0.3,
                     "frontdelts": 0.3,
                     "triceps": 0.2
                 }

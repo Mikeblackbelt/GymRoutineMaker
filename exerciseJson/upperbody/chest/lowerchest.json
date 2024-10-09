@@ -67,7 +67,7 @@
                 }
             },
             "Chest Fly (Dumbbell)": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbbell"],
                 "MuscleGroups": {
                     "lowerchest": 0.8,
                     "upperchest": 0.6,
@@ -76,7 +76,7 @@
                 }
             },
             "Pec Deck": {
-                "Equipment": ["Pec Deck Machine"],
+                "Equipment": ["Machine"],
                 "MuscleGroups": {
                     "lowerchest": 0.7,
                     "upperchest": 0.5,
@@ -85,7 +85,7 @@
                 }
             },
             "Low Cable Fly": {
-                "Equipment": ["Cable Machine"],
+                "Equipment": ["Cable"],
                 "MuscleGroups": {
                     "lowerchest": 0.8,
                     "upperchest": 0.3,

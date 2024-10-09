@@ -10,7 +10,7 @@
                 }
             },
             "Seated Dumbbell Press": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbbell"],
                 "MuscleGroups": {
                     "frontdelts": 1.0,
                     "sideDelts": 0.3,
@@ -24,11 +24,19 @@
                     "sideDelts": 0.3,
                     "triceps": 0.5
                 }
+            },
+            "Machine Shoulder Press": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.3,
+                    "triceps": 0.5
+                }
             }
         },
         "Isolation": {
             "Front Raise (Dumbbell)": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbbell"],
                 "MuscleGroups": {
                     "frontdelts": 1.0,
                     "sideDelts": 0.4,

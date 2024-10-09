@@ -3,7 +3,7 @@
         "Compound": {},
         "Isolation": {
             "Lateral Raise": {
-                "Equipment": ["Dumbbells"],
+                "Equipment": ["Dumbbell"],
                 "MuscleGroups": {
                     "sidedelts": 1.0,
                     "frontdelts": 0.3,

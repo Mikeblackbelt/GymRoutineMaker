@@ -1,0 +1,21 @@
+{
+    "Exercises": {
+        "Compound": {
+          
+        },
+        "Isolation": {
+            "Cable Woodchopper": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "obliques": 1.0
+                }
+            },
+            "Dumbbell Side Bend": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "obliques": 1.0
+                }
+            }
+        }
+    }
+}
