@@ -1,0 +1,55 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Pull-Up": {
+                "Equipment": ["Pull-Up Bar"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "biceps": 0.5,
+                    "traps": 0.4
+                }
+            },
+            "Bent-Over Barbell Row": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "upperback": 0.6,
+                    "biceps": 0.4
+                }
+            },
+            "Lat Pulldown": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "biceps": 0.4,
+                    "traps": 0.3
+                }
+            }
+        },
+        "Isolation": {
+            "Single-Arm Dumbbell Row": {
+                "Equipment": ["Dumbbells", "Bench"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "upperback": 0.5,
+                    "biceps": 0.4
+                }
+            },
+            "Cable Row": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "upperback": 0.4,
+                    "biceps": 0.3
+                }
+            },
+            "Straight-Arm Pulldown": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "lats": 1.0,
+                    "traps": 0.4
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Overhead Press": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.3,
+                    "triceps": 0.5
+                }
+            },
+            "Seated Dumbbell Press": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.3,
+                    "triceps": 0.4
+                }
+            },
+            "Seated Barbell Press": {
+                "Equipment": ["Barbell", "Bench"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.3,
+                    "triceps": 0.5
+                }
+            }
+        },
+        "Isolation": {
+            "Front Raise (Dumbbell)": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.4,
+                    "upperchest": 0.3
+                }
+            },
+            "Cable Front Raise": {
+                "Equipment": ["Cable Machine"],
+                "MuscleGroups": {
+                    "frontdelts": 1.0,
+                    "sideDelts": 0.3
+                }
+            }
+        }
+    }
+}

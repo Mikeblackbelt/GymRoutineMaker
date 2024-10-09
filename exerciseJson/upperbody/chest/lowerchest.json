@@ -1,9 +1,98 @@
 {
-    "Compounds": {
-        "Bench Press": {
-            "Equipment": ["Barbell", "Bench"],
-            "MuscleGroups": {"lowerchest": 1, "upperchest": 0.9, "frontdelts": 0.7, "triceps": 0.6},
-
+    "Exercises": {
+        "Compound": {
+            "Bench Press": {
+                "Equipment": ["Barbell", "Bench"],
+                "MuscleGroups": {
+                    "lowerchest": 1,
+                    "upperchest": 0.9,
+                    "frontdelts": 0.7,
+                    "triceps": 0.6
+                }
+            },
+            "Decline Dumbbell Press": {
+                "Equipment": ["Dumbbell", "Decline Bench"],
+                "MuscleGroups": {
+                    "lowerchest": 1,
+                    "upperchest": 0.5,
+                    "frontdelts": 0.5,
+                    "triceps": 0.4
+                }
+            },
+            "Dips": {
+                "Equipment": ["Dip Station"],
+                "MuscleGroups": {
+                    "lowerchest": 1,
+                    "upperchest": 0.6,
+                    "frontdelts": 0.5,
+                    "triceps": 1
+                }
+            },
+            "Push-Ups": {
+                "Equipment": [],
+                "MuscleGroups": {
+                    "lowerchest": 1,
+                    "upperchest": 0.5,
+                    "frontdelts": 0.5,
+                    "triceps": 0.4
+                }
+            },
+            "Decline Bench Press": {
+                "Equipment": ["Barbell", "Decline Bench"],
+                "MuscleGroups": {
+                    "lowerchest": 1.0,
+                    "upperchest": 0.4,
+                    "frontdelts": 0.5,
+                    "triceps": 0.5
+                }
+            },
+            "Dumbbell Press": {
+                "Equipment": ["Dumbbell", "Bench"],
+                "MuscleGroups": {
+                    "lowerchest": 1,
+                    "upperchest": 0.9,
+                    "frontdelts": 0.7,
+                    "triceps": 0.6
+                }
+            }
+        },
+        "Isolation": {
+            "Cable Crossover": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "lowerchest": 0.9,
+                    "upperchest": 0.7,
+                    "frontdelts": 0.4,
+                    "triceps": 0.3
+                }
+            },
+            "Chest Fly (Dumbbell)": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "lowerchest": 0.8,
+                    "upperchest": 0.6,
+                    "frontdelts": 0.4,
+                    "triceps": 0.3
+                }
+            },
+            "Pec Deck": {
+                "Equipment": ["Pec Deck Machine"],
+                "MuscleGroups": {
+                    "lowerchest": 0.7,
+                    "upperchest": 0.5,
+                    "frontdelts": 0.3,
+                    "triceps": 0.2
+                }
+            },
+            "Low Cable Fly": {
+                "Equipment": ["Cable Machine"],
+                "MuscleGroups": {
+                    "lowerchest": 0.8,
+                    "upperchest": 0.3,
+                    "frontdelts": 0.3,
+                    "triceps": 0.2
+                }
+            }
         }
     }
 }

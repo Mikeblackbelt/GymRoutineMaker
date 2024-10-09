@@ -1,0 +1,46 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Close-Grip Bench Press": {
+                "Equipment": ["Barbell", "Bench"],
+                "MuscleGroups": {
+                    "triceps": 1.0,
+                    "upperchest": 0.5,
+                    "lowerchest": 0.7,
+                    "frontdelts": 0.4
+                }
+            },
+            "Skull Crushers": {
+                "Equipment": ["EZ Bar"],
+                "MuscleGroups": {
+                    "triceps": 1.0,
+                    "upperchest": 0.3,
+                    "frontdelts": 0.2
+                }
+            }
+        },
+        "Isolation": {
+            "Tricep Pushdown": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "triceps": 1.0,
+                    "upperchest": 0.2
+                }
+            },
+            "Overhead Tricep Extension": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "triceps": 1.0,
+                    "frontdelts": 0.3
+                }
+            },
+            "Overhead Cable Extension": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "triceps": 1.0,
+                    "frontdelts": 0.3
+                }
+            }
+        }
+    }
+}

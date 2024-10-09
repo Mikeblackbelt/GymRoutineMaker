@@ -1,0 +1,31 @@
+{
+    "Exercises": {
+        "Compound": {
+            "T-Bar Row": {
+                "Equipment": ["T-Bar Row Machine"],
+                "MuscleGroups": {
+                    "upperback": 1.0,
+                    "lats": 0.6,
+                    "biceps": 0.4
+                }
+            }
+        },
+        "Isolation": {
+            "Face Pull": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "upperback": 1.0,
+                    "traps": 0.5,
+                    "reardelts": 0.6
+                }
+            },
+            "Shrug": {
+                "Equipment": ["Dumbbells", "Barbell"],
+                "MuscleGroups": {
+                    "traps": 1.0,
+                    "upperback": 0.4
+                }
+            }
+        }
+    }
+}

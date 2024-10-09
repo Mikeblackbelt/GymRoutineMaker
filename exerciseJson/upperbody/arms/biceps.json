@@ -1,0 +1,58 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Chin-Up": {
+                "Equipment": ["Pull-Up Bar"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "lats": 0.6,
+                    "upperback": 0.4
+                }
+            },
+            "Barbell Curl": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.3
+                }
+            }
+        },
+        "Isolation": {
+            "Dumbbell Curl": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.3
+                }
+            },
+            "Incline Curl": {
+                "Equipment": ["Dumbbells", "Incline Bench"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.3
+                }
+            },
+            "Concentration Curl": {
+                "Equipment": ["Dumbbell"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.2
+                }
+            },
+            "Cable Curl": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.2
+                }
+            },
+            "Hammer Curl": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "biceps": 1.0,
+                    "forearms": 0.4
+                }
+            }
+        }
+    }
+}

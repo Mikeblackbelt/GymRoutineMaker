@@ -1,0 +1,22 @@
+{
+    "Exercises": {
+        "Compound": {},
+        "Isolation": {
+            "Lateral Raise": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "sidedelts": 1.0,
+                    "frontdelts": 0.3,
+                    "traps": 0.3
+                }
+            },
+            "Cable Lateral Raise": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "sidedelts": 1.0,
+                    "frontdelts": 0.3
+                }
+            }
+        }
+    }
+}

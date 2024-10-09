@@ -1,0 +1,40 @@
+{
+    "Exercises": {
+        "Compound": {
+            "Face Pull": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "reardelts": 1.0,
+                    "upperback": 0.6,
+                    "traps": 0.5
+                }
+            }
+        },
+        "Isolation": {
+            "Rear Delt Fly (Dumbbell)": {
+                "Equipment": ["Dumbbells"],
+                "MuscleGroups": {
+                    "reardelts": 1.0,
+                    "upperback": 0.4,
+                    "traps": 0.3
+                }
+            },
+            "Cable Rear Delt Fly": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "reardelts": 1.0,
+                    "upperback": 0.3,
+                    "traps": 0.3
+                }
+            },
+            "Reverse Pec Deck": {
+                "Equipment": ["Pec Deck Machine"],
+                "MuscleGroups": {
+                    "reardelts": 1.0,
+                    "upperback": 0.5,
+                    "traps": 0.3
+                }
+            }
+        }
+    }
+}
