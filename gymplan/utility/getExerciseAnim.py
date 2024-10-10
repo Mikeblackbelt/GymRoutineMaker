@@ -1,3 +1,7 @@
-from pytube import YouTube 
+from pytube import YouTube, Search
+import json
 
-def getExerAm(savepath,exerciseName):
+def getExerData(exerciseName):
+    with open()
+def getExerAnim(savepath,exerciseName):
+  searchedVids = Search('{exerciseName}')
