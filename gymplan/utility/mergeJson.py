@@ -1,5 +1,6 @@
 import json
 import os
+import filePaths
 
 """
 the reason this exists is for getExerciseAnim.py
@@ -29,9 +30,16 @@ def merge(directory) -> dict:
 
                  else:
                     rDict[key] = val
-                  
-
     return rDict
 
-print(merge(r"C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson"))
+def extract_exercises(data):
+    exercises_list = {}
+    for key, value in data.items():
+        for category in value.values(): 
+            for exercise, details in category.items():
+                exercises_list[exercise] = details  
+    return exercises_list
+
+print(extract_exercises(merge(filePaths.fpExerJson())))
+
     
