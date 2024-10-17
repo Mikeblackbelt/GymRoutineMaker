@@ -8,6 +8,11 @@ so its easier to look through the json.
  this most likely wont be sed for the actual routine
 """
 
+def logToFile(file,msg) -> None:
+    with open(f"{filePaths.fpLogDir()}\\{file}",'a') as logFile:
+        logFile.writelines(msg)
+
+
 def getFilePaths(directory) -> list:
     filePaths = []
     for item in os.listdir(directory):
@@ -17,12 +22,15 @@ def getFilePaths(directory) -> list:
             filePaths.append(f'{directory}\\{item}')
     return filePaths
 
-def merge(directory) -> dict:
+def merge(directory,exclude=None) -> dict:
     rDict = {}
     repeatKeys = {}
     for file in getFilePaths(directory):
+        if exclude is not None and exclude == file: 
+            continue
         with open(file) as jsonFile:
             fileData = json.load(jsonFile)
+            logToFile('utilLog1.txt',f'\n\n{file} opened\nContents:\n\n{fileData}\n\n')
             for key, val in fileData.items():
                  if key in rDict:
                     repeatKeys[key] = 1 + repeatKeys[key] if key in repeatKeys else 1
