@@ -26,7 +26,7 @@ def merge(directory,exclude=None) -> dict:
     rDict = {}
     repeatKeys = {}
     for file in getFilePaths(directory):
-        if exclude is not None and exclude == file: 
+        if exclude is not None and file in exclude: 
             continue
         with open(file) as jsonFile:
             fileData = json.load(jsonFile)
