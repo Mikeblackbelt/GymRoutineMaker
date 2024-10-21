@@ -19,7 +19,7 @@ for exercises in exerciseList.keys():
 mergeJson.logToFile('utilLog1.txt', f"Video Data: \n{exerlist}")
 
 with open(f'{filePaths.fpVidJson()}\\videos.json', 'w') as vidFile:
-    json.dump(exerlist)
+    json.dump(exerlist,vidFile)
 
 """
 exerdict [{'Cable Crunch': 'https://youtube.com/watch?v=3qjoXDTuyOE'}, {'Decline Sit-Up': 'https://youtube.com/watch?v=IINnwHwexkg'}, {'Hanging Leg Raise': 'https://youtube.com/watch?v=Pr1ieGZ5atk'}, {'Ab Wheel Rollout': 'https://youtube.com/watch?v=9ZCoAbI7uX0'}, {'V-Up': 'https://youtube.com/watch?v=nfWQihJo-Mc'}, {'Cable Woodchopper': 'https://youtube.com/watch?v=DoACGlPyQTI'}, {'Dumbbell Side Bend': 'https://youtube.com/watch?v=dL9ZzqtQI5c'}, {'Standing Calf Raise': 'https://youtube.com/watch?v=97NbelB5yvQ'}, {'Seated Calf Raise': 'https://youtube.com/watch?v=3ZRe_QpvRPg'}, {'Smith Machine Calf Raise': 'https://youtube.com/watch?v=1lKjFPrYqf0'}, {'Single Leg Calf Raise': 'https://youtube.com/watch?v=PTn6icEeH3Y'}, {'Calf Press on Leg Press Machine': 'https://youtube.com/watch?v=Hu8i9d_IgpM'}, {'Hip Thrust': 'https://youtube.com/watch?v=xDmFkJxPzeM'}, {'Step-Up': 'https://youtube.com/watch?v=v2GfVnjmY7c'}, {'Glute Bridge': 'https://youtube.com/watch?v=Q_Bpj91Yiis'}, {'Dumbbell Glute Bridge': 'https://youtube.com/watch?v=0kx1QOzhTCQ'}, {'Cable Kickback': 'https://youtube.com/watch?v=IozaC4bS2UY'}, {'Deadlift': 'https://youtube.com/watch?v=r4MzxtBKyNE'}, {'Romanian Deadlift': 'https://youtube.com/watch?v=5zmlnbWb-g4'}, {'Good Morning': 

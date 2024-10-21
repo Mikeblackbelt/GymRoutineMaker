@@ -22,14 +22,19 @@ def getFilePaths(directory) -> list:
             filePaths.append(f'{directory}\\{item}')
     return filePaths
 
-def merge(directory,exclude=None) -> dict:
+def merge(directory,exclude: list = None) -> dict:
     rDict = {}
     repeatKeys = {}
     for file in getFilePaths(directory):
         if exclude is not None and file in exclude: 
+            logToFile('utilLog1.txt', f'Excluding {file}')
             continue
         with open(file) as jsonFile:
-            fileData = json.load(jsonFile)
+            try: 
+                fileData = json.load(jsonFile) 
+            except json.decoder.JSONDecodeError:
+                 logToFile('utilLog1.txt',f'{file} is blank.')
+                 continue
             logToFile('utilLog1.txt',f'\n\n{file} opened\nContents:\n\n{fileData}\n\n')
             for key, val in fileData.items():
                  if key in rDict:
@@ -48,6 +53,6 @@ def extract_exercises(data):
                 exercises_list[exercise] = details  
     return exercises_list
 
-print(extract_exercises(merge(filePaths.fpExerJson())))
+print(extract_exercises(merge(filePaths.fpExerJson(),[r'C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json'])))
 
     

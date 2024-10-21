@@ -110,3 +110,348 @@ Contents:
 
 {'Exercises': {'Compound': {}, 'Isolation': {'Lateral Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3, 'traps': 0.3}}, 'Cable Lateral Raise': {'Equipment': ['Cable'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3}}}}}
 
+Excluding C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\abs.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Crunch': {'Equipment': ['Cable'], 'MuscleGroups': {'abs': 1.0}}, 'Decline Sit-Up': {'Equipment': ['Decline Bench'], 'MuscleGroups': {'abs': 1.0}}, 'Hanging Leg Raise': {'Equipment': ['Pull-up Bar'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.6}}, 'Ab Wheel Rollout': {'Equipment': ['Ab Wheel'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.5}}, 'V-Up': {'Equipment': [], 'MuscleGroups': {'abs': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\obliques.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Woodchopper': {'Equipment': ['Cable'], 'MuscleGroups': {'obliques': 1.0}}, 'Dumbbell Side Bend': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'obliques': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\calves.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Standing Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Seated Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Smith Machine Calf Raise': {'Equipment': ['Smith Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Single Leg Calf Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'calves': 1.0}}, 'Calf Press on Leg Press Machine': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\glutes.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Hip Thrust': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.6}}, 'Step-Up': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 0.8, 'quads': 0.6}}}, 'Isolation': {'Glute Bridge': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Dumbbell Glute Bridge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Cable Kickback': {'Equipment': ['Cable'], 'MuscleGroups': {'glutes': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\hamstrings.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 0.8, 'glutes': 0.7, 'lowerback': 0.6, 'upperback': 0.4}}, 'Romanian Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.7, 'lowerback': 0.5}}, 'Good Morning': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'lowerback': 0.7, 'glutes': 0.5}}, 'Glute-Ham Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6}}, 'Dumbbell Single Leg Romanian Deadlift': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6, 'lowerback': 0.4}}}, 'Isolation': {'Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}, 'Lying Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\quads.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Squat': {'Equipment': ['Barbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.7, 'hamstrings': 0.4}}, 'Leg Press': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.5}}, 'Lunge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.6}}}, 'Isolation': {'Leg Extension': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\biceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Chin-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'biceps': 1.0, 'lats': 0.6, 'upperback': 0.4}}, 'Barbell Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}}, 'Isolation': {'Dumbbell Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Incline Curl': {'Equipment': ['Dumbell', 'Incline Bench'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Concentration Curl': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Cable Curl': {'Equipment': ['Cable'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Hammer Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\forearms.json opened
+Contents:
+
+{'Exercises': {'Compound': {"Farmer's Walk": {'Equipment': ['Dumbbell'], 'MuscleGroups': {'forearms': 1.0, 'traps': 0.5}}}, 'Isolation': {'Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Curl': {'Equipment': ['EZBar'], 'MuscleGroups': {'forearms': 0.8, 'biceps': 0.5}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\triceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Close-Grip Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.5, 'lowerchest': 0.7, 'frontdelts': 0.45}}, 'Skull Crushers': {'Equipment': ['EZBar'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.3, 'frontdelts': 0.2}}}, 'Isolation': {'Tricep Pushdown': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.2}}, 'Overhead Tricep Extension': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}, 'Overhead Cable Extension': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\lats.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Pull-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.5, 'traps': 0.4}}, 'Chin up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 0.9, 'biceps': 0.7}}, 'Lat Pulldown': {'Equipment': ['Machine'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.4, 'traps': 0.3}}, 'Single-Arm Dumbbell Row': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.5, 'biceps': 0.4}}}, 'Isolation': {'Cable Row': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.4, 'biceps': 0.3}}, 'Straight-Arm Pulldown': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'traps': 0.4}}, 'Dumbbell Pullover': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lats': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\midback.json opened
+Contents:
+
+{'Exercises': {'Compound': {'T-Bar Row': {'Equipment': ['Machine'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.6, 'biceps': 0.4}, 'Seal Row': {'Equipment': ['Bench', 'Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.4}}, 'Barbell Row': {'Equipment': ['Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.5}}}}, 'Isolation': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'upperback': 1.0, 'traps': 0.5, 'reardelts': 0.6}}, 'Shrug': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'traps': 1.0, 'upperback': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\lowerchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}, 'Decline Dumbbell Press': {'Equipment': ['Dumbbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Dips': {'Equipment': ['Dip Station'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.6, 'frontdelts': 0.5, 'triceps': 1}}, 'Push-Ups': {'Equipment': [], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Bench Press': {'Equipment': ['Barbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1.0, 'upperchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.5}}, 'Dumbbell Press': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}}, 'Isolation': {'Cable Crossover': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.9, 'upperchest': 0.7, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Chest Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.6, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'lowerchest': 0.7, 'upperchest': 0.5, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Low Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.3, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\upperchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Incline Bench Press': {'Equipment': ['Barbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}, 'Incline Dumbbell Press': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Push-Ups': {'Equipment': [], 'MuscleGroups': {'upperchest': 0.8, 'lowerchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.3}}, 'Incline chest Press': {'Equipment': ['Machine'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}}, 'Isolation': {'Incline Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Dumbbell Fly (Incline)': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 0.9, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\frontdelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Overhead Press': {'Equipment': ['Barbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Seated Dumbbell Press': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.4}}, 'Seated Barbell Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Machine Shoulder Press': {'Equipment': ['Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}}, 'Isolation': {'Front Raise (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.4, 'upperchest': 0.3}}, 'Cable Front Raise': {'Equipment': ['Cable Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\reardelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.6, 'traps': 0.5}}}, 'Isolation': {'Rear Delt Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.4, 'traps': 0.3}}, 'Cable Rear Delt Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.3, 'traps': 0.3}}, 'Reverse Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.5, 'traps': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\sidedelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Lateral Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3, 'traps': 0.3}}, 'Cable Lateral Raise': {'Equipment': ['Cable'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json opened
+Contents:
+
+{'Cable Crunch': 'https://youtube.com/watch?v=3qjoXDTuyOE', 'Decline Sit-Up': 'https://youtube.com/watch?v=IINnwHwexkg', 'Hanging Leg Raise': 'https://youtube.com/watch?v=QyVq5oUBpss', 'Ab Wheel Rollout': 'https://youtube.com/watch?v=9ZCoAbI7uX0', 'V-Up': 'https://youtube.com/watch?v=nfWQihJo-Mc', 'Cable Woodchopper': 'https://youtube.com/watch?v=ZDt4MCvjMAA', 'Dumbbell Side Bend': 'https://youtube.com/watch?v=dL9ZzqtQI5c', 'Standing Calf Raise': 'https://youtube.com/watch?v=g_E7_q1z2bo', 'Seated Calf Raise': 'https://youtube.com/watch?v=smyXy_dhXo8', 'Smith Machine Calf Raise': 'https://youtube.com/watch?v=1lKjFPrYqf0', 'Single Leg Calf Raise': 'https://youtube.com/watch?v=PTn6icEeH3Y', 'Calf Press on Leg Press Machine': 'https://youtube.com/watch?v=IrxfRHGiGE0', 'Hip Thrust': 'https://youtube.com/watch?v=xDmFkJxPzeM', 'Step-Up': 'https://youtube.com/watch?v=9ZknEYboBOQ', 'Glute Bridge': 'https://youtube.com/watch?v=Q_Bpj91Yiis', 'Dumbbell Glute Bridge': 'https://youtube.com/watch?v=FSiUH5jn3Cs', 'Cable Kickback': 'https://youtube.com/watch?v=SqO-VUEak2M', 'Deadlift': 'https://youtube.com/watch?v=XxWcirHIwVo', 'Romanian Deadlift': 'https://youtube.com/watch?v=5zmlnbWb-g4', 'Good Morning': 'https://youtube.com/watch?v=vKPGe8zb2S4', 'Glute-Ham Raise': 'https://youtube.com/watch?v=z15C9UZUbss', 'Dumbbell Single Leg Romanian Deadlift': 'https://youtube.com/watch?v=lI8-igvsnVQ', 'Leg Curl': 'https://youtube.com/watch?v=3tcjzbziRk0', 'Lying Leg Curl': 'https://youtube.com/watch?v=vl5nUdE9mWM', 'Squat': 'https://youtube.com/watch?v=gcNh17Ckjgg', 'Leg Press': 'https://youtube.com/watch?v=VFk3RzndUEc', 'Lunge': 'https://youtube.com/watch?v=9gglI77Kzq8', 'Leg Extension': 'https://youtube.com/watch?v=swZQC689o9U', 'Chin-Up': 'https://youtube.com/watch?v=KweCZJlwCw0', 'Barbell Curl': 'https://youtube.com/watch?v=kwG2ipFRgfo', 'Dumbbell Curl': 'https://youtube.com/watch?v=ykJmrZ5v0Oo', 'Incline Curl': 'https://youtube.com/watch?v=soxrZlIl35U', 'Concentration Curl': 'https://youtube.com/watch?v=0AUGkch3tzc', 'Cable Curl': 'https://youtube.com/watch?v=NFzTWp2qpiE', 'Hammer Curl': 'https://youtube.com/watch?v=OPqe0kCxmR8', "Farmer's Walk": 'https://youtube.com/watch?v=z7E_YU9P1jU', 'Wrist Curl': 'https://youtube.com/watch?v=3VLTzIrnb5g', 'Reverse Wrist Curl': 'https://youtube.com/watch?v=ypfd1kaI1AU', 'Reverse Curl': 'https://youtube.com/watch?v=ypfd1kaI1AU', 'Close-Grip Bench Press': 'https://youtube.com/watch?v=wxVRe9pmJdk', 'Skull Crushers': 'https://youtube.com/watch?v=d_KZxkY_0cM', 'Tricep Pushdown': 'https://youtube.com/watch?v=2-LAMcpzODU', 'Overhead Tricep Extension': 'https://youtube.com/watch?v=-Vyt2QdsR7E', 'Overhead Cable Extension': 'https://youtube.com/watch?v=Fwl0T1_giQ0', 'Pull-Up': 'https://youtube.com/watch?v=p40iUjf02j0', 'Chin up': 'https://youtube.com/watch?v=KweCZJlwCw0', 'Lat Pulldown': 'https://youtube.com/watch?v=JGeRYIZdojU', 'Single-Arm Dumbbell Row': 'https://youtube.com/watch?v=dFzUjzfih7k', 'Cable Row': 'https://youtube.com/watch?v=CsROhQ1onAg', 'Straight-Arm Pulldown': 'https://youtube.com/watch?v=wcVDItawocI', 'Dumbbell Pullover': 'https://youtube.com/watch?v=FK4rHfWKEac', 'T-Bar Row': 'https://youtube.com/watch?v=TyLoy3n_a10', 'Face Pull': 'https://youtube.com/watch?v=ljgqer1ZpXg', 'Shrug': 'https://youtube.com/watch?v=_t3lrPI6Ns4', 'Bench Press': 'https://youtube.com/watch?v=4Y2ZdHCOXok', 'Decline Dumbbell Press': 'https://youtube.com/watch?v=QsYre__-aro', 'Dips': 'https://youtube.com/watch?v=2z8JmcrW-As', 'Push-Ups': 'https://youtube.com/watch?v=IODxDxX7oi4', 'Decline Bench Press': 'https://youtube.com/watch?v=LfyQBUKR8SE', 'Dumbbell Press': 'https://youtube.com/watch?v=QsYre__-aro', 'Cable Crossover': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Chest Fly (Dumbbell)': 'https://youtube.com/watch?v=QENKPHhQVi4', 'Pec Deck': 'https://youtube.com/watch?v=eGjt4lk6g34', 'Low Cable Fly': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Incline Bench Press': 'https://youtube.com/watch?v=jPLdzuHckI8', 'Incline Dumbbell Press': 'https://youtube.com/watch?v=IP4oeKh1Sd4', 'Decline Push-Ups': 'https://youtube.com/watch?v=5QFjmotLfW4', 'Incline chest Press': 'https://youtube.com/watch?v=I70W7ZLBWiQ', 'Incline Cable Fly': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Dumbbell Fly (Incline)': 'https://youtube.com/watch?v=ajdFwa-qM98', 'Overhead Press': 'https://youtube.com/watch?v=F3QY5vMz_6I', 'Seated Dumbbell Press': 'https://youtube.com/watch?v=qEwKCR5JCog', 'Seated Barbell Press': 'https://youtube.com/watch?v=oBGeXxnigsQ', 'Machine Shoulder Press': 'https://youtube.com/watch?v=3R14MnZbcpw', 'Front Raise (Dumbbell)': 'https://youtube.com/watch?v=-t7fuZ0KhDA', 'Cable Front Raise': 'https://youtube.com/watch?v=vtH93qBItdk', 'Rear Delt Fly (Dumbbell)': 'https://youtube.com/watch?v=EA7u4Q_8HQ0', 'Cable Rear Delt Fly': 'https://youtube.com/watch?v=er15V96hG5U', 'Reverse Pec Deck': 'https://youtube.com/watch?v=6cHY60y7QRU', 'Lateral Raise': 'https://youtube.com/watch?v=XPPfnSEATJA', 'Cable Lateral Raise': 'https://youtube.com/watch?v=Z5FA9aq3L6A'}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\abs.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Crunch': {'Equipment': ['Cable'], 'MuscleGroups': {'abs': 1.0}}, 'Decline Sit-Up': {'Equipment': ['Decline Bench'], 'MuscleGroups': {'abs': 1.0}}, 'Hanging Leg Raise': {'Equipment': ['Pull-up Bar'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.6}}, 'Ab Wheel Rollout': {'Equipment': ['Ab Wheel'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.5}}, 'V-Up': {'Equipment': [], 'MuscleGroups': {'abs': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\obliques.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Woodchopper': {'Equipment': ['Cable'], 'MuscleGroups': {'obliques': 1.0}}, 'Dumbbell Side Bend': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'obliques': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\calves.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Standing Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Seated Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Smith Machine Calf Raise': {'Equipment': ['Smith Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Single Leg Calf Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'calves': 1.0}}, 'Calf Press on Leg Press Machine': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\glutes.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Hip Thrust': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.6}}, 'Step-Up': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 0.8, 'quads': 0.6}}}, 'Isolation': {'Glute Bridge': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Dumbbell Glute Bridge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Cable Kickback': {'Equipment': ['Cable'], 'MuscleGroups': {'glutes': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\hamstrings.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 0.8, 'glutes': 0.7, 'lowerback': 0.6, 'upperback': 0.4}}, 'Romanian Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.7, 'lowerback': 0.5}}, 'Good Morning': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'lowerback': 0.7, 'glutes': 0.5}}, 'Glute-Ham Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6}}, 'Dumbbell Single Leg Romanian Deadlift': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6, 'lowerback': 0.4}}}, 'Isolation': {'Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}, 'Lying Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\quads.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Squat': {'Equipment': ['Barbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.7, 'hamstrings': 0.4}}, 'Leg Press': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.5}}, 'Lunge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.6}}}, 'Isolation': {'Leg Extension': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\biceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Chin-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'biceps': 1.0, 'lats': 0.6, 'upperback': 0.4}}, 'Barbell Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}}, 'Isolation': {'Dumbbell Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Incline Curl': {'Equipment': ['Dumbell', 'Incline Bench'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Concentration Curl': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Cable Curl': {'Equipment': ['Cable'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Hammer Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\forearms.json opened
+Contents:
+
+{'Exercises': {'Compound': {"Farmer's Walk": {'Equipment': ['Dumbbell'], 'MuscleGroups': {'forearms': 1.0, 'traps': 0.5}}}, 'Isolation': {'Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Curl': {'Equipment': ['EZBar'], 'MuscleGroups': {'forearms': 0.8, 'biceps': 0.5}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\triceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Close-Grip Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.5, 'lowerchest': 0.7, 'frontdelts': 0.45}}, 'Skull Crushers': {'Equipment': ['EZBar'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.3, 'frontdelts': 0.2}}}, 'Isolation': {'Tricep Pushdown': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.2}}, 'Overhead Tricep Extension': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}, 'Overhead Cable Extension': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\lats.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Pull-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.5, 'traps': 0.4}}, 'Chin up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 0.9, 'biceps': 0.7}}, 'Lat Pulldown': {'Equipment': ['Machine'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.4, 'traps': 0.3}}, 'Single-Arm Dumbbell Row': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.5, 'biceps': 0.4}}}, 'Isolation': {'Cable Row': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.4, 'biceps': 0.3}}, 'Straight-Arm Pulldown': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'traps': 0.4}}, 'Dumbbell Pullover': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lats': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\midback.json opened
+Contents:
+
+{'Exercises': {'Compound': {'T-Bar Row': {'Equipment': ['Machine'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.6, 'biceps': 0.4}, 'Seal Row': {'Equipment': ['Bench', 'Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.4}}, 'Barbell Row': {'Equipment': ['Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.5}}}}, 'Isolation': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'upperback': 1.0, 'traps': 0.5, 'reardelts': 0.6}}, 'Shrug': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'traps': 1.0, 'upperback': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\lowerchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}, 'Decline Dumbbell Press': {'Equipment': ['Dumbbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Dips': {'Equipment': ['Dip Station'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.6, 'frontdelts': 0.5, 'triceps': 1}}, 'Push-Ups': {'Equipment': [], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Bench Press': {'Equipment': ['Barbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1.0, 'upperchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.5}}, 'Dumbbell Press': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}}, 'Isolation': {'Cable Crossover': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.9, 'upperchest': 0.7, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Chest Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.6, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'lowerchest': 0.7, 'upperchest': 0.5, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Low Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.3, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\upperchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Incline Bench Press': {'Equipment': ['Barbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}, 'Incline Dumbbell Press': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Push-Ups': {'Equipment': [], 'MuscleGroups': {'upperchest': 0.8, 'lowerchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.3}}, 'Incline chest Press': {'Equipment': ['Machine'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}}, 'Isolation': {'Incline Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Dumbbell Fly (Incline)': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 0.9, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\frontdelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Overhead Press': {'Equipment': ['Barbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Seated Dumbbell Press': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.4}}, 'Seated Barbell Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Machine Shoulder Press': {'Equipment': ['Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}}, 'Isolation': {'Front Raise (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.4, 'upperchest': 0.3}}, 'Cable Front Raise': {'Equipment': ['Cable Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\reardelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.6, 'traps': 0.5}}}, 'Isolation': {'Rear Delt Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.4, 'traps': 0.3}}, 'Cable Rear Delt Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.3, 'traps': 0.3}}, 'Reverse Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.5, 'traps': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\sidedelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Lateral Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3, 'traps': 0.3}}, 'Cable Lateral Raise': {'Equipment': ['Cable'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3}}}}}
+
+Excluding C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\abs.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Crunch': {'Equipment': ['Cable'], 'MuscleGroups': {'abs': 1.0}}, 'Decline Sit-Up': {'Equipment': ['Decline Bench'], 'MuscleGroups': {'abs': 1.0}}, 'Hanging Leg Raise': {'Equipment': ['Pull-up Bar'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.6}}, 'Ab Wheel Rollout': {'Equipment': ['Ab Wheel'], 'MuscleGroups': {'abs': 1.0, 'hipflexors': 0.5}}, 'V-Up': {'Equipment': [], 'MuscleGroups': {'abs': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\abs\obliques.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Cable Woodchopper': {'Equipment': ['Cable'], 'MuscleGroups': {'obliques': 1.0}}, 'Dumbbell Side Bend': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'obliques': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\calves.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Standing Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Seated Calf Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Smith Machine Calf Raise': {'Equipment': ['Smith Machine'], 'MuscleGroups': {'calves': 1.0}}, 'Single Leg Calf Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'calves': 1.0}}, 'Calf Press on Leg Press Machine': {'Equipment': ['Machine'], 'MuscleGroups': {'calves': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\glutes.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Hip Thrust': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.6}}, 'Step-Up': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 0.8, 'quads': 0.6}}}, 'Isolation': {'Glute Bridge': {'Equipment': ['Barbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Dumbbell Glute Bridge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'glutes': 1.0, 'hamstrings': 0.5}}, 'Cable Kickback': {'Equipment': ['Cable'], 'MuscleGroups': {'glutes': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\hamstrings.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 0.8, 'glutes': 0.7, 'lowerback': 0.6, 'upperback': 0.4}}, 'Romanian Deadlift': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.7, 'lowerback': 0.5}}, 'Good Morning': {'Equipment': ['Barbell'], 'MuscleGroups': {'hamstrings': 1.0, 'lowerback': 0.7, 'glutes': 0.5}}, 'Glute-Ham Raise': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6}}, 'Dumbbell Single Leg Romanian Deadlift': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'hamstrings': 1.0, 'glutes': 0.6, 'lowerback': 0.4}}}, 'Isolation': {'Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}, 'Lying Leg Curl': {'Equipment': ['Machine'], 'MuscleGroups': {'hamstrings': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\lowerbody\legs\quads.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Squat': {'Equipment': ['Barbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.7, 'hamstrings': 0.4}}, 'Leg Press': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.5}}, 'Lunge': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'quads': 1.0, 'glutes': 0.6}}}, 'Isolation': {'Leg Extension': {'Equipment': ['Machine'], 'MuscleGroups': {'quads': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\biceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Chin-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'biceps': 1.0, 'lats': 0.6, 'upperback': 0.4}}, 'Barbell Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}}, 'Isolation': {'Dumbbell Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Incline Curl': {'Equipment': ['Dumbell', 'Incline Bench'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.3}}, 'Concentration Curl': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Cable Curl': {'Equipment': ['Cable'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.2}}, 'Hammer Curl': {'Equipment': ['Dumbell'], 'MuscleGroups': {'biceps': 1.0, 'forearms': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\forearms.json opened
+Contents:
+
+{'Exercises': {'Compound': {"Farmer's Walk": {'Equipment': ['Dumbbell'], 'MuscleGroups': {'forearms': 1.0, 'traps': 0.5}}}, 'Isolation': {'Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Wrist Curl': {'Equipment': ['Barbell'], 'MuscleGroups': {'forearms': 1.0}}, 'Reverse Curl': {'Equipment': ['EZBar'], 'MuscleGroups': {'forearms': 0.8, 'biceps': 0.5}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\arms\triceps.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Close-Grip Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.5, 'lowerchest': 0.7, 'frontdelts': 0.45}}, 'Skull Crushers': {'Equipment': ['EZBar'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.3, 'frontdelts': 0.2}}}, 'Isolation': {'Tricep Pushdown': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'upperchest': 0.2}}, 'Overhead Tricep Extension': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}, 'Overhead Cable Extension': {'Equipment': ['Cable'], 'MuscleGroups': {'triceps': 1.0, 'frontdelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\lats.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Pull-Up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.5, 'traps': 0.4}}, 'Chin up': {'Equipment': ['Pull-Up Bar'], 'MuscleGroups': {'lats': 0.9, 'biceps': 0.7}}, 'Lat Pulldown': {'Equipment': ['Machine'], 'MuscleGroups': {'lats': 1.0, 'biceps': 0.4, 'traps': 0.3}}, 'Single-Arm Dumbbell Row': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.5, 'biceps': 0.4}}}, 'Isolation': {'Cable Row': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'upperback': 0.4, 'biceps': 0.3}}, 'Straight-Arm Pulldown': {'Equipment': ['Cable'], 'MuscleGroups': {'lats': 1.0, 'traps': 0.4}}, 'Dumbbell Pullover': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lats': 1.0}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\back\midback.json opened
+Contents:
+
+{'Exercises': {'Compound': {'T-Bar Row': {'Equipment': ['Machine'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.6, 'biceps': 0.4}, 'Seal Row': {'Equipment': ['Bench', 'Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.4}}, 'Barbell Row': {'Equipment': ['Barbell'], 'MuscleGroups': {'upperback': 1.0, 'lats': 0.7, 'biceps': 0.5}}}}, 'Isolation': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'upperback': 1.0, 'traps': 0.5, 'reardelts': 0.6}}, 'Shrug': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'traps': 1.0, 'upperback': 0.4}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\lowerchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Bench Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}, 'Decline Dumbbell Press': {'Equipment': ['Dumbbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Dips': {'Equipment': ['Dip Station'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.6, 'frontdelts': 0.5, 'triceps': 1}}, 'Push-Ups': {'Equipment': [], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Bench Press': {'Equipment': ['Barbell', 'Decline Bench'], 'MuscleGroups': {'lowerchest': 1.0, 'upperchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.5}}, 'Dumbbell Press': {'Equipment': ['Dumbbell', 'Bench'], 'MuscleGroups': {'lowerchest': 1, 'upperchest': 0.9, 'frontdelts': 0.7, 'triceps': 0.6}}}, 'Isolation': {'Cable Crossover': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.9, 'upperchest': 0.7, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Chest Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.6, 'frontdelts': 0.4, 'triceps': 0.3}}, 'Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'lowerchest': 0.7, 'upperchest': 0.5, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Low Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'lowerchest': 0.8, 'upperchest': 0.3, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\chest\upperchest.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Incline Bench Press': {'Equipment': ['Barbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}, 'Incline Dumbbell Press': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.5, 'frontdelts': 0.5, 'triceps': 0.4}}, 'Decline Push-Ups': {'Equipment': [], 'MuscleGroups': {'upperchest': 0.8, 'lowerchest': 0.4, 'frontdelts': 0.5, 'triceps': 0.3}}, 'Incline chest Press': {'Equipment': ['Machine'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.6, 'triceps': 0.5}}}, 'Isolation': {'Incline Cable Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'upperchest': 1.0, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}, 'Dumbbell Fly (Incline)': {'Equipment': ['Dumbbell', 'Incline Bench'], 'MuscleGroups': {'upperchest': 0.9, 'lowerchest': 0.4, 'frontdelts': 0.3, 'triceps': 0.2}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\frontdelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Overhead Press': {'Equipment': ['Barbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Seated Dumbbell Press': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.4}}, 'Seated Barbell Press': {'Equipment': ['Barbell', 'Bench'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}, 'Machine Shoulder Press': {'Equipment': ['Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3, 'triceps': 0.5}}}, 'Isolation': {'Front Raise (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.4, 'upperchest': 0.3}}, 'Cable Front Raise': {'Equipment': ['Cable Machine'], 'MuscleGroups': {'frontdelts': 1.0, 'sideDelts': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\reardelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {'Face Pull': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.6, 'traps': 0.5}}}, 'Isolation': {'Rear Delt Fly (Dumbbell)': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.4, 'traps': 0.3}}, 'Cable Rear Delt Fly': {'Equipment': ['Cable'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.3, 'traps': 0.3}}, 'Reverse Pec Deck': {'Equipment': ['Machine'], 'MuscleGroups': {'reardelts': 1.0, 'upperback': 0.5, 'traps': 0.3}}}}}
+
+
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\upperbody\shoulders\sidedelts.json opened
+Contents:
+
+{'Exercises': {'Compound': {}, 'Isolation': {'Lateral Raise': {'Equipment': ['Dumbbell'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3, 'traps': 0.3}}, 'Cable Lateral Raise': {'Equipment': ['Cable'], 'MuscleGroups': {'sidedelts': 1.0, 'frontdelts': 0.3}}}}}
+
+C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json is blank.Video Data: 
+{'Cable Crunch': 'https://youtube.com/watch?v=3qjoXDTuyOE', 'Decline Sit-Up': 'https://youtube.com/watch?v=IINnwHwexkg', 'Hanging Leg Raise': 'https://youtube.com/watch?v=QyVq5oUBpss', 'Ab Wheel Rollout': 'https://youtube.com/watch?v=9ZCoAbI7uX0', 'V-Up': 'https://youtube.com/watch?v=nfWQihJo-Mc', 'Cable Woodchopper': 'https://youtube.com/watch?v=ZDt4MCvjMAA', 'Dumbbell Side Bend': 'https://youtube.com/watch?v=dL9ZzqtQI5c', 'Standing Calf Raise': 'https://youtube.com/watch?v=g_E7_q1z2bo', 'Seated Calf Raise': 'https://youtube.com/watch?v=smyXy_dhXo8', 'Smith Machine Calf Raise': 'https://youtube.com/watch?v=1lKjFPrYqf0', 'Single Leg Calf Raise': 'https://youtube.com/watch?v=PTn6icEeH3Y', 'Calf Press on Leg Press Machine': 'https://youtube.com/watch?v=IrxfRHGiGE0', 'Hip Thrust': 'https://youtube.com/watch?v=KFnKL7qSzVs', 'Step-Up': 'https://youtube.com/watch?v=9ZknEYboBOQ', 'Glute Bridge': 'https://youtube.com/watch?v=Q_Bpj91Yiis', 'Dumbbell Glute Bridge': 'https://youtube.com/watch?v=FSiUH5jn3Cs', 'Cable Kickback': 'https://youtube.com/watch?v=SqO-VUEak2M', 'Deadlift': 'https://youtube.com/watch?v=XxWcirHIwVo', 'Romanian Deadlift': 'https://youtube.com/watch?v=5zmlnbWb-g4', 'Good Morning': 'https://youtube.com/watch?v=vKPGe8zb2S4', 'Glute-Ham Raise': 'https://youtube.com/watch?v=z15C9UZUbss', 'Dumbbell Single Leg Romanian Deadlift': 'https://youtube.com/watch?v=lI8-igvsnVQ', 'Leg Curl': 'https://youtube.com/watch?v=Orxowest56U', 'Lying Leg Curl': 'https://youtube.com/watch?v=vl5nUdE9mWM', 'Squat': 'https://youtube.com/watch?v=gcNh17Ckjgg', 'Leg Press': 'https://youtube.com/watch?v=VFk3RzndUEc', 'Lunge': 'https://youtube.com/watch?v=9gglI77Kzq8', 'Leg Extension': 'https://youtube.com/watch?v=swZQC689o9U', 'Chin-Up': 'https://youtube.com/watch?v=KweCZJlwCw0', 'Barbell Curl': 'https://youtube.com/watch?v=kwG2ipFRgfo', 'Dumbbell Curl': 'https://youtube.com/watch?v=ykJmrZ5v0Oo', 'Incline Curl': 'https://youtube.com/watch?v=HhHHBj3qTJ4', 'Concentration Curl': 'https://youtube.com/watch?v=0AUGkch3tzc', 'Cable Curl': 'https://youtube.com/watch?v=NFzTWp2qpiE', 'Hammer Curl': 'https://youtube.com/watch?v=OPqe0kCxmR8', "Farmer's Walk": 'https://youtube.com/watch?v=z7E_YU9P1jU', 'Wrist Curl': 'https://youtube.com/watch?v=3VLTzIrnb5g', 'Reverse Wrist Curl': 'https://youtube.com/watch?v=ypfd1kaI1AU', 'Reverse Curl': 'https://youtube.com/watch?v=ypfd1kaI1AU', 'Close-Grip Bench Press': 'https://youtube.com/watch?v=wxVRe9pmJdk', 'Skull Crushers': 'https://youtube.com/watch?v=d_KZxkY_0cM', 'Tricep Pushdown': 'https://youtube.com/watch?v=2-LAMcpzODU', 'Overhead Tricep Extension': 'https://youtube.com/watch?v=-Vyt2QdsR7E', 'Overhead Cable Extension': 'https://youtube.com/watch?v=Fwl0T1_giQ0', 'Pull-Up': 'https://youtube.com/watch?v=p40iUjf02j0', 'Chin up': 'https://youtube.com/watch?v=5_EI7a1LsS4', 'Lat Pulldown': 'https://youtube.com/watch?v=JGeRYIZdojU', 'Single-Arm Dumbbell Row': 'https://youtube.com/watch?v=dFzUjzfih7k', 'Cable Row': 'https://youtube.com/watch?v=UCXxvVItLoM', 'Straight-Arm Pulldown': 'https://youtube.com/watch?v=wcVDItawocI', 'Dumbbell Pullover': 'https://youtube.com/watch?v=FK4rHfWKEac', 'T-Bar Row': 'https://youtube.com/watch?v=yPis7nlbqdY', 'Face Pull': 'https://youtube.com/watch?v=ljgqer1ZpXg', 'Shrug': 'https://youtube.com/watch?v=JEnhFC1AtHw', 'Bench Press': 'https://youtube.com/watch?v=4Y2ZdHCOXok', 'Decline Dumbbell Press': 'https://youtube.com/watch?v=QsYre__-aro', 'Dips': 'https://youtube.com/watch?v=2z8JmcrW-As', 'Push-Ups': 'https://youtube.com/watch?v=IODxDxX7oi4', 'Decline Bench Press': 'https://youtube.com/watch?v=LfyQBUKR8SE', 'Dumbbell Press': 'https://youtube.com/watch?v=QsYre__-aro', 'Cable Crossover': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Chest Fly (Dumbbell)': 'https://youtube.com/watch?v=Nhvz9EzdJ4U', 'Pec Deck': 'https://youtube.com/watch?v=eGjt4lk6g34', 'Low Cable Fly': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Incline Bench Press': 'https://youtube.com/watch?v=jPLdzuHckI8', 'Incline Dumbbell Press': 'https://youtube.com/watch?v=IP4oeKh1Sd4', 'Decline Push-Ups': 'https://youtube.com/watch?v=5QFjmotLfW4', 'Incline chest Press': 'https://youtube.com/watch?v=p6jieWs9xs0', 'Incline Cable Fly': 'https://youtube.com/watch?v=JUDTGZh4rhg', 'Dumbbell Fly (Incline)': 'https://youtube.com/watch?v=ajdFwa-qM98', 'Overhead Press': 'https://youtube.com/watch?v=_RlRDWO2jfg', 'Seated Dumbbell Press': 'https://youtube.com/watch?v=qEwKCR5JCog', 'Seated Barbell Press': 'https://youtube.com/watch?v=oBGeXxnigsQ', 'Machine Shoulder Press': 'https://youtube.com/watch?v=3R14MnZbcpw', 'Front Raise (Dumbbell)': 'https://youtube.com/watch?v=-t7fuZ0KhDA', 'Cable Front Raise': 'https://youtube.com/watch?v=vtH93qBItdk', 'Rear Delt Fly (Dumbbell)': 'https://youtube.com/watch?v=EA7u4Q_8HQ0', 'Cable Rear Delt Fly': 'https://youtube.com/watch?v=er15V96hG5U', 'Reverse Pec Deck': 'https://youtube.com/watch?v=R4a1hpzYOIc', 'Lateral Raise': 'https://youtube.com/watch?v=XPPfnSEATJA', 'Cable Lateral Raise': 'https://youtube.com/watch?v=Z5FA9aq3L6A'}
