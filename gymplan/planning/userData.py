@@ -1,6 +1,7 @@
 import uuid
 import json
 import gymplan.utility.filePaths as fp
+
 #fpUserJson()
 class User():
     def __init__(id,name,goal,daysPerWeek):
