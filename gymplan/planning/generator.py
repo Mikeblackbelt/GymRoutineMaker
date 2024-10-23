@@ -29,20 +29,35 @@ def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSet: flo
    
    setsPerWeek = math.floor(daysPerWeek*timePerDay/estTimePerSet)
    
-""""   volumeRatios = [
-      ('chest',0.15), #12 sets of 80 sets/week
-      ('back',0.2), #16
-      ('frontdelts',0.05), #4
-      ('sidedelts',0.1), #8
-      ('reardelts',0.05), #4
-      ('biceps',0.125), #10
-      ('triceps',0.1), #8
-      ('calves',0.075), #6
-      ('quads',0.15) #
-   ]""""
+   defaultDirectVolumeRatios = {
+    'chest': 0.12, 
+    'lats': 0.08, 
+    'midback': 0.06,
+    'frontdelts': 0.05, 
+    'sidedelts': 0.08, 
+    'reardelts': 0.04, 
+    'biceps': 0.09, 
+    'triceps': 0.08, 
+    'calves': 0.06, 
+    'quads': 0.12, 
+    'hamstrings': 0.08, 
+    'glutes': 0.06, 
+    'abs': 0.05,
+    'obliques': 0.03
+   }
+
+   newVolumeRatio = defaultDirectVolumeRatios
+
    if priorityMuscles is not None:
      for muscles in priorityMuscles:
-        """weeklyVolume = setsPerWeek/ """
+       newVolumeRatio[muscles] = 2*defaultDirectVolumeRatios[muscles]
+      
+      ratioError = abs(1 - sum(list(newVolumeRatio.values())))
+      for mc in newVolumeRatio:
+         newVolumeRatio[mc] -= ratioError/len(newVolumeRatio)
+
+    
+            
      
            
      
