@@ -1,0 +1,16 @@
+{
+    "Chest": {"MV": 4, "MEV": 6, "MAV": 16, "MRV": 22, "MAVP": 22, "MRVP": 32},
+    "Back": {"MV": 5, "MEV": 8, "MAV": 20, "MRV": 26, "MAVP": 26, "MRVP": 34},
+    "Biceps": {"MV": 2, "MEV": 6, "MAV": 20, "MRV": 26, "MAVP": 26, "MRVP": 34},
+    "Triceps": {"MV": 2, "MEV": 6, "MAV": 14, "MRV": 20, "MAVP": 20, "MRVP": 26},
+    "Forearms": {"MV": 0, "MEV": 4, "MAV": 24, "MRV": 30, "MAVP": 30, "MRVP": 40},
+    "Sidedelts": {"MV": 4, "MEV": 6, "MAV": 20, "MRV": 30, "MAVP": 30, "MRVP": 40},
+    "Frontdelts": {"MV": 0, "MEV": 2, "MAV": 8, "MRV": 12, "MAVP": 16, "MRVP": 20},
+    "Reardelts": {"MV": 0, "MEV": 2, "MAV": 12, "MRV": 20, "MAVP": 28, "MRVP": 40},
+    "Quads": {"MV": 4, "MEV": 6, "MAV": 14, "MRV": 18, "MAVP": 16, "MRVP": 24},
+    "Hamstrings": {"MV": 3, "MEV": 6, "MAV": 12, "MRV": 16, "MAVP": 16, "MRVP": 20},
+    "Glutes": {"MV": 4, "MEV": 8, "MAV": 24, "MRV": 30, "MAVP": 30, "MRVP": 40},
+    "Calves": {"MV": 4, "MEV": 6, "MAV": 16, "MRV": 24, "MAVP": 24, "MRVP": 32},
+    "Abs": {"MV": 0, "MEV": 2, "MAV": 12, "MRV": 16, "MAVP": 24, "MRVP": 32},
+    "Obliques": {"MV": 0, "MEV": 2, "MAV": 12, "MRV": 16, "MAVP": 24, "MRVP": 32}
+}

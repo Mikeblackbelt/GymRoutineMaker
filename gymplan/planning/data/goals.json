@@ -1,0 +1,26 @@
+{
+    "B": {
+        "Type": "Bodybuilding",
+        "Description": "Lose fat whilst maintaining muscle OR Build Muscle whilst gaining weight (cardio and nutrition should be focused on separately)",
+        "Day_Options": [2, 3, 4, 5, 6],
+        "Est_Weekly_MinTime": 180
+    },
+    "P": {
+        "Type": "Powerlifting",
+        "Description": "Gain strength in the 3 powerlifts (squat, bench press, deadlift) whilst not focusing on any changes in body composition.",
+        "Day_Options": [3, 4, 5,6],
+        "Est_Weekly_MinTime": 180
+    },
+    "H": {
+        "Type": "Fitness/General Health",
+        "Description": "Enhance overall health via weightlifting (cardio should be incorporated separately)",
+        "Day_Options": [2, 3, 4, 5],
+        "Est_Weekly_MinTime": 120
+    },
+    "A": {
+        "Type": "Supplementing a sport",
+        "Description": "Focus on sport-specific training to improve performance in a particular sport. Actual training for the given sport should be designed by your coach.",
+        "Day_Options": [3, 4, 5, 6],
+        "Est_Weekly_MinTime": 90
+    }
+}
