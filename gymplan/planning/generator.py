@@ -5,11 +5,12 @@ import asyncio
 with open("data\goals.json",'r') as file:
     goals = json.load(file)
 
+#WARNING: VERY POORLY WRITTEN FUNCTION lmao
 async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSet: float = 10/3,priorityMuscles: list = None):
   #handling bad inputs
   if goal not in goals: raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
   elif goal not in goals[goal]["Day_Options"]: raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]["Day_Options"]}")
-
+  #everythig else
   if goal == 'A' and priorityMuscles is not None:
      priorityMuscles = ['Hamstrings','Calves','Quads','Glutes']
     
@@ -61,25 +62,62 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSe
   pullMuscles = ['lats','midback','reardelts','biceps']
   lowerMuscles = ['calves','quads','hamstrings','glutes','abs','obliques']
 
-  match split:
+  for i in range(daysPerWeek):
+      weeklySetStructure[i] = []
+
+  match split: #WARNING: this code is very poorly written; i dont really care and i know the possible optimizations but im not rewriting this to save a few lines assuming it works fine sorryyy
      case 'FB':
-        for i in range(daysPerWeek):
-          weeklySetStructure[i] = []
           for muscle in newVolumeRatio:
              weeklySetStructure[i].append(setsPerWeek*newVolumeRatio[muscle]/daysPerWeek)
      case 'UL':
-        for i in range(4):
-           weeklySetStructure[i] = []
         #upper, push focused
         for muscle in pushMuscles:
            weeklySetStructure[0][muscle] = 0.6*newVolumeRatio[muscle]*setsPerWeek
         for muscle in pullMuscles:
            weeklySetStructure[0][muscle] = 0.4*newVolumeRatio[muscle]*setsPerWeek 
-         #upper pull
+         #upper pull focused
         for muscle in pushMuscles:
-           weeklySetStructure[0][muscle] = 0.6*newVolumeRatio[muscle]*setsPerWeek
+           weeklySetStructure[2][muscle] = 0.6*newVolumeRatio[muscle]*setsPerWeek
         for muscle in pullMuscles:
-           weeklySetStructure[0][muscle] = 0.4*newVolumeRatio[muscle]*setsPerWeek 
+           weeklySetStructure[2][muscle] = 0.4*newVolumeRatio[muscle]*setsPerWeek 
+         #lower
+        for i in range(2):
+          for muscle in lowerMuscles:
+            weeklySetStructure[2*i+1][muscle] = 0.5*newVolumeRatio[muscle]*setsPerWeek
+      case 'ULPPL':
+         #upper
+         for muscle in pushMuscles+pullMuscles:
+            weeklySetStructure[0][muscle] = newVolumeRatio[muscle]*setPerWeek/3
+         #lower
+         for i in [1, 4]:
+            for muscle in lowerMuscles:
+               weeklySetStructure[i][muscle] = 0.5*newVolumeRatio[muscle] * setsPerWeek
+         #push
+         for muscle in pushMuscles:
+            weeklySetStructure[2][muscle] = newVolumeRatio[muscle] * 2/3 * setsPerWeek
+         #pull
+         for muscle in pullMuscles:
+            weeklySetStructure[3][muscle] = newVolumeRatio[muscle] * 2/3 * setsPerWeek
+      case 'PPL':
+         for i in range(2):
+            for muscle in pushMuscles:
+               weeklySetStructure[i][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
+            for muscle in pullMuscles:
+                  weeklySetStructure[i+1][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
+            for muscle in lowerMuscles:
+                  weeklySetStructure[i+2][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
+      case 'PL':
+         powerlifts =  ['Squat','Bench','Deadlift']
+         if daysPerWeek % 3 == 0:
+           for i in range(daysPerWeek):
+             weeklySetStructure[i] = powerlifts[i % 3]
+         else: # daysPerWeek == 4
+            for i in range(3):
+               weeklySetStructure[i] = powerlifts[i % 3]
+            weeklySetStructure[3] = 'ac'
+             
+
+
 
            
         
