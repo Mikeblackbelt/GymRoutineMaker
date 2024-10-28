@@ -9,4 +9,6 @@ def fpLogDir() -> str:
 
 def fpUserJson()-> str:
     return r"C:\Users\mike.mat\Desktop\GymRoutineMaker\userData\users.json"
-    
+
+def fpPlanData() -> str:
+    return r"C:\Users\mike.mat\Desktop\GymRoutineMaker\gymplan\planning\data"

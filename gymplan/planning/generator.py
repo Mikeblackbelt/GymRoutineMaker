@@ -8,51 +8,65 @@ sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
 
 import gymplan.utility.filePaths as fp
 
-with open("data\goals.json",'r') as file:
+with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
     goals = json.load(file)
 
-async def getMGroupExercises(group:str,subgroup: str) -> dict:
-   with open(f'{fp.ExerJson}\\{group}\\{subgroup}.json','r') as file:
+async def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
+   with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
       exercises = json.load(file)
    return exercises
 
-"""
 async def pushR(sets: list[int], equipment: list[str]):
     if len(sets) != 4:
         raise Exception("sets must be a list of exactly 4 integers")
     
     # Define muscle groups for a push day
-    muscle_groups = ["chest", "frontdelts", "sidedelts", "triceps"]
+    muscle_groups = ["upperchest", "frontdelts", "sidedelts", "triceps"]
+    coresp = ['chest','chest','shoulders','shoulders','arms']
     exerciseList = []
     
-    # Iterate over each muscle group, fetching exercises and assigning sets
     for idx, muscle in enumerate(muscle_groups):
-        exercises = await getMGroupExercises("push", muscle)
+        # Fetch exercises for the specific muscle
+        i = 0
+        exercises = await getMGroupExercises('upperbody',coresp[i], muscle) 
+        i += 1 #this was improvised 
+        # Filter exercises by equipment availability and type (compound/isolation)
+        compound_exercises = [
+            ex for ex in exercises["Compound"] if ex["Equipment"] in equipment
+        ]
+        isolation_exercises = [
+            ex for ex in exercises["Isolation"] if ex["Equipment"] in equipment
+        ]
         
-        # Filter exercises based on available equipment
-        available_exercises = [ex for ex in exercises if ex["equipment"] in equipment]
+        # Randomly select exercises, preferring one from each category if available
+        chosen_exercises = []
+        if compound_exercises:
+            chosen_exercises.append(random.choice(compound_exercises))
+        if isolation_exercises:
+            chosen_exercises.append(random.choice(isolation_exercises))
         
-        # Randomly select exercises for each muscle group
-        chosen_exercises = random.sample(available_exercises, min(2, len(available_exercises)))
-        
-        # Assign sets to the selected exercises
+        # Assign the specified sets to each selected exercise
         for ex in chosen_exercises:
             exerciseList.append({
                 "exercise": ex["name"],
                 "sets": sets[idx],
                 "muscle": muscle,
+                "type": "compound" if ex in compound_exercises else "isolation",
                 "equipment": ex["equipment"]
             })
     
     return exerciseList
-"""
+
+result = asyncio.run(pushR([4, 4, 4, 4], ["Incline Bench", 'Bench', 'Machine', "Cable", "Barbell"]))
+print(result)
 
 
 #WARNING: VERY POORLY WRITTEN FUNCTION lmao
-async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSet: float = 10/3,equimentPresent: list(str),priorityMuscles: list = None):
+async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,equimentPresent: list[str], estTimePerSet: float = 10/3,priorityMuscles: list = None):
   #handling bad inputs
   if goal not in goals: raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
-  elif daysPerWeek not in goals[goal]["Day_Options"]: raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]["Day_Options"]}")
+  elif daysPerWeek not in goals[goal]["Day_Options"]: raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]['Day_Options']}")
+
   #everythig else
   if goal == 'A' and priorityMuscles is None:
      priorityMuscles = ['Hamstrings','Calves','Quads','Glutes']
@@ -126,7 +140,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSe
         for i in range(2):
           for muscle in lowerMuscles:
             weeklySetStructure[2*i+1][muscle] = 0.5*newVolumeRatio[muscle]*setsPerWeek
-      case 'ULPPL':
+     case 'ULPPL':
          #upper
          for muscle in pushMuscles+pullMuscles:
             weeklySetStructure[0][muscle] = newVolumeRatio[muscle]*setPerWeek/3
@@ -140,7 +154,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSe
          #pull
          for muscle in pullMuscles:
             weeklySetStructure[3][muscle] = newVolumeRatio[muscle] * 2/3 * setsPerWeek
-      case 'PPL':
+     case 'PPL':
          for i in range(2):
             for muscle in pushMuscles:
                weeklySetStructure[i][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
@@ -148,7 +162,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSe
                   weeklySetStructure[i+1][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
             for muscle in lowerMuscles:
                   weeklySetStructure[i+2][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
-      case 'PL':
+     case 'PL':
          powerlifts =  ['Squat','Bench','Deadlift']
          if daysPerWeek % 3 == 0:
            for i in range(daysPerWeek):
@@ -161,7 +175,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,estTimePerSe
 """if split != 'PL':
       for days in weeklySetStructure:
          if daysPerWeek >= 4: #UL, ULPPL, PPL
-            if 'chest' in days and chest''""
+            if 'chest' in days and chest''"""
             
 
 
