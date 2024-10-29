@@ -14,28 +14,27 @@ with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
 async def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
    with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
       exercises = json.load(file)
-   return exercises
+   return exercises["Exercises"]
 
 async def pushR(sets: list[int], equipment: list[str]):
     if len(sets) != 4:
         raise Exception("sets must be a list of exactly 4 integers")
     
     # Define muscle groups for a push day
-    muscle_groups = ["upperchest", "frontdelts", "sidedelts", "triceps"]
+    muscle_groups = ["upperchest","lowerchest", "frontdelts", "sidedelts", "triceps"]
     coresp = ['chest','chest','shoulders','shoulders','arms']
     exerciseList = []
-    
+    i=0
     for idx, muscle in enumerate(muscle_groups):
         # Fetch exercises for the specific muscle
-        i = 0
         exercises = await getMGroupExercises('upperbody',coresp[i], muscle) 
         i += 1 #this was improvised 
         # Filter exercises by equipment availability and type (compound/isolation)
         compound_exercises = [
-            ex for ex in exercises["Compound"] if ex["Equipment"] in equipment
+            exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipment
         ]
         isolation_exercises = [
-            ex for ex in exercises["Isolation"] if ex["Equipment"] in equipment
+            ex for ex in exercises["Isolation"] if exercises["Isolation"][ex]["Equipment"] in equipment
         ]
         
         # Randomly select exercises, preferring one from each category if available
@@ -44,7 +43,7 @@ async def pushR(sets: list[int], equipment: list[str]):
             chosen_exercises.append(random.choice(compound_exercises))
         if isolation_exercises:
             chosen_exercises.append(random.choice(isolation_exercises))
-        
+        print(f'{compound_exercises},{isolation_exercises}')
         # Assign the specified sets to each selected exercise
         for ex in chosen_exercises:
             exerciseList.append({
@@ -54,6 +53,7 @@ async def pushR(sets: list[int], equipment: list[str]):
                 "type": "compound" if ex in compound_exercises else "isolation",
                 "equipment": ex["equipment"]
             })
+            
     
     return exerciseList
 
