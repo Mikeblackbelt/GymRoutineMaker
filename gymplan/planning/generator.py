@@ -15,7 +15,7 @@ async def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
    with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
       exercises = json.load(file)
    return exercises["Exercises"]
-
+"""
 async def pushR(sets: list[int], equipment: list[str]):
     if len(sets) != 4:
         raise Exception("sets must be a list of exactly 4 integers")
@@ -31,12 +31,14 @@ async def pushR(sets: list[int], equipment: list[str]):
         i += 1 #this was improvised 
         # Filter exercises by equipment availability and type (compound/isolation)
         compound_exercises = [
-            exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipment
+           # """exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipment"""
         ]
         isolation_exercises = [
-            ex for ex in exercises["Isolation"] if exercises["Isolation"][ex]["Equipment"] in equipment
+           # ex for ex in exercises["Isolation"] if exercises["Isolation"][ex]["Equipment"] in equipment
         ]
         
+        for ex in exercises['Compound']:
+         if exercises["Compound"]['ex']['Equipment']
         # Randomly select exercises, preferring one from each category if available
         chosen_exercises = []
         if compound_exercises:
@@ -59,7 +61,7 @@ async def pushR(sets: list[int], equipment: list[str]):
 
 result = asyncio.run(pushR([4, 4, 4, 4], ["Incline Bench", 'Bench', 'Machine', "Cable", "Barbell"]))
 print(result)
-
+"""
 
 #WARNING: VERY POORLY WRITTEN FUNCTION lmao
 async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,equimentPresent: list[str], estTimePerSet: float = 10/3,priorityMuscles: list = None):
