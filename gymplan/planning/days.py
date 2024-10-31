@@ -20,19 +20,25 @@ class RoutineDay():
         ciStructures: list of the the distribution of compound/isolation exercises of each day. should be structured something like [[[[upperbody,chest,upperchest], c,3]. c represents compound, i represents isolation. strings. if None, one is automatically generated as per the logic in self.generate()
         """
 
-       self.muscles =  muscles 
-       self.ciStructure = ciStructure
+        self.muscles =  muscles 
+        self.ciStructure = ciStructures
     
-    def getCompIsol(self, muscle[list[str,str,str]],equipment: list[str]):
+   def getCompIsol(self, muscle: list[list[str,str,str]],equipment: list[str]):
         """
         muscle: [section,group,subgroup] i.e: [upperbody,chest,upperchest]
-        equipmnent: aviable equipment
+        equipmnent: avaible equipment, i.e ['dumbell','dip station','bench']
         """
+        equipment = [x.lower() for x in equipment]
+
         exercises = getMGroupExercises(muscle[0],muscle[1],muscle[2])
+        for item in exercises['Compound']: #the only thing i know for real
+            for equipmentItem in item['Equipment']: 
+                if equipmentItem.lower() not in equipment:
+                    pass #not finished
 
         #not finished
 
-    def generate(sets: list[int], equipment: list[str]):
+   def generate(self, sets: list[int], equipment: list[str]):
         """
         sets: list of sets per muscle. sets[i] coresponds to self.muscles[i] YES I COULDVE MADE THIS  A KV PAIR
         equipment: all avaible equipment, or [] if None
@@ -43,21 +49,21 @@ class RoutineDay():
         ciStructure = self.ciStructure
         if ciStructure is None:
             indexTracker = -1
-            for muscle,mSets in zip(muscles,sets): #compounds first
+            for muscle,mSets in zip(self.muscles,sets): #compounds first
                 indexTracker += 1
                 if mSets > 9:
                     ciStructure.append([muscle,'c',math.ceil(mSets/3)])
-                    ciSturcture.append([muscle,'c',math.floor(mSets/3)])
+                    ciStructure.append([muscle,'c',math.floor(mSets/3)])
                     sets[indexTracker] -= math.ceil(mSets/3) + math.floor(mSets/3)
                 elif mSets > 4:
                     ciStructure.append([muscle,'c',math.ceil(mSets/2)])
                     sets[indexTracker] -= math.ceil(mSets/2)
                 else:
                     ciStructure.append([muscle,random.choice(['c','i']),mSets])
-            for muscle, mSets in zip(muscles,sets): #isolations
+            for muscle, mSets in zip(self.muscles,sets): #isolations
                 if mSets != 0:
                     ciStructure.append([muscle,'i',mSets])
-
+             
         for muscle in ciStructure:
             ci = self.getCompIsol(muscle)
             #not finished

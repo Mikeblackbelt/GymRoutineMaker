@@ -31,8 +31,7 @@ async def pushR(sets: list[int], equipment: list[str]):
         i += 1 #this was improvised 
         # Filter exercises by equipment availability and type (compound/isolation)
         compound_exercises = [
-           # """exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipment"""
-        ]
+           # exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipmen        ]
         isolation_exercises = [
            # ex for ex in exercises["Isolation"] if exercises["Isolation"][ex]["Equipment"] in equipment
         ]
@@ -145,7 +144,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,equimentPres
      case 'ULPPL':
          #upper
          for muscle in pushMuscles+pullMuscles:
-            weeklySetStructure[0][muscle] = newVolumeRatio[muscle]*setPerWeek/3
+            weeklySetStructure[0][muscle] = newVolumeRatio[muscle]*setsPerWeek/3
          #lower
          for i in [1, 4]:
             for muscle in lowerMuscles:
