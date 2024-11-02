@@ -4,14 +4,14 @@ import os
 import random
 import math
 
-sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
+sys.path.append(os.path.abspath(r'C:\Users\mmati\OneDrive\Documents\GitHub\GymRoutineMaker'))
 
 import gymplan.utility.filePaths as fp
 
 def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
-   with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
-      exercises = json.load(file)
-   return exercises["Exercises"]
+    with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
+        exercises = json.load(file)
+    return exercises["Exercises"]
 
 defaultDirectVolumeRatios = {
     'upperchest': 0.06,
@@ -32,76 +32,73 @@ defaultDirectVolumeRatios = {
 }
 
 class DayType():
-   def __init__(self, muscles: list[list[str,str,str]], ciStructures: list[list[list[str],str,int],str] = None): #me when nested lists
-        """
-        muscles: muscles trained in the day being constructed. the first item of each object should be the SECTION (i.e: upper body), the second should be GROUP (i,e: chest) and the third should be the subgrouP (i.e: upperchest)
-        ciStructures: list of the the distribution of compound/isolation exercises of each day. should be structured something like [[[upperbody,chest,upperchest], c]]. c represents compound, i represents isolation. strings. if None, one is automatically generated as per the logic in self.generate()
-        """
-
-        self.muscles =  muscles 
+    def __init__(self, muscles: list[list[str,str,str]], ciStructures: list[list[list[str],str,int],str] = None): 
+        self.muscles = muscles 
         self.ciStructure = ciStructures
-    
-   def getCompIsol(self, muscle: list[list[str,str,str]],equipment: list[str]):
-        """
-        muscle: [section,group,subgroup] i.e: [upperbody,chest,upperchest]
-        equipmnent: avaible equipment, i.e ['dumbell','dip station','bench']
-        """
-        equipment = [x.lower() for x in equipment]
 
+    def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]):
+        equipment = [x.lower() for x in equipment]
         returnCompounds = []
         returnIsos = []
 
-        exercises = getMGroupExercises(muscle[0],muscle[1],muscle[2])
+        exercises = getMGroupExercises(muscle[0], muscle[1], muscle[2])
         for item in exercises['Compound']:
-           if all(equipmentItem.lower() in equipment for equipmentItem in item['Equipment']):
-               returnCompounds.append(item)
+            if all(equipmentItem.lower() in equipment for equipmentItem in exercises['Compound'][item]['Equipment']):
+                returnCompounds.append(item)
         
         for item in exercises['Isolation']:
-            if all(equipmentItem.lower() in equipment for equipmentItem in item['Equipment']):\
+            if all(equipmentItem.lower() in equipment for equipmentItem in exercises['Isolation'][item]['Equipment']):
                 returnIsos.append(item)
-        return [returnCompounds,returnIsos]
-
-        #not finished
-
-   def generate(self, sets: list[int], equipment: list[str]):
-        """
-        sets: list of sets per muscle. sets[i] coresponds to self.muscles[i] YES I COULDVE MADE THIS  A KV PAIR
-        equipment: all avaible equipment, or [] if None
-        """
-        if len(sets) != len(self.muscles) or 0 in sets: raise Exception('Sets must be a list of 4 integers')
-        if any(i < 0 for i in sets): raise Exception('All values in sets must be positive')
         
+        return [returnCompounds, returnIsos]
+
+    def establishRatios(self):
+        dayPercentVolume = sum(defaultDirectVolumeRatios[muscle[2]] for muscle in self.muscles)
+        newVol = {}
+        for muscle in self.muscles:
+            newVol[muscle[2]] = defaultDirectVolumeRatios[muscle[2]] / dayPercentVolume
+        return newVol
+                               
+    def generate(self, sets: list[int], equipment: list[str]):
+        if len(sets) != len(self.muscles) or 0 in sets: 
+            raise Exception('Sets must be a list of len(muscles) nonzero integers')
+        if any(i < 0 for i in sets): 
+            raise Exception('All values in sets must be positive')
+
         ciStructure = self.ciStructure
         if ciStructure is None:
-            indexTracker = -1
-            for muscle,mSets in zip(self.muscles,sets): #compounds first
-                indexTracker += 1
+            ciStructure = []
+            for muscle, mSets in zip(self.muscles, sets):
                 if mSets > 9:
-                    ciStructure.append([muscle,'c',math.ceil(mSets/3)])
-                    ciStructure.append([muscle,'c',math.floor(mSets/3)])
-                    sets[indexTracker] -= math.ceil(mSets/3) + math.floor(mSets/3)
+                    ciStructure.append([muscle, 'c', math.ceil(mSets / 3)])
+                    ciStructure.append([muscle, 'c', math.floor(mSets / 3)])
+                    ciStructure.append([muscle, 'i', mSets - (math.ceil(mSets / 3) + math.floor(mSets / 3))])
                 elif mSets > 4:
-                    ciStructure.append([muscle,'c',math.ceil(mSets/2)])
-                    sets[indexTracker] -= math.ceil(mSets/2)
+                    ciStructure.append([muscle, 'c', math.ceil(mSets / 2)])
+                    ciStructure.append([muscle, 'i', mSets - math.ceil(mSets / 2)])
                 else:
-                    ciStructure.append([muscle,random.choice(['c','i']),mSets])
-            for muscle, mSets in zip(self.muscles,sets): #isolations
-                if mSets != 0:
-                    ciStructure.append([muscle,'i',mSets])
-    
+                    ciStructure.append([muscle, random.choice(['c', 'i']), mSets])
+
+            print(f"Generated ciStructure (compounds and isolations split): {ciStructure}")
+
         exerciseList = []
-        else:
-            pass #finish this
-
-        
         for muscle in ciStructure:
-           ci = self.getCompIsol(muscle[0])
-           comp = ci[0]; iso = ci[1]
-           if muscle[1] = 'c':
-              exerciseList.append({random.choice(comp).keys()[0]:muscle[2]})
-           else:
-              exerciseList.append({random.choice(comp).keys()[0]:muscle[2]})
+            ci = self.getCompIsol(muscle[0], equipment)
+            comp = ci[0]
+            iso = ci[1]
+            print(f"Available compound exercises for {muscle[0]}: {comp}")
+            print(f"Available isolation exercises for {muscle[0]}: {iso}")
 
+            if muscle[1] == 'c' and len(comp) != 0:
+                selected_exercise = random.choice(comp)
+                exerciseList.append({selected_exercise: muscle[2]})
+                print(f"Selected compound exercise: {selected_exercise} with {muscle[2]} sets")
+            elif len(iso) != 0:
+                selected_exercise = random.choice(iso)
+                exerciseList.append({selected_exercise: muscle[2]})
+                print(f"Selected isolation exercise: {selected_exercise} with {muscle[2]} sets")
+
+        print(f"Final exercise list: {exerciseList}")
         return exerciseList
 
 push = DayType(
@@ -111,5 +108,7 @@ push = DayType(
         ["upperbody", "shoulders", "frontdelts"],
         ["upperbody", "shoulders", "sidedelts"],
         ["upperbody", "arms", "triceps"],
-    ] #add the other one later
+    ]
 )
+
+print(push.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
