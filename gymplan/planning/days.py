@@ -32,9 +32,8 @@ defaultDirectVolumeRatios = {
 }
 
 class DayType():
-    def __init__(self, muscles: list[list[str,str,str]], ciStructures: list[list[list[str],str,int],str] = None): 
+    def __init__(self, muscles: list[list[str,str,str]]): 
         self.muscles = muscles 
-        self.ciStructure = ciStructures
 
     def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]):
         equipment = [x.lower() for x in equipment]
@@ -65,21 +64,19 @@ class DayType():
         if any(i < 0 for i in sets): 
             raise Exception('All values in sets must be positive')
 
-        ciStructure = self.ciStructure
-        if ciStructure is None:
-            ciStructure = []
-            for muscle, mSets in zip(self.muscles, sets):
-                if mSets > 9:
-                    ciStructure.append([muscle, 'c', math.ceil(mSets / 3)])
-                    ciStructure.append([muscle, 'c', math.floor(mSets / 3)])
-                    ciStructure.append([muscle, 'i', mSets - (math.ceil(mSets / 3) + math.floor(mSets / 3))])
-                elif mSets > 4:
-                    ciStructure.append([muscle, 'c', math.ceil(mSets / 2)])
-                    ciStructure.append([muscle, 'i', mSets - math.ceil(mSets / 2)])
-                else:
-                    ciStructure.append([muscle, random.choice(['c', 'i']), mSets])
+        ciStructure = []
+        for muscle, mSets in zip(self.muscles, sets):
+            if mSets > 9:
+                ciStructure.append([muscle, 'c', math.ceil(mSets / 3)])
+                ciStructure.append([muscle, 'c', math.floor(mSets / 3)])
+                ciStructure.append([muscle, 'i', mSets - (math.ceil(mSets / 3) + math.floor(mSets / 3))])
+            elif mSets > 4:
+                ciStructure.append([muscle, 'c', math.ceil(mSets / 2)])
+                ciStructure.append([muscle, 'i', mSets - math.ceil(mSets / 2)])
+            else:
+                ciStructure.append([muscle, random.choice(['c', 'i']), mSets])
 
-            print(f"Generated ciStructure (compounds and isolations split): {ciStructure}")
+        print(f"Generated ciStructure (compounds and isolations split): {ciStructure}")
 
         exerciseList = []
         for muscle in ciStructure:
@@ -101,7 +98,7 @@ class DayType():
         print(f"Final exercise list: {exerciseList}")
         return exerciseList
 
-push = DayType(
+pushChestFocus = DayType(
     [
         ["upperbody", "chest", "upperchest"],
         ["upperbody", "chest", "lowerchest"],
@@ -109,6 +106,7 @@ push = DayType(
         ["upperbody", "shoulders", "sidedelts"],
         ["upperbody", "arms", "triceps"],
     ]
+
 )
 
-print(push.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
+print(pushChestFocus.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
