@@ -98,15 +98,64 @@ class DayType():
         print(f"Final exercise list: {exerciseList}")
         return exerciseList
 
-pushChestFocus = DayType(
+pushConstruct = DayType(
     [
         ["upperbody", "chest", "upperchest"],
         ["upperbody", "chest", "lowerchest"],
         ["upperbody", "shoulders", "frontdelts"],
         ["upperbody", "shoulders", "sidedelts"],
-        ["upperbody", "arms", "triceps"],
+        ["upperbody", "arms", "triceps"]
     ]
-
 )
 
-print(pushChestFocus.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
+pullConstruct = DayType(
+    [
+        ["upperbody", "back", "lats"],
+        ["upperbody","back","midback"],
+        ["upperbody","arms","biceps"],
+        ["upperbody","arms","forearms"],
+        ["upperbody", "shoulders", "reardelts"]
+    ]
+)
+
+legConstruct = DayType(
+    [
+       ["lowerbody","legs","quads"] ,
+       ["lowerbody","legs","hamstrings"],
+       ["lowerbody","legs","glutes"],
+       ['lowerbody',"legs","calves"],
+       ['lowerbody','abs','abs'],
+       ['lowerbody','abs','obliques']
+    ]
+)
+
+upperConstruct = DayType(
+    [
+        ["upperbody", "back", "lats"],
+        ["upperbody","back","midback"],
+        ["upperbody","arms","biceps"],
+        ["upperbody", "chest", "upperchest"],
+        ["upperbody", "chest", "lowerchest"],
+        ["upperbody", "shoulders", "sidedelts"],
+        ["upperbody", "arms", "triceps"]
+    ]
+)
+
+fullConstruct = DayType(
+    [
+        ["upperbody", "back", "lats"],
+        ["upperbody","back","midback"],
+        ["upperbody","arms","biceps"],
+        ["upperbody", "chest", "upperchest"],
+        ["upperbody", "chest", "lowerchest"],
+        ["upperbody", "shoulders", "sidedelts"],
+        ["upperbody", "arms", "triceps"],
+        ["lowerbody","legs","quads"] ,
+        ["lowerbody","legs","hamstrings"],
+        ["lowerbody","legs","glutes"],
+        ['lowerbody',"legs","calves"],
+        ['lowerbody','abs','abs'],
+    ]
+)
+
+print(pushConstruct.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))

@@ -173,10 +173,7 @@ async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,equimentPres
                weeklySetStructure[i] = powerlifts[i % 3]
             weeklySetStructure[3] = 'ac'
              
-"""if split != 'PL':
-      for days in weeklySetStructure:
-         if daysPerWeek >= 4: #UL, ULPPL, PPL
-            if 'chest' in days and chest''"""
+   
             
 
 
