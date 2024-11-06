@@ -34,13 +34,6 @@
                     "traps": 0.5,
                     "reardelts": 0.6
                 }
-            },
-            "Shrug": {
-                "Equipment": ["Dumbbell"],
-                "MuscleGroups": {
-                    "traps": 1.0,
-                    "upperback": 0.4
-                }
             }
         }
     }

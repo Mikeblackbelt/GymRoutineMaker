@@ -4,185 +4,118 @@ import asyncio
 import sys
 import os
 import random
-sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
+import days
 
+sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
 import gymplan.utility.filePaths as fp
+import gymplan.utility.mergeJson as mj
 
 with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
     goals = json.load(file)
 
-async def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
-   with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
-      exercises = json.load(file)
-   return exercises["Exercises"]
-"""
-async def pushR(sets: list[int], equipment: list[str]):
-    if len(sets) != 4:
-        raise Exception("sets must be a list of exactly 4 integers")
-    
-    # Define muscle groups for a push day
-    muscle_groups = ["upperchest","lowerchest", "frontdelts", "sidedelts", "triceps"]
-    coresp = ['chest','chest','shoulders','shoulders','arms']
-    exerciseList = []
-    i=0
-    for idx, muscle in enumerate(muscle_groups):
-        # Fetch exercises for the specific muscle
-        exercises = await getMGroupExercises('upperbody',coresp[i], muscle) 
-        i += 1 #this was improvised 
-        # Filter exercises by equipment availability and type (compound/isolation)
-        compound_exercises = [
-           # exercises[ex] for ex in exercises["Compound"] if exercises["Compound"][ex]["Equipment"] in equipmen        ]
-        isolation_exercises = [
-           # ex for ex in exercises["Isolation"] if exercises["Isolation"][ex]["Equipment"] in equipment
-        ]
-        
-        for ex in exercises['Compound']:
-         if exercises["Compound"]['ex']['Equipment']
-        # Randomly select exercises, preferring one from each category if available
-        chosen_exercises = []
-        if compound_exercises:
-            chosen_exercises.append(random.choice(compound_exercises))
-        if isolation_exercises:
-            chosen_exercises.append(random.choice(isolation_exercises))
-        print(f'{compound_exercises},{isolation_exercises}')
-        # Assign the specified sets to each selected exercise
-        for ex in chosen_exercises:
-            exerciseList.append({
-                "exercise": ex["name"],
-                "sets": sets[idx],
-                "muscle": muscle,
-                "type": "compound" if ex in compound_exercises else "isolation",
-                "equipment": ex["equipment"]
-            })
-            
-    
-    return exerciseList
+async def getMGroupExercises(section: str, group: str, subgroup: str) -> dict:
+    with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json', 'r') as file:
+        exercises = json.load(file)
+    mj.logToFile('planlogs.txt',f'{subgroup} exercises found: \n{exercises}')
+    return exercises["Exercises"]
 
-result = asyncio.run(pushR([4, 4, 4, 4], ["Incline Bench", 'Bench', 'Machine', "Cable", "Barbell"]))
-print(result)
-"""
+async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 10/2, priorityMuscles: list = None):
+    if goal not in goals:
+        mj.logToFile('planlogs.txt',f'\nerror, {goal} (input) not in {goals} (valid inputs)\n')
+        raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
+    elif daysPerWeek not in goals[goal]["Day_Options"]:
+        mj.logToFile(f'\nerror, {goal} has {goals[goal]["Day_Options"]} as valid day options whereas {daysPerWeek} was inputted\n')
+        raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]['Day_Options']}")
 
-#WARNING: VERY POORLY WRITTEN FUNCTION lmao
-async def makeRoutine(goal: str,timePerDay: float,daysPerWeek: int ,equimentPresent: list[str], estTimePerSet: float = 10/3,priorityMuscles: list = None):
-  #handling bad inputs
-  if goal not in goals: raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
-  elif daysPerWeek not in goals[goal]["Day_Options"]: raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]['Day_Options']}")
-
-  #everythig else
-  if goal == 'A' and priorityMuscles is None:
-     priorityMuscles = ['Hamstrings','Calves','Quads','Glutes']
+    if goal == 'A' and priorityMuscles is None:
+        mj.logToFile('planlogs.txt','\nprioritymuscles updated due to goal type\n')
+        priorityMuscles = ['Hamstrings', 'Calves', 'Quads', 'Glutes']
     
-  if goal in ['B','M','H','A']:
-     match daysPerWeek:
-        case 2 | 3: 
-           split = 'FB'
-        case 4:
-           split = 'UL'
-        case 5:
-           split = 'ULPPL'
-        case 6:
-           split = 'PPL'
-  elif goal == "P":
+    if goal in ['B', 'M', 'H', 'A']:
+        match daysPerWeek:
+            case 2 | 3:
+                split = 'FB'
+            case 4:
+                split = 'UL'
+            case 5:
+                split = 'ULPPL'
+            case 6:
+                split = 'PPL'
+    elif goal == "P":
         split = 'PL'
-
-  setsPerWeek = math.floor(daysPerWeek*timePerDay/estTimePerSet)
-   
-  defaultDirectVolumeRatios = {
-    'chest': 0.12, 
-    'lats': 0.08, 
-    'midback': 0.06,
-    'frontdelts': 0.05, 
-    'sidedelts': 0.08, 
-    'reardelts': 0.04, 
-    'biceps': 0.09, 
-    'triceps': 0.08, 
-    'calves': 0.06, 
-    'quads': 0.12, 
-    'hamstrings': 0.08, 
-    'glutes': 0.06, 
-    'abs': 0.05,
-    'obliques': 0.03
-   }
-
-  newVolumeRatio = defaultDirectVolumeRatios
-
-  if priorityMuscles is not None:
-     for muscles in priorityMuscles:
-       newVolumeRatio[muscles] = 2*defaultDirectVolumeRatios[muscles]
-      
-     ratioError = abs(1 - sum(list(newVolumeRatio.values())))
-     for mc in newVolumeRatio:
-         newVolumeRatio[mc] -= ratioError/len(newVolumeRatio)
-   
-  weeklySetStructure = [] 
-  pushMuscles = ['chest','frontdelts','sidedelts','triceps']
-  pullMuscles = ['lats','midback','reardelts','biceps']
-  lowerMuscles = ['calves','quads','hamstrings','glutes','abs','obliques']
-
-  for i in range(daysPerWeek):
-      weeklySetStructure[i] = []
-
-  match split: #WARNING: this code is very poorly written; i dont really care and i know the possible optimizations but im not rewriting this to save a few lines assuming it works fine sorryyy
-     case 'FB':
-          for muscle in newVolumeRatio:
-             weeklySetStructure[i].append(setsPerWeek*newVolumeRatio[muscle]/daysPerWeek)
-     case 'UL':
-        #upper, push focused
-        for muscle in pushMuscles:
-           weeklySetStructure[0][muscle] = 0.6*newVolumeRatio[muscle]*setsPerWeek
-        for muscle in pullMuscles:
-           weeklySetStructure[0][muscle] = 0.4*newVolumeRatio[muscle]*setsPerWeek 
-         #upper pull focused
-        for muscle in pullMuscles:
-           weeklySetStructure[2][muscle] = 0.4*newVolumeRatio[muscle]*setsPerWeek 
-        for muscle in pushMuscles:
-           weeklySetStructure[2][muscle] = 0.6*newVolumeRatio[muscle]*setsPerWeek
-         #lower
-        for i in range(2):
-          for muscle in lowerMuscles:
-            weeklySetStructure[2*i+1][muscle] = 0.5*newVolumeRatio[muscle]*setsPerWeek
-     case 'ULPPL':
-         #upper
-         for muscle in pushMuscles+pullMuscles:
-            weeklySetStructure[0][muscle] = newVolumeRatio[muscle]*setsPerWeek/3
-         #lower
-         for i in [1, 4]:
-            for muscle in lowerMuscles:
-               weeklySetStructure[i][muscle] = 0.5*newVolumeRatio[muscle] * setsPerWeek
-         #push
-         for muscle in pushMuscles:
-            weeklySetStructure[2][muscle] = newVolumeRatio[muscle] * 2/3 * setsPerWeek
-         #pull
-         for muscle in pullMuscles:
-            weeklySetStructure[3][muscle] = newVolumeRatio[muscle] * 2/3 * setsPerWeek
-     case 'PPL':
-         for i in range(2):
-            for muscle in pushMuscles:
-               weeklySetStructure[i][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
-            for muscle in pullMuscles:
-                  weeklySetStructure[i+1][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
-            for muscle in lowerMuscles:
-                  weeklySetStructure[i+2][muscle] = newVolumeRatio[muscle] * 1/2 * setsPerWeek
-     case 'PL':
-         powerlifts =  ['Squat','Bench','Deadlift']
-         if daysPerWeek % 3 == 0:
-           for i in range(daysPerWeek):
-             weeklySetStructure[i] = powerlifts[i % 3]
-         else: # daysPerWeek == 4
-            for i in range(3):
-               weeklySetStructure[i] = powerlifts[i % 3]
-            weeklySetStructure[3] = 'ac'
-             
-   
-            
-
-
-
-           
-        
-
     
-            
-     
-           
-     
+    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet)
+    defaultDirectVolumeRatios = days.defaultDirectVolumeRatios
+    newVolumeRatio = defaultDirectVolumeRatios.copy()
+    mj.logToFile('planlogs.txt',f'\n{split} split chosen with {setsPerWeek} weekly sets\n')
+    if priorityMuscles is not None:
+        for muscle in priorityMuscles:
+            newVolumeRatio[muscle] = 2 * defaultDirectVolumeRatios[muscle]
+
+        ratioError = abs(1 - sum(newVolumeRatio.values()))
+        for mc in newVolumeRatio:
+            newVolumeRatio[mc] -= ratioError / len(newVolumeRatio)
+    mj.logToFile('planlogs.txt', f'\nVolume ratios:\n\n{newVolumeRatio}\n')
+    weeklySetStructure = [[] for _ in range(daysPerWeek)]
+    exlist = []
+
+    match split:
+        case 'FB':
+            for i in range(daysPerWeek):
+                for muscle in days.fbMuscles:
+                    weeklySetStructure[i].append(math.ceil(setsPerWeek * newVolumeRatio[muscle[2]] / daysPerWeek))
+                exlist.append(days.fullConstruct.generate(weeklySetStructure[i], equipmentPresent))
+        
+        case 'UL':
+            for i in range(2):
+                for muscle in days.upperMuscles:
+                    weeklySetStructure[2*i].append(math.ceil(0.5*newVolumeRatio[muscle[2]]*setsPerWeek))
+                for muscle in days.legMuscles:
+                    weeklySetStructure[2 * i + 1].append(math.ceil(0.5 * newVolumeRatio[muscle[2]] * setsPerWeek))
+                exlist.append(days.upperConstruct.generate(weeklySetStructure[2 * i], equipmentPresent))
+                exlist.append(days.legConstruct.generate(weeklySetStructure[2 * i + 1], equipmentPresent))
+
+        case 'ULPPL':
+            exlist = [None] * 5
+            for muscle in days.upperMuscles:
+                weeklySetStructure[0].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 3))
+            exlist[0] = days.upperConstruct.generate(weeklySetStructure[0], equipmentPresent)
+
+            for i in [1, 4]:
+                for muscle in days.legMuscles:
+                    weeklySetStructure[i].append(math.ceil(0.5 * newVolumeRatio[muscle[2]] * setsPerWeek))
+                exlist[i] = days.legConstruct.generate(weeklySetStructure[i], equipmentPresent)
+
+            for muscle in days.pushMuscles:
+                weeklySetStructure[2].append(math.ceil(newVolumeRatio[muscle[2]] * 2 / 3 * setsPerWeek))
+            exlist[2] = days.pushConstruct.generate(weeklySetStructure[2], equipmentPresent)
+
+            for muscle in days.pullMuscles:
+                weeklySetStructure[3].append(math.ceil(newVolumeRatio[muscle[2]] * 2 / 3 * setsPerWeek))
+            exlist[3] = days.pullConstruct.generate(weeklySetStructure[3], equipmentPresent)
+
+        case 'PPL':
+            for i in range(2):
+                for muscle in days.pushMuscles:
+                    weeklySetStructure[3*i].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 2))
+                for muscle in days.pullMuscles:
+                    weeklySetStructure[3*i + 1].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 2))
+                for muscle in days.legMuscles:
+                    weeklySetStructure[3*i + 2].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 2))
+                exlist.append(days.pushConstruct.generate(weeklySetStructure[3*i], equipmentPresent))
+                exlist.append(days.pullConstruct.generate(weeklySetStructure[3*i + 1], equipmentPresent))
+                exlist.append(days.legConstruct.generate(weeklySetStructure[3*i + 2], equipmentPresent))
+                mj.logToFile('planlogs.txt',f'\nPPL Cycle {i+1} generated succesfully\n')
+    mj.logToFile('planlogs.txt',f'\nFinal Exercises: \n\n{exlist}\n') 
+    return exlist
+    
+data = asyncio.run(makeRoutine('M', 60, 6, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
+print(data)
+index = 0
+for object in data:
+    
+    print(f'Day {index + 1}:\n')
+    index += 1
+    for exercise in object:
+        print(f'{list(exercise.keys())[0]} for {list(exercise.values())[0]} sets.\n')
+    

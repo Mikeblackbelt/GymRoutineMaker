@@ -1,6 +1,8 @@
 import json
 import os
-import filePaths
+import sys
+#"""sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))"""
+from . import filePaths
 
 """
 the reason this exists is for getExerciseAnim.py
@@ -53,6 +55,7 @@ def extract_exercises(data):
                 exercises_list[exercise] = details  
     return exercises_list
 
-print(extract_exercises(merge(filePaths.fpExerJson(),[r'C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json'])))
+if __name__ == "__main__":
+    print(extract_exercises(merge(filePaths.fpExerJson(),[r'C:\Users\mike.mat\Desktop\GymRoutineMaker\exerciseJson\videos\videos.json'])))
 
     

@@ -7,6 +7,7 @@ import math
 sys.path.append(os.path.abspath(r'C:\Users\mmati\OneDrive\Documents\GitHub\GymRoutineMaker'))
 
 import gymplan.utility.filePaths as fp
+import gymplan.utility.mergeJson as mj
 
 def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
     with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json','r') as file:
@@ -14,26 +15,27 @@ def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
     return exercises["Exercises"]
 
 defaultDirectVolumeRatios = {
-    'upperchest': 0.06,
-    'lowerchest': 0.06, 
+    'chest': 0.10,
     'lats': 0.08, 
-    'midback': 0.06,
-    'frontdelts': 0.05, 
-    'sidedelts': 0.08, 
+    'midback': 0.08,
+    'frontdelts': 0.04, 
+    'sidedelts': 0.09, 
     'reardelts': 0.04, 
-    'biceps': 0.09, 
-    'triceps': 0.08, 
+    'biceps': 0.08, 
+    'triceps': 0.07, 
     'calves': 0.06, 
-    'quads': 0.12, 
-    'hamstrings': 0.08, 
+    'quads': 0.10, 
+    'hamstrings': 0.09, 
     'glutes': 0.06, 
     'abs': 0.05,
-    'obliques': 0.03
+    'obliques': 0.03,
+    'forearms': 0.04
 }
 
 class DayType():
     def __init__(self, muscles: list[list[str,str,str]]): 
         self.muscles = muscles 
+        mj.logToFile('planlogs.txt',f'\n{self} initated\n')
 
     def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]):
         equipment = [x.lower() for x in equipment]
@@ -48,7 +50,7 @@ class DayType():
         for item in exercises['Isolation']:
             if all(equipmentItem.lower() in equipment for equipmentItem in exercises['Isolation'][item]['Equipment']):
                 returnIsos.append(item)
-        
+        mj.logToFile('planlogs.txt', f'\n{self}.getCompIsol returned \n{[returnCompounds, returnIsos]}\n')
         return [returnCompounds, returnIsos]
 
     def establishRatios(self):
@@ -60,8 +62,10 @@ class DayType():
                                
     def generate(self, sets: list[int], equipment: list[str]):
         if len(sets) != len(self.muscles) or 0 in sets: 
-            raise Exception('Sets must be a list of len(muscles) nonzero integers')
+            mj.logToFile('planlogs.txt',f'\nError in {self}.generate():\n len(sets) != len(self.muscles).\nSets: {sets}\nMuscles: {self.muscles}\n')
+            raise Exception(f'Sets must be a list of len(self.muscles) ({len(self.muscles)}) nonzero integers')
         if any(i < 0 for i in sets): 
+            mj.logToFile('planlogs.txt',f'\nSets: {sets} contains negative value\n')
             raise Exception('All values in sets must be positive')
 
         ciStructure = []
@@ -74,80 +78,67 @@ class DayType():
                 ciStructure.append([muscle, 'c', math.ceil(mSets / 2)])
                 ciStructure.append([muscle, 'i', mSets - math.ceil(mSets / 2)])
             else:
-                ciStructure.append([muscle, random.choice(['c', 'i']), mSets])
+                ciStructure.append([muscle,random.choice(['c','c','i']), mSets])
 
-        print(f"Generated ciStructure (compounds and isolations split): {ciStructure}")
+        mj.logToFile('planlogs.txt',f"Generated ciStructure (compounds and isolations split): {ciStructure}")
 
         exerciseList = []
         for muscle in ciStructure:
             ci = self.getCompIsol(muscle[0], equipment)
             comp = ci[0]
             iso = ci[1]
-            print(f"Available compound exercises for {muscle[0]}: {comp}")
-            print(f"Available isolation exercises for {muscle[0]}: {iso}")
+            mj.logToFile('planlogs.txt',f"\nAvailable compound exercises for {muscle[0]}: {comp}\n")
+            mj.logToFile('planlogs.txt',f"\nAvailable isolation exercises for {muscle[0]}: {iso}\n")
 
             if muscle[1] == 'c' and len(comp) != 0:
                 selected_exercise = random.choice(comp)
                 exerciseList.append({selected_exercise: muscle[2]})
-                print(f"Selected compound exercise: {selected_exercise} with {muscle[2]} sets")
+                mj.logToFile('planlogs.txt',f"\nSelected compound exercise: {selected_exercise} with {muscle[2]} sets")
             elif len(iso) != 0:
                 selected_exercise = random.choice(iso)
                 exerciseList.append({selected_exercise: muscle[2]})
-                print(f"Selected isolation exercise: {selected_exercise} with {muscle[2]} sets")
+                mj.logToFile('planlogs.txt',f"\nSelected isolation exercise: {selected_exercise} with {muscle[2]} sets")
 
-        print(f"Final exercise list: {exerciseList}")
+        mj.logToFile('planlogs.txt',f"\nFinal exercise list: {exerciseList}")
         return exerciseList
 
-pushConstruct = DayType(
-    [
-        ["upperbody", "chest", "upperchest"],
-        ["upperbody", "chest", "lowerchest"],
-        ["upperbody", "shoulders", "frontdelts"],
-        ["upperbody", "shoulders", "sidedelts"],
-        ["upperbody", "arms", "triceps"]
-    ]
-)
+pushMuscles = [
+    ["upperbody", "chest", "chest"],
+    ["upperbody", "shoulders", "frontdelts"],
+    ["upperbody", "shoulders", "sidedelts"],
+    ["upperbody", "arms", "triceps"]
+]
+pushConstruct = DayType(pushMuscles)
 
-pullConstruct = DayType(
-    [
+pullMuscles = [
         ["upperbody", "back", "lats"],
         ["upperbody","back","midback"],
         ["upperbody","arms","biceps"],
         ["upperbody","arms","forearms"],
         ["upperbody", "shoulders", "reardelts"]
-    ]
-)
+]
+pullConstruct = DayType(pullMuscles)
 
-legConstruct = DayType(
-    [
+legMuscles =   [
        ["lowerbody","legs","quads"] ,
        ["lowerbody","legs","hamstrings"],
        ["lowerbody","legs","glutes"],
        ['lowerbody',"legs","calves"],
        ['lowerbody','abs','abs'],
        ['lowerbody','abs','obliques']
-    ]
-)
+]
+legConstruct = DayType(legMuscles)
 
-upperConstruct = DayType(
-    [
+upperMuscles = random.choice([pushMuscles+pullMuscles,pullMuscles+pushMuscles])
+upperMuscles.remove(["upperbody", "shoulders", "reardelts"])
+upperMuscles.remove(["upperbody","arms","forearms"])
+upperConstruct = DayType(upperMuscles)
+
+fbMuscles = [
         ["upperbody", "back", "lats"],
         ["upperbody","back","midback"],
         ["upperbody","arms","biceps"],
-        ["upperbody", "chest", "upperchest"],
-        ["upperbody", "chest", "lowerchest"],
-        ["upperbody", "shoulders", "sidedelts"],
-        ["upperbody", "arms", "triceps"]
-    ]
-)
-
-fullConstruct = DayType(
-    [
-        ["upperbody", "back", "lats"],
-        ["upperbody","back","midback"],
-        ["upperbody","arms","biceps"],
-        ["upperbody", "chest", "upperchest"],
-        ["upperbody", "chest", "lowerchest"],
+        ["upperbody", "chest", "chest"],
         ["upperbody", "shoulders", "sidedelts"],
         ["upperbody", "arms", "triceps"],
         ["lowerbody","legs","quads"] ,
@@ -155,7 +146,8 @@ fullConstruct = DayType(
         ["lowerbody","legs","glutes"],
         ['lowerbody',"legs","calves"],
         ['lowerbody','abs','abs'],
-    ]
-)
+]
+fbMuscles.remove(['lowerbody','abs','abs'])
+fullConstruct = DayType(fbMuscles)
 
-print(pushConstruct.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
+#print(pushConstruct.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))

@@ -37,7 +37,7 @@ class User():
         with open(fp.fpUserJson(), "w") as f:
             json.dump(users, f, indent=4)
 
-def getUserData(id=None, name= None) -> dict:
+def getUserData(*, id=None, name= None) -> dict:
     if id is None and name is None:
         raise Exception('Atleast one input is required')
     elif id is not None:
@@ -53,4 +53,4 @@ def getUserData(id=None, name= None) -> dict:
 
 
 testUser = User('test','A',5)
-print(getUserData(str(1)))
+print(getUserData(str(id=1)))

@@ -54,6 +54,42 @@
                     "frontdelts": 0.7,
                     "triceps": 0.6
                 }
+            },
+            "Incline Bench Press": {
+                "Equipment": ["Barbell", "Incline Bench"],
+                "MuscleGroups": {
+                    "upperchest": 1.0,
+                    "lowerchest": 0.4,
+                    "frontdelts": 0.6,
+                    "triceps": 0.5
+                }
+            },
+            "Incline Dumbbell Press": {
+                "Equipment": ["Dumbbell", "Incline Bench"],
+                "MuscleGroups": {
+                    "upperchest": 1.0,
+                    "lowerchest": 0.5,
+                    "frontdelts": 0.5,
+                    "triceps": 0.4
+                }
+            },
+            "Decline Push-Ups": {
+                "Equipment": [],
+                "MuscleGroups": {
+                    "upperchest": 0.8,
+                    "lowerchest": 0.4,
+                    "frontdelts": 0.5,
+                    "triceps": 0.3
+                }
+            },
+            "Incline Chest Press": {
+                "Equipment": ["Machine"],
+                "MuscleGroups": {
+                    "upperchest": 1.0,
+                    "lowerchest": 0.4,
+                    "frontdelts": 0.6,
+                    "triceps": 0.5
+                }
             }
         },
         "Isolation": {
@@ -89,6 +125,24 @@
                 "MuscleGroups": {
                     "lowerchest": 0.8,
                     "upperchest": 0.3,
+                    "frontdelts": 0.3,
+                    "triceps": 0.2
+                }
+            },
+            "Incline Cable Fly": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "upperchest": 1.0,
+                    "lowerchest": 0.4,
+                    "frontdelts": 0.3,
+                    "triceps": 0.2
+                }
+            },
+            "Dumbbell Fly (Incline)": {
+                "Equipment": ["Dumbbell", "Incline Bench"],
+                "MuscleGroups": {
+                    "upperchest": 0.9,
+                    "lowerchest": 0.4,
                     "frontdelts": 0.3,
                     "triceps": 0.2
                 }
