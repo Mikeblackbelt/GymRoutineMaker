@@ -1,1 +1,3 @@
 'M', 40, 4, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]) testcase is Error
+FIXED
+
