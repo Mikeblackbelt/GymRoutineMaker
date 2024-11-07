@@ -5,6 +5,7 @@ import sys
 import os
 import random
 import days
+import powerliftingRoutine as plr
 
 sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
 import gymplan.utility.filePaths as fp
@@ -44,7 +45,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
     elif goal == "P":
         split = 'PL'
     
-    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet)
+    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet) if goal != 'P' else math.floor(daysPerWeek*2*timePerDay / 3*estTimePerSet)
     defaultDirectVolumeRatios = days.defaultDirectVolumeRatios
     newVolumeRatio = defaultDirectVolumeRatios.copy()
     mj.logToFile('planlogs.txt',f'\n{split} split chosen with {setsPerWeek} weekly sets\n')
@@ -106,16 +107,32 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
                 exlist.append(days.pullConstruct.generate(weeklySetStructure[3*i + 1], equipmentPresent))
                 exlist.append(days.legConstruct.generate(weeklySetStructure[3*i + 2], equipmentPresent))
                 mj.logToFile('planlogs.txt',f'\nPPL Cycle {i+1} generated succesfully\n')
+
+        case 'PL':
+            spd = math.floor(setsPerWeek/daysPerWeek)
+            exlist = [None]*daysPerWeek
+            for i in range(math.floor(daysPerWeek/3)):
+                exlist[3*i] = plr.benchDay.generate(spd,equipmentPresent)
+                exlist[3*i+1] = plr.squatDay.generate(spd,equipmentPresent)
+                exlist[3*i+2] = plr.deadliftDay.generate(spd,equipmentPresent)
+                mj.logToFile('planlogs.txt','f\nPL cycle {i+1} generated successfully')
+            if spd != setsPerWeek/daysPerWeek:
+                
+                exlist[3] = (plr.ascDay([math.ceil(len(1.5*plr.ascM/spd))]*[len(plr.ascM)],equipmentPresent))
+            
+            while None in exlist: exlist.remove(None)
+            
     mj.logToFile('planlogs.txt',f'\nFinal Exercises: \n\n{exlist}\n') 
     return exlist
-    
-data = asyncio.run(makeRoutine('M', 60, 6, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
-print(data)
-index = 0
-for object in data:
-    
-    print(f'Day {index + 1}:\n')
-    index += 1
-    for exercise in object:
-        print(f'{list(exercise.keys())[0]} for {list(exercise.values())[0]} sets.\n')
-    
+
+if __name__ == "__main__":
+    data = asyncio.run(makeRoutine('P', 60, 4, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
+    print(data)
+    index = 0
+    for object in data:
+        
+        print(f'Day {index + 1}:\n')
+        index += 1
+        for exercise in object:
+            print(f'{list(exercise.keys())[0]} for {list(exercise.values())[0]} sets.\n')
+        

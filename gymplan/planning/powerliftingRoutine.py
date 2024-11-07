@@ -55,7 +55,7 @@ class plDayType:
         mj.logToFile('planlogs.txt', f'\n{self}.getAccessories({equipment}) returned:\n {accessories}\n')
         return accessories
 
-    def generate(self, setsTotal: int, equipment: list[str]) -> list[dict[str: int]]:
+    def generate(self, setsTotal: int, equipment: list[str]) -> list[dict[str: int]]: #slightly refactored by chatgpt
         rlist = []
         added_exercises = set()  # Track added exercises to avoid duplicates
 
@@ -116,8 +116,8 @@ dlMuscles = [
        ["upperbody","arms","forearms"],
 ]
 deadliftDay = plDayType('Deadlift',dlMuscles)
-
-ascDay = days.DayType(dlMuscles + days.pushMuscles + sqd)
+ascM = dlMuscles + days.pushMuscles + sqd
+ascDay = days.DayType(ascM)
 
 print(ascDay.generate([4]*len(dlMuscles + days.pushMuscles + sqd),['Barbell','Bench','Dumbbell','Incline Bench', 'Machine', 'Cable', 'Dip Station']))
 

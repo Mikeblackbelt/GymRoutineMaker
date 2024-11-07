@@ -4,7 +4,7 @@ import os
 import random
 import math
 
-sys.path.append(os.path.abspath(r'C:\Users\mmati\OneDrive\Documents\GitHub\GymRoutineMaker'))
+sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
 
 import gymplan.utility.filePaths as fp
 import gymplan.utility.mergeJson as mj
