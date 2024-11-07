@@ -1,2 +1,2475 @@
 planlogs.txt cleared manually
 
+
+<days.DayType object at 0x000002AE99486F90> initated
+
+<days.DayType object at 0x000002AE99500690> initated
+
+<days.DayType object at 0x000002AE995007D0> initated
+
+<days.DayType object at 0x000002AE994A4FC0> initated
+
+<days.DayType object at 0x000002AE994A5CD0> initated
+
+<days.DayType object at 0x000002719300AF90> initated
+
+<days.DayType object at 0x00000271930A0550> initated
+
+<days.DayType object at 0x00000271930A0690> initated
+
+<days.DayType object at 0x0000027193028FC0> initated
+
+<days.DayType object at 0x0000027193029CD0> initated
+{self} initated (plDayType)*
+<days.DayType object at 0x000001BCBECAAF90> initated
+
+<days.DayType object at 0x000001BCBED40550> initated
+
+<days.DayType object at 0x000001BCBED40690> initated
+
+<days.DayType object at 0x000001BCBECC4FC0> initated
+
+<days.DayType object at 0x000001BCBECC5CD0> initated
+<__main__.plDayType object at 0x000001BCBECAB380> initated (plDayType)*
+<days.DayType object at 0x00000126790DAF90> initated
+
+<days.DayType object at 0x0000012679170550> initated
+
+<days.DayType object at 0x0000012679170690> initated
+
+<days.DayType object at 0x00000126790F4FC0> initated
+
+<days.DayType object at 0x00000126790F5CD0> initated
+<__main__.plDayType object at 0x00000126790DB380> initated (plDayType)*
+<__main__.plDayType object at 0x00000126790DB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000126790DB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000126790DB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000126790DB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000126790DB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], [], ['Close-Grip Bench Press']]
+
+<days.DayType object at 0x000002033D14AF90> initated
+
+<days.DayType object at 0x000002033D1E0550> initated
+
+<days.DayType object at 0x000002033D1E0690> initated
+
+<days.DayType object at 0x000002033D164FC0> initated
+
+<days.DayType object at 0x000002033D165CD0> initated
+<__main__.plDayType object at 0x000002033D14B380> initated (plDayType)*
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000002033D14B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000002033D14B380>.generate() returned routine:
+ [{'Bench Press': 6}, {'Decline Push-Ups': 1}, {'Decline Push-Ups': 1}, {'Incline Bench Press': 1}, {'Decline Push-Ups': 1}, {'Machine Shoulder Press': 1}, {'Decline Push-Ups': 1}, {'Machine Shoulder Press': 1}, {'Dumbbell Press': 1}, {'Seated Barbell Press': 1}]
+
+<days.DayType object at 0x000001CF089EAF90> initated
+
+<days.DayType object at 0x000001CF08A80550> initated
+
+<days.DayType object at 0x000001CF08A80690> initated
+
+<days.DayType object at 0x000001CF08A04FC0> initated
+
+<days.DayType object at 0x000001CF08A05CD0> initated
+<__main__.plDayType object at 0x000001CF089EB380> initated (plDayType)*
+Choose 10 accessories.
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001CF089EB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001CF089EB380>.generate() returned routine:
+ [{'Bench Press': 5}, {'Dumbbell Press': 1}, {'Dips': 1}, {'Close-Grip Bench Press': 1}, {'Incline Bench Press': 1}, {'Incline Bench Press': 1}, {'Seated Barbell Press': 1}, {'Dips': 1}, {'Incline Bench Press': 1}, {'Push-Ups': 1}, {'Seated Barbell Press': 1}]
+
+<days.DayType object at 0x00000160A3D1AF90> initated
+
+<days.DayType object at 0x00000160A3DB0550> initated
+
+<days.DayType object at 0x00000160A3DB0690> initated
+
+<days.DayType object at 0x00000160A3D34FC0> initated
+
+<days.DayType object at 0x00000160A3D35CD0> initated
+<__main__.plDayType object at 0x00000160A3D1B380> initated (plDayType)*
+Choose 4 accessories.
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press', 'Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press', 'Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000160A3D1B380>.generate() returned routine:
+ [{'Bench Press': 4}, {'Seated Dumbbell Press': 3}, {'Overhead Press': 3}, {'Incline Dumbbell Press': 3}, {'Decline Push-Ups': 3}]
+
+<days.DayType object at 0x000001EBBFC2AF90> initated
+
+<days.DayType object at 0x000001EBBFCC0550> initated
+
+<days.DayType object at 0x000001EBBFCC0690> initated
+
+<days.DayType object at 0x000001EBBFC44FC0> initated
+
+<days.DayType object at 0x000001EBBFC45CD0> initated
+<__main__.plDayType object at 0x000001EBBFC2B380> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001EBBFC2B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001EBBFC2B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001EBBFC2B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001EBBFC2B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001EBBFC2B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], [], ['Close-Grip Bench Press']]
+
+<days.DayType object at 0x0000018A751CAF90> initated
+
+<days.DayType object at 0x0000018A75260550> initated
+
+<days.DayType object at 0x0000018A75260690> initated
+
+<days.DayType object at 0x0000018A751E4FC0> initated
+
+<days.DayType object at 0x0000018A751E5CD0> initated
+<__main__.plDayType object at 0x0000018A751CB380> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x0000018A751CB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x0000018A751CB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x0000018A751CB380>.generate() returned routine:
+ [{'Bench Press': 5}, {'Close-Grip Bench Press': 4}, {'Machine Shoulder Press': 4}]
+
+<days.DayType object at 0x000001ABC1BEAF90> initated
+
+<days.DayType object at 0x000001ABC1C80550> initated
+
+<days.DayType object at 0x000001ABC1C80690> initated
+
+<days.DayType object at 0x000001ABC1C04FC0> initated
+
+<days.DayType object at 0x000001ABC1C05CD0> initated
+<__main__.plDayType object at 0x000001ABC1BEB380> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001ABC1BEB380>.generate() returned routine:
+ [{'Bench Press': 5}, {'Machine Shoulder Press': 4}, {'Close-Grip Bench Press': 4}]
+
+<days.DayType object at 0x000001799212AF90> initated
+
+<days.DayType object at 0x00000179921C0550> initated
+
+<days.DayType object at 0x00000179921C0690> initated
+
+<days.DayType object at 0x0000017992144FC0> initated
+
+<days.DayType object at 0x0000017992145CD0> initated
+<__main__.plDayType object at 0x000001799212B380> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001799212B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001799212B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001799212B380>.generate() returned routine:
+ [{'Bench Press': 5}, {'Dumbbell Press': 4}, {'Seated Barbell Press': 4}]
+
+<days.DayType object at 0x000001C05FE5AF90> initated
+
+<days.DayType object at 0x000001C05FEF0550> initated
+
+<days.DayType object at 0x000001C05FEF0690> initated
+
+<days.DayType object at 0x000001C05FE74FC0> initated
+
+<days.DayType object at 0x000001C05FE75CD0> initated
+<__main__.plDayType object at 0x000001C05FE5B380> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x000001C05FE5B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x000001C05FE5B380>.generate() returned routine:
+ [{'Bench Press': 3}, {'Dips': 3}, {'Seated Barbell Press': 3}, {'Incline Chest Press': 3}]
+
+<days.DayType object at 0x00000205B227AF90> initated
+
+<days.DayType object at 0x00000205B2310550> initated
+
+<days.DayType object at 0x00000205B2310690> initated
+
+<days.DayType object at 0x00000205B2294FC0> initated
+
+<days.DayType object at 0x00000205B2295CD0> initated
+<__main__.plDayType object at 0x00000205B227B380> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Accessories updated:
+ + ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<__main__.plDayType object at 0x00000205B227B380>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<__main__.plDayType object at 0x00000205B227B380>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Close-Grip Bench Press']]
+
+<__main__.plDayType object at 0x00000205B227B380>.generate() returned routine:
+ [{'Bench Press': 6}, {'Seated Barbell Press': 3}, {'Decline Push-Ups': 3}]
+
+<days.DayType object at 0x000001FF293FAF90> initated
+
+<days.DayType object at 0x000001FF29490550> initated
+
+<days.DayType object at 0x000001FF29490690> initated
+
+<days.DayType object at 0x000001FF2940D0F0> initated
+
+<days.DayType object at 0x000001FF2940DE00> initated
+<__main__.plDayType object at 0x000001FF293FB380> initated (plDayType)*
+<days.DayType object at 0x000002B1451FAF90> initated
+
+<days.DayType object at 0x000002B145290550> initated
+
+<days.DayType object at 0x000002B145290690> initated
+
+<days.DayType object at 0x000002B14521D0F0> initated
+
+<days.DayType object at 0x000002B14521DE00> initated
+<__main__.plDayType object at 0x000002B1451FB380> initated (plDayType)*
+<days.DayType object at 0x0000022BD61FAF90> initated
+
+<days.DayType object at 0x0000022BD6290550> initated
+
+<days.DayType object at 0x0000022BD6290690> initated
+
+<days.DayType object at 0x0000022BD620D0F0> initated
+
+<days.DayType object at 0x0000022BD620DE00> initated
+<__main__.plDayType object at 0x0000022BD61FB380> initated (plDayType)*
+<days.DayType object at 0x000001729677AF90> initated
+
+<days.DayType object at 0x0000017296810550> initated
+
+<days.DayType object at 0x0000017296810690> initated
+
+<days.DayType object at 0x000001729679D0F0> initated
+
+<days.DayType object at 0x000001729679DE00> initated
+<__main__.plDayType object at 0x000001729677B380> initated (plDayType)*<__main__.plDayType object at 0x0000017296810B90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x0000017296810B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x0000017296810B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000017296810B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Squat', 'Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x0000017296810B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x0000017296810B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000017296810B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Squat', 'Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x0000017296810B90>.generate() returned routine:
+ [{'Squat': 5}, {'Lunge': 4}, {'Squat': 4}]
+
+<days.DayType object at 0x000001BB12F5AF90> initated
+
+<days.DayType object at 0x000001BB12FF4550> initated
+
+<days.DayType object at 0x000001BB12FF4690> initated
+
+<days.DayType object at 0x000001BB12F7D0F0> initated
+
+<days.DayType object at 0x000001BB12F7DE00> initated
+<__main__.plDayType object at 0x000001BB12F5B380> initated (plDayType)*<__main__.plDayType object at 0x000001BB12FF4B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001BB12FF4B90>.generate() returned routine:
+ [{'Squat': 4}, {'Step-Up': 3}, {'Leg Press': 3}, {'Hip Thrust': 3}]
+
+<days.DayType object at 0x000001D42E27AF90> initated
+
+<days.DayType object at 0x000001D42E314550> initated
+
+<days.DayType object at 0x000001D42E314690> initated
+
+<days.DayType object at 0x000001D42E29D0F0> initated
+
+<days.DayType object at 0x000001D42E29DE00> initated
+<__main__.plDayType object at 0x000001D42E27B380> initated (plDayType)*<__main__.plDayType object at 0x000001D42E314B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001D42E314B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001D42E314B90>.generate() returned routine:
+ [{'Squat': 4}, {'Hip Thrust': 3}, {'Step-Up': 3}, {'Hip Thrust': 3}]
+
+<days.DayType object at 0x000001C34AD0AF90> initated
+
+<days.DayType object at 0x000001C34ADA4550> initated
+
+<days.DayType object at 0x000001C34ADA4690> initated
+
+<days.DayType object at 0x000001C34AD2D0F0> initated
+
+<days.DayType object at 0x000001C34AD2DE00> initated
+<__main__.plDayType object at 0x000001C34AD0B380> initated (plDayType)*<__main__.plDayType object at 0x000001C34ADA4B90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001C34ADA4B90>.generate() returned routine:
+ [{'Squat': 6}, {'Step-Up': 3}, {'Step-Up': 3}]
+
+<days.DayType object at 0x000001F02A60AF90> initated
+
+<days.DayType object at 0x000001F02A6A4550> initated
+
+<days.DayType object at 0x000001F02A6A4690> initated
+
+<days.DayType object at 0x000001F02A62D0F0> initated
+
+<days.DayType object at 0x000001F02A62DE00> initated
+<__main__.plDayType object at 0x000001F02A60B380> initated (plDayType)*<__main__.plDayType object at 0x000001F02A6A4B90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001F02A6A4B90>.generate() returned routine:
+ [{'Squat': 5}, {'Hip Thrust': 4}, {'Step-Up': 4}]
+
+<days.DayType object at 0x00000182FC18AF90> initated
+
+<days.DayType object at 0x00000182FC224550> initated
+
+<days.DayType object at 0x00000182FC224690> initated
+
+<days.DayType object at 0x00000182FC1AD0F0> initated
+
+<days.DayType object at 0x00000182FC1ADE00> initated
+<__main__.plDayType object at 0x00000182FC18B380> initated (plDayType)*<__main__.plDayType object at 0x00000182FC224B90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x00000182FC224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x00000182FC224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x00000182FC224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x00000182FC224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x00000182FC224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x00000182FC224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x00000182FC224B90>.generate() returned routine:
+ [{'Squat': 5}, {'Step-Up': 4}, {'Step-Up': 4}]
+
+<days.DayType object at 0x000002F19463AF90> initated
+
+<days.DayType object at 0x000002F1946D4550> initated
+
+<days.DayType object at 0x000002F1946D4690> initated
+
+<days.DayType object at 0x000002F19465D0F0> initated
+
+<days.DayType object at 0x000002F19465DE00> initated
+<__main__.plDayType object at 0x000002F19463B380> initated (plDayType)*<__main__.plDayType object at 0x000002F1946D4B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002F1946D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002F1946D4B90>.generate() returned routine:
+ [{'Squat': 3}, {'Hip Thrust': 3}, {'Lunge': 3}, {'Step-Up': 3}]
+
+<days.DayType object at 0x000001DB6375EF90> initated
+
+<days.DayType object at 0x000001DB637F4550> initated
+
+<days.DayType object at 0x000001DB637F4690> initated
+
+<days.DayType object at 0x000001DB6377D0F0> initated
+
+<days.DayType object at 0x000001DB6377DE00> initated
+<__main__.plDayType object at 0x000001DB6375F380> initated (plDayType)*<__main__.plDayType object at 0x000001DB637F4B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000001DB637F4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000001DB637F4B90>.generate() returned routine:
+ [{'Squat': 3}, {'Hip Thrust': 3}, {'Lunge': 3}, {'Step-Up': 3}]
+
+<days.DayType object at 0x000002850B18EF90> initated
+
+<days.DayType object at 0x000002850B224550> initated
+
+<days.DayType object at 0x000002850B224690> initated
+
+<days.DayType object at 0x000002850B1AD0F0> initated
+
+<days.DayType object at 0x000002850B1ADE00> initated
+<__main__.plDayType object at 0x000002850B18F380> initated (plDayType)*<__main__.plDayType object at 0x000002850B224B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x000002850B224B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x000002850B224B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x000002850B224B90>.generate() returned routine:
+ [{'Squat': 4}, {'Step-Up': 3}, {'Leg Press': 3}, {'Lunge': 3}]
+
+<days.DayType object at 0x00000227938EEF90> initated
+
+<days.DayType object at 0x0000022793984550> initated
+
+<days.DayType object at 0x0000022793984690> initated
+
+<days.DayType object at 0x000002279390D0F0> initated
+
+<days.DayType object at 0x000002279390DE00> initated
+<__main__.plDayType object at 0x00000227938EF380> initated (plDayType)*<__main__.plDayType object at 0x0000022793984B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000022793984B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000022793984B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x0000022793984B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000022793984B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x0000022793984B90>.generate() returned routine:
+ [{'Squat': 3}, {'Hip Thrust': 3}, {'Leg Press': 3}, {'Step-Up': 3}]
+
+<days.DayType object at 0x000001350653EF90> initated
+
+<days.DayType object at 0x00000135065D4550> initated
+
+<days.DayType object at 0x00000135065D4690> initated
+
+<days.DayType object at 0x000001350655D0F0> initated
+
+<days.DayType object at 0x000001350655DE00> initated
+<__main__.plDayType object at 0x000001350653F380> initated (plDayType)*<__main__.plDayType object at 0x00000135065D4B90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Accessories updated:
+ + ['Squat', 'Leg Press', 'Lunge']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x00000135065D4B90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Leg Press', 'Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<__main__.plDayType object at 0x00000135065D4B90>.generate() returned routine:
+ [{'Squat': 4}, {'Lunge': 3}, {'Leg Press': 3}, {'Hip Thrust': 3}]
+
+<days.DayType object at 0x0000023DD7E6EF90> initated
+
+<days.DayType object at 0x0000023DD7F04550> initated
+
+<days.DayType object at 0x0000023DD7F04690> initated
+
+<days.DayType object at 0x0000023DD7E8D0F0> initated
+
+<days.DayType object at 0x0000023DD7E8DE00> initated
+<__main__.plDayType object at 0x0000023DD7E6F380> initated (plDayType)*<__main__.plDayType object at 0x0000023DD7F04B90> initated (plDayType)*<__main__.plDayType object at 0x0000023DD7F05A90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['Cable Row', 'Straight-Arm Pulldown', 'Dumbbell Pullover']]
+
+Accessories updated:
+ + ['Lat Pulldown', 'Single-Arm Dumbbell Row']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Hip Thrust', 'Step-Up'], ['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['Cable Row', 'Straight-Arm Pulldown', 'Dumbbell Pullover']]
+
+Accessories updated:
+ + ['Lat Pulldown', 'Single-Arm Dumbbell Row']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Hip Thrust', 'Step-Up'], ['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000023DD7F05A90>.generate() returned routine:
+ [{'Deadlift': 5}, {"Farmer's Walk": 4}, {'Step-Up': 4}]
+
+<days.DayType object at 0x000002698CA0EF90> initated
+
+<days.DayType object at 0x000002698CAA4550> initated
+
+<days.DayType object at 0x000002698CAA4690> initated
+
+<days.DayType object at 0x000002698CA2D0F0> initated
+
+<days.DayType object at 0x000002698CA2DE00> initated
+<__main__.plDayType object at 0x000002698CA0F380> initated (plDayType)*<__main__.plDayType object at 0x000002698CAA4B90> initated (plDayType)*<__main__.plDayType object at 0x000002698CAA5A90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['Cable Row', 'Straight-Arm Pulldown', 'Dumbbell Pullover']]
+
+Accessories updated:
+ + ['Lat Pulldown', 'Single-Arm Dumbbell Row']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['Cable Row', 'Straight-Arm Pulldown', 'Dumbbell Pullover']]
+
+Accessories updated:
+ + ['Lat Pulldown', 'Single-Arm Dumbbell Row']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x000002698CAA5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Lat Pulldown', 'Single-Arm Dumbbell Row'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x000002698CAA5A90>.generate() returned routine:
+ [{'Deadlift': 6}, {'T-Bar Row': 3}, {'Lat Pulldown': 3}]
+
+<days.DayType object at 0x0000027BADCEEF90> initated
+
+<days.DayType object at 0x0000027BADD84550> initated
+
+<days.DayType object at 0x0000027BADD84690> initated
+
+<days.DayType object at 0x0000027BADD0D0F0> initated
+
+<days.DayType object at 0x0000027BADD0DE00> initated
+<__main__.plDayType object at 0x0000027BADCEF380> initated (plDayType)*<__main__.plDayType object at 0x0000027BADD84B90> initated (plDayType)*<__main__.plDayType object at 0x0000027BADD85A90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000027BADD85A90>.generate() returned routine:
+ [{'Deadlift': 3}, {"Farmer's Walk": 3}, {'Good Morning': 3}, {'T-Bar Row': 3}]
+
+<days.DayType object at 0x0000021E3B01EF90> initated
+
+<days.DayType object at 0x0000021E3B0B4550> initated
+
+<days.DayType object at 0x0000021E3B0B4690> initated
+
+<days.DayType object at 0x0000021E3B03D0F0> initated
+
+<days.DayType object at 0x0000021E3B03DE00> initated
+<__main__.plDayType object at 0x0000021E3B01F380> initated (plDayType)*<__main__.plDayType object at 0x0000021E3B0B4B90> initated (plDayType)*<__main__.plDayType object at 0x0000021E3B0B5A90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000021E3B0B5A90>.generate() returned routine:
+ [{'Deadlift': 6}, {'T-Bar Row': 3}, {"Farmer's Walk": 3}]
+
+<days.DayType object at 0x0000026A1424EF90> initated
+
+<days.DayType object at 0x0000026A142E4550> initated
+
+<days.DayType object at 0x0000026A142E4690> initated
+
+<days.DayType object at 0x0000026A1426D0F0> initated
+
+<days.DayType object at 0x0000026A1426DE00> initated
+<__main__.plDayType object at 0x0000026A1424F380> initated (plDayType)*<__main__.plDayType object at 0x0000026A142E4B90> initated (plDayType)*<__main__.plDayType object at 0x0000026A142E5A90> initated (plDayType)*
+Choose 2 accessories.
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x0000026A142E5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x0000026A142E5A90>.generate() returned routine:
+ [{'Deadlift': 6}, {"Farmer's Walk": 3}, {'T-Bar Row': 3}]
+
+<days.DayType object at 0x000001695B53EF90> initated
+
+<days.DayType object at 0x000001695B5D4550> initated
+
+<days.DayType object at 0x000001695B5D4690> initated
+
+<days.DayType object at 0x000001695B55D0F0> initated
+
+<days.DayType object at 0x000001695B55DE00> initated
+<__main__.plDayType object at 0x000001695B53F380> initated (plDayType)*<__main__.plDayType object at 0x000001695B5D4B90> initated (plDayType)*<__main__.plDayType object at 0x000001695B5D5A90> initated (plDayType)*
+Choose 3 accessories.
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Accessories updated:
+ + ['T-Bar Row']
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk"]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.getAccessories(['Barbell', 'Bench', 'Dumbbell', 'Incline Bench', 'Machine', 'Cable', 'Dip Station']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['T-Bar Row'], ["Farmer's Walk"]]
+
+<__main__.plDayType object at 0x000001695B5D5A90>.generate() returned routine:
+ [{'Deadlift': 3}, {'T-Bar Row': 3}, {'Good Morning': 3}, {'Romanian Deadlift': 3}]
+
+<days.DayType object at 0x0000027A21F1EF90> initated
+
+<days.DayType object at 0x0000027A21F90690> initated
+
+<days.DayType object at 0x0000027A21F907D0> initated
+
+<days.DayType object at 0x0000027A21F3CFC0> initated
+
+<days.DayType object at 0x0000027A21F3DCD0> initated
+<__main__.plDayType object at 0x0000027A21F1F380> initated (plDayType)*<__main__.plDayType object at 0x0000027A21F90CD0> initated (plDayType)*<__main__.plDayType object at 0x0000027A21F91BD0> initated (plDayType)*
+<days.DayType object at 0x0000027A21F639B0> initated
+
+<days.DayType object at 0x000002B5AF36EF90> initated
+
+<days.DayType object at 0x000002B5AF3E0690> initated
+
+<days.DayType object at 0x000002B5AF3E07D0> initated
+
+<days.DayType object at 0x000002B5AF38CFC0> initated
+
+<days.DayType object at 0x000002B5AF38DCD0> initated
+<__main__.plDayType object at 0x000002B5AF36F380> initated (plDayType)*<__main__.plDayType object at 0x000002B5AF3E0CD0> initated (plDayType)*<__main__.plDayType object at 0x000002B5AF3E1BD0> initated (plDayType)*
+<days.DayType object at 0x000002B5AF3B39B0> initated
+Generated ciStructure (compounds and isolations split): [[['lowerbody', 'legs', 'hamstrings'], 'i', 4], [['upperbody', 'back', 'midback'], 'c', 4], [['upperbody', 'arms', 'forearms'], 'i', 4], [['upperbody', 'chest', 'chest'], 'c', 4], [['upperbody', 'shoulders', 'frontdelts'], 'c', 4], [['upperbody', 'shoulders', 'sidedelts'], 'i', 4], [['upperbody', 'arms', 'triceps'], 'c', 4], [['lowerbody', 'legs', 'quads'], 'i', 4], [['lowerbody', 'legs', 'glutes'], 'c', 4]]
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift'], ['Leg Curl', 'Lying Leg Curl']]
+
+Available compound exercises for ['lowerbody', 'legs', 'hamstrings']: ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Glute-Ham Raise', 'Dumbbell Single Leg Romanian Deadlift']
+
+Available isolation exercises for ['lowerbody', 'legs', 'hamstrings']: ['Leg Curl', 'Lying Leg Curl']
+
+Selected isolation exercise: Lying Leg Curl with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['T-Bar Row'], ['Face Pull']]
+
+Available compound exercises for ['upperbody', 'back', 'midback']: ['T-Bar Row']
+
+Available isolation exercises for ['upperbody', 'back', 'midback']: ['Face Pull']
+
+Selected compound exercise: T-Bar Row with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[["Farmer's Walk"], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Available compound exercises for ['upperbody', 'arms', 'forearms']: ["Farmer's Walk"]
+
+Available isolation exercises for ['upperbody', 'arms', 'forearms']: ['Wrist Curl', 'Reverse Wrist Curl']
+
+Selected isolation exercise: Reverse Wrist Curl with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press'], ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']]
+
+Available compound exercises for ['upperbody', 'chest', 'chest']: ['Bench Press', 'Dips', 'Push-Ups', 'Dumbbell Press', 'Incline Bench Press', 'Incline Dumbbell Press', 'Decline Push-Ups', 'Incline Chest Press']
+
+Available isolation exercises for ['upperbody', 'chest', 'chest']: ['Cable Crossover', 'Chest Fly (Dumbbell)', 'Pec Deck', 'Low Cable Fly', 'Incline Cable Fly', 'Dumbbell Fly (Incline)']
+
+Selected compound exercise: Dumbbell Press with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press'], ['Front Raise (Dumbbell)']]
+
+Available compound exercises for ['upperbody', 'shoulders', 'frontdelts']: ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press', 'Machine Shoulder Press']
+
+Available isolation exercises for ['upperbody', 'shoulders', 'frontdelts']: ['Front Raise (Dumbbell)']
+
+Selected compound exercise: Seated Barbell Press with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[[], ['Lateral Raise', 'Cable Lateral Raise']]
+
+Available compound exercises for ['upperbody', 'shoulders', 'sidedelts']: []
+
+Available isolation exercises for ['upperbody', 'shoulders', 'sidedelts']: ['Lateral Raise', 'Cable Lateral Raise']
+
+Selected isolation exercise: Lateral Raise with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']]
+
+Available compound exercises for ['upperbody', 'arms', 'triceps']: ['Close-Grip Bench Press']
+
+Available isolation exercises for ['upperbody', 'arms', 'triceps']: ['Tricep Pushdown', 'Overhead Tricep Extension', 'Overhead Cable Extension']
+
+Selected compound exercise: Close-Grip Bench Press with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Squat', 'Leg Press', 'Lunge'], ['Leg Extension']]
+
+Available compound exercises for ['lowerbody', 'legs', 'quads']: ['Squat', 'Leg Press', 'Lunge']
+
+Available isolation exercises for ['lowerbody', 'legs', 'quads']: ['Leg Extension']
+
+Selected isolation exercise: Leg Extension with 4 sets
+<days.DayType object at 0x000002B5AF3B39B0>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']]
+
+Available compound exercises for ['lowerbody', 'legs', 'glutes']: ['Hip Thrust', 'Step-Up']
+
+Available isolation exercises for ['lowerbody', 'legs', 'glutes']: ['Glute Bridge', 'Dumbbell Glute Bridge', 'Cable Kickback']
+
+Selected compound exercise: Step-Up with 4 sets
+Final exercise list: [{'Lying Leg Curl': 4}, {'T-Bar Row': 4}, {'Reverse Wrist Curl': 4}, {'Dumbbell Press': 4}, {'Seated Barbell Press': 4}, {'Lateral Raise': 4}, {'Close-Grip Bench Press': 4}, {'Leg Extension': 4}, {'Step-Up': 4}]

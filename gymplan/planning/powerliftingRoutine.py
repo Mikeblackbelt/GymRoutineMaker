@@ -4,6 +4,7 @@ import os
 import random
 import math
 import days
+import typing
 
 sys.path.append(os.path.abspath(r'C:\Users\mmati\OneDrive\Documents\GitHub\GymRoutineMaker'))
 
@@ -16,11 +17,11 @@ def getMGroupExercises(section:str,group:str,subgroup: str) -> dict:
     return exercises["Exercises"]
 
 class plDayType:
-    def __init__(self,lift: union(list,str),muscles: list[list[str,str,str]]) -> None:
+    def __init__(self,lift: typing.Union[list,str],muscles: list[list[str,str,str]]) -> None:
         self.lift = lift
         self.muscles = muscles
-    
-    def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]) -> list:
+        mj.logToFile('planlogs.txt',f'{self} initated (plDayType)*')
+    def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]) -> list: #stolen from days.py
         equipment = [x.lower() for x in equipment]
         returnCompounds = []
         returnIsos = []
@@ -36,31 +37,90 @@ class plDayType:
         mj.logToFile('planlogs.txt', f'\n{self}.getCompIsol returned \n{[returnCompounds, returnIsos]}\n')
         return [returnCompounds, returnIsos]
     
-    def getAccessories(self, equipment: list[str]) -> list:
+    def getAccessories(self, equipment: list[str]) -> list[list[str]]:
         accessories = []
         for muscle in self.muscles:
-            accessories.append(getCompIsol(muscle, equipment)[0])
+            asc = self.getCompIsol(muscle, equipment)[0]
+            accessories.append(asc) #choose append bc i want to split it into muscles
+            mj.logToFile('planlogs.txt',f'\nAccessories updated:\n + {asc}\n')
+        while [] in accessories:
+            accessories.remove([])
+        for item in accessories:
+           if type(self.lift) == str and self.lift in item:
+               item.remove(self.lift)
+           else:
+               for lift in self.lift:
+                   if lift in item: item.remove(lift)
+        
+        mj.logToFile('planlogs.txt', f'\n{self}.getAccessories({equipment}) returned:\n {accessories}\n')
         return accessories
 
-    def generate(self,setsTotal: int,equipment: list[str]) -> list[dict{str:int}]:
+    def generate(self, setsTotal: int, equipment: list[str]) -> list[dict[str: int]]:
         rlist = []
-        if 'Barbell' not in equipment or if 'Bench' not in equipment: raise Exception('A powerlifting routine requires a barbell and a bench...how do you expect to powerlift?')
-        if type(self.lift) == list:
-            if setsTotal < 4*len(self.lift):
-                for lifts in self.lift:
-                    rlist.append({lifts: math.ceil(setsTotal/len(self.lift))})
-                return rlist
-            elif setsTotal < 6*lens(self.lift):
-                for lifts in self.lift:
-                    liftSets = random.choice([3,4,5])
-                    rlist.append({lifts: liftSets})
-                    setsTotal -= liftSets
-                #conttinue 
-            else:
-                #continue
-                pass
+        added_exercises = set()  # Track added exercises to avoid duplicates
+
+        if 'Barbell' not in equipment or 'Bench' not in equipment:
+            raise Exception('A powerlifting routine requires a barbell and a bench...how do you expect to powerlift?')
+
+        if type(self.lift) == str:
+            self.lift = [self.lift]
+
+        if setsTotal < 4 * len(self.lift):
+            for lifts in self.lift:
+                rlist.append({lifts: math.ceil(setsTotal / len(self.lift))})
+            mj.logToFile('planlogs.txt', f'\n{self}.generate() returned routine:\n {rlist}\n')
+            return rlist
+        elif setsTotal <= 6 * len(self.lift):
+            setslist = [3, 4, 5]
         else:
-            #continue
-            pass
+            setslist = [3, 4, 5, 6]
+
+        for lifts in self.lift:
+            liftSets = random.choice(setslist)
+            rlist.append({lifts: liftSets})
+            added_exercises.add(lifts)  # Add the lift to track duplicates
+            setsTotal -= liftSets  
+
+        accessories = math.floor((setsTotal + 1) / 3) if setsTotal >= 2 else 1
+        mj.logToFile('planlogs.txt', f'\nChoose {accessories} accessories.\n')
+        setsPerAc = round(setsTotal / accessories)
+
+        for _ in range(accessories):
+            accessory = None
+            accessory_attempts = 0
+            while accessory_attempts < 10:
+                candidate = random.choice(random.choice(self.getAccessories(equipment)))
+                if candidate not in added_exercises:
+                    accessory = candidate
+                    break
+                accessory_attempts += 1
+            if accessory:
+                rlist.append({accessory: setsPerAc})
+                added_exercises.add(accessory)  # Track the added accessory to prevent duplicates
+
+        mj.logToFile('planlogs.txt', f'\n{self}.generate() returned routine:\n {rlist}\n')
+        return rlist
+
+
+benchDay = plDayType('Bench Press', days.pushMuscles)
+sqd = days.legMuscles
+
+for n in [["lowerbody","legs","hamstrings"],['lowerbody',"legs","calves"],['lowerbody','abs','abs'],['lowerbody','abs','obliques']]:
+    days.legMuscles.remove(n)
+
+squatDay = plDayType('Squat',sqd)
+
+dlMuscles = [
+       ["lowerbody","legs","hamstrings"],
+       ["upperbody","back","midback"],
+       ["upperbody","arms","forearms"],
+]
+deadliftDay = plDayType('Deadlift',dlMuscles)
+
+ascDay = days.DayType(dlMuscles + days.pushMuscles + sqd)
+
+print(ascDay.generate([4]*len(dlMuscles + days.pushMuscles + sqd),['Barbell','Bench','Dumbbell','Incline Bench', 'Machine', 'Cable', 'Dip Station']))
+
+            
                 
-           
+        
