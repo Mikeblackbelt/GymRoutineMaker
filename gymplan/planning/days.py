@@ -3,8 +3,8 @@ import sys
 import os
 import random
 import math
-
-sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
+import backupfp as b
+sys.path.append(os.path.abspath(b.main()))
 
 import gymplan.utility.filePaths as fp
 import gymplan.utility.mergeJson as mj
@@ -61,6 +61,7 @@ class DayType():
         return newVol
                                
     def generate(self, sets: list[int], equipment: list[str]):
+        mj.logToFile('planlogs.txt',f'{self}.generate({sets},{equipment} is being run)') 
         if len(sets) != len(self.muscles) or 0 in sets: 
             mj.logToFile('planlogs.txt',f'\nError in {self}.generate():\n len(sets) != len(self.muscles).\nSets: {sets}\nMuscles: {self.muscles}\n')
             raise Exception(f'Sets must be a list of len(self.muscles) ({len(self.muscles)}) nonzero integers')

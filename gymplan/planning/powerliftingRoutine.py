@@ -5,8 +5,8 @@ import random
 import math
 import days
 import typing
-
-sys.path.append(os.path.abspath(r'C:\Users\mmati\OneDrive\Documents\GitHub\GymRoutineMaker'))
+import backupfp as b
+sys.path.append(os.path.abspath(b.main()))
 
 import gymplan.utility.filePaths as fp
 import gymplan.utility.mergeJson as mj
@@ -58,7 +58,7 @@ class plDayType:
     def generate(self, setsTotal: int, equipment: list[str]) -> list[dict[str: int]]: #slightly refactored by chatgpt
         rlist = []
         added_exercises = set()  # Track added exercises to avoid duplicates
-
+        mj.logToFile('planlogs.txt',f'{self}.generate({setsTotal},{equipment} is being run)') 
         if 'Barbell' not in equipment or 'Bench' not in equipment:
             raise Exception('A powerlifting routine requires a barbell and a bench...how do you expect to powerlift?')
 
@@ -119,8 +119,11 @@ deadliftDay = plDayType('Deadlift',dlMuscles)
 ascM = dlMuscles + days.pushMuscles + sqd
 ascDay = days.DayType(ascM)
 
-print(ascDay.generate([4]*len(dlMuscles + days.pushMuscles + sqd),['Barbell','Bench','Dumbbell','Incline Bench', 'Machine', 'Cable', 'Dip Station']))
-
+if __name__ == "__main__":
+    print('asc')
+    print(ascDay.generate([4]*len(ascM),['Barbell','Bench','Dumbbell','Incline Bench', 'Machine', 'Cable', 'Dip Station']))
+    print('push')
+    print(benchDay.generate(4*len(days.pushMuscles),['Barbell','Bench','Dumbbell','Incline Bench', 'Machine', 'Cable', 'Dip Station']))
             
                 
         

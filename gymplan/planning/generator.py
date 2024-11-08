@@ -6,8 +6,9 @@ import os
 import random
 import days
 import powerliftingRoutine as plr
+import backupfp as b
 
-sys.path.append(os.path.abspath(r'C:\Users\mike.mat\Desktop\GymRoutineMaker'))
+sys.path.append(os.path.abspath(b.main()))
 import gymplan.utility.filePaths as fp
 import gymplan.utility.mergeJson as mj
 
@@ -45,7 +46,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
     elif goal == "P":
         split = 'PL'
     
-    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet) if goal != 'P' else math.floor(daysPerWeek*2*timePerDay / 3*estTimePerSet)
+    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet) if goal != 'P' else math.floor(daysPerWeek*2*timePerDay / (3*estTimePerSet))
     defaultDirectVolumeRatios = days.defaultDirectVolumeRatios
     newVolumeRatio = defaultDirectVolumeRatios.copy()
     mj.logToFile('planlogs.txt',f'\n{split} split chosen with {setsPerWeek} weekly sets\n')
@@ -110,6 +111,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
 
         case 'PL':
             spd = math.floor(setsPerWeek/daysPerWeek)
+            mj.logToFile('planlogs.txt',f'\npowerlifting sets per day: {spd}\n')
             exlist = [None]*daysPerWeek
             for i in range(math.floor(daysPerWeek/3)):
                 exlist[3*i] = plr.benchDay.generate(spd,equipmentPresent)
