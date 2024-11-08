@@ -7,6 +7,13 @@
                     "forearms": 1.0,
                     "traps": 0.5
                 }
+            },
+            "Rack Pull": {
+                "Equipment": ["Barbell"],
+                "MuscleGroups": {
+                    "midback": 1.0,
+                    "forearms": 0.5
+                }
             }
         },
         "Isolation": {

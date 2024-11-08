@@ -7,6 +7,7 @@ import random
 import days
 import powerliftingRoutine as plr
 import backupfp as b
+import time
 
 sys.path.append(os.path.abspath(b.main()))
 import gymplan.utility.filePaths as fp
@@ -21,7 +22,8 @@ async def getMGroupExercises(section: str, group: str, subgroup: str) -> dict:
     mj.logToFile('planlogs.txt',f'{subgroup} exercises found: \n{exercises}')
     return exercises["Exercises"]
 
-async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 10/2, priorityMuscles: list = None):
+st = time.time()
+async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 4, priorityMuscles: list = None):
     if goal not in goals:
         mj.logToFile('planlogs.txt',f'\nerror, {goal} (input) not in {goals} (valid inputs)\n')
         raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
@@ -46,7 +48,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
     elif goal == "P":
         split = 'PL'
     
-    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet) if goal != 'P' else math.floor(daysPerWeek*2*timePerDay / (3*estTimePerSet))
+    setsPerWeek = math.floor(daysPerWeek*timePerDay / estTimePerSet) if goal != 'P' else math.floor(daysPerWeek*4*timePerDay / (7*estTimePerSet))
     defaultDirectVolumeRatios = days.defaultDirectVolumeRatios
     newVolumeRatio = defaultDirectVolumeRatios.copy()
     mj.logToFile('planlogs.txt',f'\n{split} split chosen with {setsPerWeek} weekly sets\n')
@@ -112,27 +114,27 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
         case 'PL':
             spd = math.floor(setsPerWeek/daysPerWeek)
             mj.logToFile('planlogs.txt',f'\npowerlifting sets per day: {spd}\n')
-            exlist = [None]*daysPerWeek
+            exlist = []
             for i in range(math.floor(daysPerWeek/3)):
-                exlist[3*i] = plr.benchDay.generate(spd,equipmentPresent)
-                exlist[3*i+1] = plr.squatDay.generate(spd,equipmentPresent)
-                exlist[3*i+2] = plr.deadliftDay.generate(spd,equipmentPresent)
-                mj.logToFile('planlogs.txt','f\nPL cycle {i+1} generated successfully')
-            if spd != setsPerWeek/daysPerWeek:
+                exlist.extend([plr.benchDay.generate(spd,equipmentPresent),plr.squatDay.generate(spd,equipmentPresent),plr.deadliftDay.generate(spd,equipmentPresent)])
+                mj.logToFile('planlogs.txt',f'\nPL cycle {i+1} generated successfully')
+            print(daysPerWeek) #3
+            if daysPerWeek % 3 != 0:
+                ascessories = plr.ascDay.generate([math.ceil(1.5*len(plr.ascM)/spd)]*len(plr.ascM),equipmentPresent)
+                mj.logToFile('planlogs.txt',f"\nasc is {ascessories}\n")
+                exlist.append(ascessories)
                 
-                exlist[3] = (plr.ascDay([math.ceil(len(1.5*plr.ascM/spd))]*[len(plr.ascM)],equipmentPresent))
-            
             while None in exlist: exlist.remove(None)
             
-    mj.logToFile('planlogs.txt',f'\nFinal Exercises: \n\n{exlist}\n') 
+    mj.clearLog('planlogs.txt')
     return exlist
-
+print(time.time() - st)
 if __name__ == "__main__":
-    data = asyncio.run(makeRoutine('P', 60, 4, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
+    data = asyncio.run(makeRoutine('M', 90, 5, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
+    #mj.clearFile('planlogs.txt')
     print(data)
     index = 0
     for object in data:
-        
         print(f'Day {index + 1}:\n')
         index += 1
         for exercise in object:

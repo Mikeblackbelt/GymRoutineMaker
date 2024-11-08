@@ -90,7 +90,7 @@ class plDayType:
             accessory_attempts = 0
             while accessory_attempts < 10:
                 candidate = random.choice(random.choice(self.getAccessories(equipment)))
-                if candidate not in added_exercises:
+                if candidate not in added_exercises and candidate not in ['Bench Press','Squat','Deadlift']:
                     accessory = candidate
                     break
                 accessory_attempts += 1

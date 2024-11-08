@@ -14,7 +14,10 @@ def logToFile(file,msg) -> None:
     with open(f"{filePaths.fpLogDir()}\\{file}",'a') as logFile:
         logFile.writelines(msg)
 
-
+def clearLog(file) -> None:
+    with open(f"{filePaths.fpLogDir()}\\{file}",'w') as logFile:
+        logFile.write('Cleared automatically\n')
+    
 def getFilePaths(directory) -> list:
     filePaths = []
     for item in os.listdir(directory):
