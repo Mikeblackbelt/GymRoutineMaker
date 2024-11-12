@@ -129,6 +129,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
     mj.clearLog('planlogs.txt')
     return exlist
 print(time.time() - st)
+
 if __name__ == "__main__":
     data = asyncio.run(makeRoutine('M', 90, 5, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
     #mj.clearFile('planlogs.txt')
