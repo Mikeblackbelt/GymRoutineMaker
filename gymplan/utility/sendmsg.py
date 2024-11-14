@@ -1,5 +1,6 @@
 import smtplib
 import os
+import mergeJson as mJ
 from dotenv import load_dotenv
 from random import randint
 from email.mime.text import MIMEText
@@ -16,9 +17,9 @@ def genOTP() -> int:
     """Generate a OTP."""
     return randint(100000, 999999)
 
-def sendOTP(address: str) -> int:
+def sendOTP(address: str, logEmail: bool = True) -> int:
     """
-    Adress: Recipent Email Adress
+    Address: Recipent Email Adress
     """
 
     OTP = genOTP()
@@ -50,7 +51,8 @@ def sendOTP(address: str) -> int:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
         server.login(SENDER, SENDER_PASS)
         server.sendmail(SENDER, address, msg.as_string())
-
+   
+    mj.logToFile('utilLog2.txt','OTP successfully sent to {address}.\n') if logEmail else mj.logToFile('utilLog2.txt',"OTP successfully sent to (hidden email)\n")
     return OTP
 
 if __name__ == "__main__":

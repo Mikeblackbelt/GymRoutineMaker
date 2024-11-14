@@ -10,24 +10,22 @@ import gymplan.utility.mergeJson as mj
 
 #fpUserJson()
 class User():
-    def __init__(self,name,username,goal,daysPerWeek,password,*, email = None, uid=None) -> None:
+    def __init__(self,name,username,password,*, email = None, uid=None,routines=None) -> None:
         self.id = str(uuid.uuid4()) if uid is None else uid
         self.name = name
         self.username = username
-        self.goal = goal
-        self.daysPerWeek = daysPerWeek
         self.password = password
         self.email = email
+        self.routines = routines
         mj.logToFile('userLogs.txt', f'\n{self.id} created')
 
     def to_dict(self) -> dict:
         return {
             "name": self.name,
             "username": self.username
-            "goal": self.goal,
-            "daysPerWeek": self.daysPerWeek,
             "password": self.password,
-            "email": self.email
+            "email": self.email,
+            "routines": self.routines
         }
 
     def upload(self) -> None:
@@ -61,5 +59,5 @@ def find(id) -> User:
     with open(fp.fpUserJson(), "r") as f:
                 users = json.load(f)
     if id in users:
-       return User(users[id]['name'],users[id]['username'],users[id]['goal'],users[id]["daysPerWeek"],users[id]['password'],email = users[id]["email"], uid = id)
+       return User(users[id]['name'],users[id]['username'],users[id]['password'],email = users[id]["email"], uid = id, routines=users[id]["routine"])
 
