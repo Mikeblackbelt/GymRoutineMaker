@@ -49,3 +49,7 @@ ae1c1329-e724-45b2-b501-331417c100f7 created
 
 {'name': 'Michael Matiychenko', 'username': 'MMAT', 'password': 'RoroZoro9876!', 'email': 'mmatiych@icloud.com', 'routines': None}
 319aca51-8b4e-4c2d-a171-553808fdd3e0 created
+d54a9018-87fa-48ca-9c4d-1cc31f69a123 created
+d54a9018-87fa-48ca-9c4d-1cc31f69a123 uploaded with userdata:
+
+{'name': 'test', 'username': 'test', 'password': '$2b$12$spLcPx/Jh8tDWxb5BfUqwe4uaTdEgJ.vwLFJf90y3EqGj6r2UQHCO', 'email': 'mmatiych@icloud.com', 'routines': {}}

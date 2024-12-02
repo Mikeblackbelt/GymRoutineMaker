@@ -1,7 +1,9 @@
 from django.urls import path
-from . import views  # Import views from the same app
+from . import views
 
 urlpatterns = [
-    # This will route the base URL for 'gymplan/' to the 'index' view
-    path('', views.index, name='index'),
+    path('login/', views.login_view, name='login'),
+    path('dashboard/', views.dashboard_view, name='dashboard'),  # Example dashboard URL
+    path('', views.login_view, name='root'), 
 ]
+#addin gh ga comment auto reload

@@ -31,7 +31,7 @@ defaultDirectVolumeRatios = {
     'obliques': 0.03,
     'forearms': 0.04
 }
-
+#comment
 class DayType():
     def __init__(self, muscles: list[list[str,str,str]]): 
         self.muscles = muscles 

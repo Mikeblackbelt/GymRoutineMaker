@@ -1,7 +1,21 @@
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.urls import reverse
+from .userDataFuncs.userData import hauth2
 
-# The 'index' view that is referenced in urls.py
-def index(request):
-    return HttpResponse("Welcome to the Gym Plan app!")
+def login_view(request):
+    if request.method == "POST":
+        username = request.POST.get('Username')
+        password = request.POST.get('Password')
+        try:
+            if hauth2(username, password):
+                return redirect(reverse('dashboard'))  
+            else:
+                return render(request, 'login.html', {'error': 'Invalid username or password'})
+        except ValueError as e:
+            return render(request, 'login.html', {'error': str(e)})
 
-def 
+    return render(request, 'login.html')
+
+def dashboard_view(request):
+    pass #do this later #comment

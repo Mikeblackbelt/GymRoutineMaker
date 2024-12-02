@@ -74,9 +74,14 @@ def getUserData(*, id: str = None, name: str = None, username: str = None) -> di
     raise ValueError("At least one identifier (id, name, username) is required")
 
 
-def auth(username: str, password: str) -> bool:
+def hauth2(username: str, password: str) -> bool:
     users = _load_users()
     for user in users.values():
         if user['username'] == username:
             return bcrypt.checkpw(password.encode(), user['password'].encode())
     raise ValueError("Username not found")
+
+if __name__ == "__main__":
+    #testuser = User('test', 'test', 'test', email='mmatiych@icloud.com')
+    #testuser.upload()
+    print(hauth2('test',"test2"))
