@@ -18,12 +18,12 @@
                 <label for="Password">Password</label>
                 <input type="text" id="Password" name="Password" required>
             </div>
-            <button type="submit">Send OTP</button>
+            <button type="submit">Login</button>
             {% if error %}
             <p class="error">{{ error }}</p>
             {% endif %}
         </form>
-        <p>Don't have an account? <a href="{% url 'singup' %}">Sign up</a></p> 
+        <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p> 
     </div>
 </body>
 </html>

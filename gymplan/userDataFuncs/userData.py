@@ -17,9 +17,12 @@ def _load_users() -> dict:
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
 
-
+defaultSettings = {
+    '2auth': False,
+    'dark_mode': False
+}
 class User:
-    def __init__(self, name: str, username: str, password: str, *, email: str = None, uid: str = None, routines: dict = None) -> None:
+    def __init__(self, name: str, username: str, password: str, *, email: str = None, uid: str = None, routines: dict = None, settings: dict = defaultSettings) -> None:
         users = _load_users()
         if any(user['username'] == username for user in users.values()):
             raise ValueError("Username already exists, please choose a different one")
@@ -29,6 +32,7 @@ class User:
         self.password = self._hash_password(password)
         self.email = email
         self.routines = routines or {}
+        self.settings = settings or defaultSettings
         mj.logToFile('userLogs.txt', f'\n{self.id} created')
 
     @staticmethod
@@ -41,7 +45,8 @@ class User:
             "username": self.username,
             "password": self.password,
             "email": self.email,
-            "routines": self.routines
+            "routines": self.routines.
+            "settings": self.settings
         }
 
     def upload(self) -> None:
