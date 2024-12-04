@@ -45,7 +45,7 @@ class User:
             "username": self.username,
             "password": self.password,
             "email": self.email,
-            "routines": self.routines.
+            "routines": self.routines,
             "settings": self.settings
         }
 
