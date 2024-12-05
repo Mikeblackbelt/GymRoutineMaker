@@ -1,6 +1,6 @@
 import smtplib
 import os
-import mergeJson as mJ
+from . import mergeJson as mJ
 from dotenv import load_dotenv
 from random import randint
 from email.mime.text import MIMEText
@@ -52,7 +52,7 @@ def sendOTP(address: str, logEmail: bool = True) -> int:
         server.login(SENDER, SENDER_PASS)
         server.sendmail(SENDER, address, msg.as_string())
    
-    mj.logToFile('utilLog2.txt','OTP successfully sent to {address}.\n') if logEmail else mj.logToFile('utilLog2.txt',"OTP successfully sent to (hidden email)\n")
+    mJ.logToFile('utilLog2.txt','OTP successfully sent to {address}.\n') if logEmail else mJ.logToFile('utilLog2.txt',"OTP successfully sent to (hidden email)\n")
     return OTP
 
 if __name__ == "__main__":

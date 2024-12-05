@@ -19,7 +19,10 @@ def _load_users() -> dict:
 
 defaultSettings = {
     '2auth': False,
-    'dark_mode': False
+    'dark_mode': False,
+    'privacy_settings': {
+        'logEmail': False,
+    }
 }
 class User:
     def __init__(self, name: str, username: str, password: str, *, email: str = None, uid: str = None, routines: dict = None, settings: dict = defaultSettings) -> None:
