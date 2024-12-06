@@ -20,6 +20,8 @@ def login_view(request):
                 else:
                     request.session['makingAccount'] = False  
                     request.session['username'] = username
+                    try:  del request.session['OTP'] 
+                    except: pass
                     return redirect(reverse('emailVerify'))
             else:
                 return render(request, 'login.html', {'error': 'Invalid username or password'})
@@ -37,12 +39,15 @@ def signup_view(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         email = request.POST.get('email')
-
+        
         try:
             new_user = UDF.User(name=name, username=username, password=password, email=email)
             new_user.upload()
             request.session['makingAccount'] = True  
             request.session['username'] = username
+            try:  del request.session['OTP'] 
+            except: pass
+
             return redirect(reverse('emailVerify')) if email else redirect(reverse('login'))
                 
         except Exception as e:
@@ -60,7 +65,8 @@ def emailVerify_view(request):
         
         if 'email' not in userdata or userdata['email'] is None:
             return HttpResponse("Error: Email not found for this user", status=400)
-        
+
+        #print(request.session['OTP'])
         if 'OTP' not in request.session:  
             OTP = sendmsg.sendOTP(userdata['email'])
             request.session['OTP'] = OTP
@@ -69,7 +75,7 @@ def emailVerify_view(request):
         return HttpResponse("Error: Username not found in session", status=400)
 
     if request.method == "POST":
-        OTPattempt = request.POST.get('otp')
+        OTPattempt = request.POST.get('OTP')
         
         if not OTPattempt:
              return render(request, 'emailVerify.html', {

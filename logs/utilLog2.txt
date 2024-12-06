@@ -1,1 +1,3 @@
 OTP successfully sent to {address}.
+OTP successfully sent to {address}.
+OTP successfully sent to {address}.

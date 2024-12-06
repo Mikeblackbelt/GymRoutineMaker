@@ -52,7 +52,8 @@ def sendOTP(address: str, logEmail: bool = True) -> int:
         server.login(SENDER, SENDER_PASS)
         server.sendmail(SENDER, address, msg.as_string())
    
-    mJ.logToFile('utilLog2.txt','OTP successfully sent to {address}.\n') if logEmail else mJ.logToFile('utilLog2.txt',"OTP successfully sent to (hidden email)\n")
+    mJ.logToFile(f'utilLog2.txt','OTP successfully sent to {address}.\n') if logEmail else mJ.logToFile('utilLog2.txt',"OTP successfully sent to (hidden email)\n")
+    print(address, OTP)
     return OTP
 
 if __name__ == "__main__":
