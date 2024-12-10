@@ -13,13 +13,13 @@ def login_view(request):
         try:
             if UDF.hauth2(username, password):
                 userdata = UDF.getUserData(username=username)
-         
+                request.session['username'] = username
+
                 if not userdata['settings'].get('2auth', False):
                     return redirect(reverse('dashboard'))
 
                 else:
                     request.session['makingAccount'] = False  
-                    request.session['username'] = username
                     try:  del request.session['OTP'] 
                     except: pass
                     return redirect(reverse('emailVerify'))
@@ -87,7 +87,8 @@ def emailVerify_view(request):
         if OTPattempt == str(request.session.get('OTP')):
             del request.session['OTP'] 
             request.session['verified'] = True
-
+            if not making_account: request.session['username'] = username
+            else: del request.session['username']
             return redirect(reverse('login')) if making_account else redirect(reverse('dashboard'))
         
         else:
@@ -104,4 +105,15 @@ def emailVerify_view(request):
 def dashboard_view(request):
     """Handles user dashboard."""
     # Placeholder for future implementation
-    return render(request, 'dashboard.html')
+    return render(request, 'homepage.html')
+
+def settingView(request):
+    """Handles setting page"""
+    #placeholder
+    return render(request, 'settings.html')
+
+def addRView(request):
+    """Handles adding the routine"""
+    #placeholder
+    return render(request, 'routineGenStart.html')
+
