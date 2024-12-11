@@ -8,6 +8,7 @@ import days
 import powerliftingRoutine as plr
 import backupfp as b
 import time
+import uuid
 
 sys.path.append(os.path.abspath(b.main()))
 import gymplan.utility.filePaths as fp
@@ -16,13 +17,17 @@ import gymplan.utility.mergeJson as mj
 with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
     goals = json.load(file)
 
+def getExerVid(name:str) -> str:
+    with open(fp.fpVidJson(), 'r') as file:
+        videos = json.load(file)
+    return videos[name]
+
 async def getMGroupExercises(section: str, group: str, subgroup: str) -> dict:
     with open(f'{fp.fpExerJson()}\\{section}\\{group}\\{subgroup}.json', 'r') as file:
         exercises = json.load(file)
     mj.logToFile('planlogs.txt',f'{subgroup} exercises found: \n{exercises}')
     return exercises["Exercises"]
 
-st = time.time()
 async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 4, priorityMuscles: list = None):
     if goal not in goals:
         mj.logToFile('planlogs.txt',f'\nerror, {goal} (input) not in {goals} (valid inputs)\n')
@@ -128,16 +133,34 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
             
     mj.clearLog('planlogs.txt')
     return exlist
-print(time.time() - st)
 
-if __name__ == "__main__":
-    data = asyncio.run(makeRoutine('M', 90, 5, ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench',"Pull-up bar"]))
-    #mj.clearFile('planlogs.txt')
-    print(data)
+async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 4, priorityMuscles: list = None) -> None:
+    rt = await makeRoutine(goal, timePerDay, daysPerWeek, equipmentPresent, estTimePerSet, priorityMuscles)
+    rID = str(uuid.uuid4())
+    pushedR = {}
+    with open(fp.fpRoutineJson(),'r') as file:
+        ExistingRoutines = json.load(file)
     index = 0
-    for object in data:
-        print(f'Day {index + 1}:\n')
+    for day in rt:
         index += 1
-        for exercise in object:
-            print(f'{list(exercise.keys())[0]} for {list(exercise.values())[0]} sets.\n')
-        
+        dayR = {}
+        for exercise in day:
+            sets = list(exercise.values())[0]
+            try: 
+                videoLink = getExerVid(list(exercise.keys())[0])
+            except:
+                videoLink = None
+            repScheme = (str(sets) + random.choice(['x5-7','x6-8','x6-8','x8-10','x8-10','x10-12','x10-12','x12-15','x14-16','x15-20','x18-22'])) if goal != 'P' else (f'{sets}x{random.randint(4,8)}')
+            dayR[list(exercise.keys())[0]] = {
+                "Video-Link": videoLink,
+                "Sets": sets,
+                'RepScheme': repScheme
+            }
+        pushedR[f'Day {index}'] = dayR
+    
+    ExistingRoutines[rID] = pushedR
+
+    with open(fp.fpRoutineJson(), 'w') as file:
+        json.dump(ExistingRoutines, file, indent=4)
+
+

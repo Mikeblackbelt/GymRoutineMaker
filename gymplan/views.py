@@ -101,7 +101,7 @@ def emailVerify_view(request):
 
     return render(request, 'emailVerify.html', {"makingAccount": making_account, 'username': username})
 
-
+#c
 def dashboard_view(request):
     """Handles user dashboard."""
     # Placeholder for future implementation
