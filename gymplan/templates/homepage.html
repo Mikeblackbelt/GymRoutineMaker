@@ -5,73 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .header a {
-            text-decoration: none;
-            color: #007BFF;
-            font-size: 18px;
-        }
-        .routine-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .routine-item {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .add-routine {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'homepage_lightMode.css' %}">
+   
+    
 </head>
 <body>
-    <div class="'container">
+    <div class="container">
         <div class="header">
-           <h1>Routine Dashboard</h1>
-           <a href="{% url 'settings' %}">Settings</a>
+            <h1>Routine Dashboard</h1>
+            <a href="{% url 'settings' %}">Settings</a>
         </div>
-        {% if user.routines %}
+        {% if routine_details %}
             <div class="routine-list">
-                {% for routine_name, routine_id in user.routines %}
-                    <div class="routine-item" onclick="viewRoutine('{{ routine_id }}')">
-                        <p>{{ routine_name }}</p>
-                        <small>ID: {{ routine_id }}</small>
+                {% for routine in routine_details %}
+                    <div class="routine-item" onclick="viewRoutine('{{ routine.id }}')">
+                        <p>{{ routine.name }}</p>
+                        <small>ID: {{ routine.id }}</small>
+                        <ul>
+                            {% for day, exercises in routine.details.items %}
+                                <li>
+                                    <strong>{{ day }}:</strong>
+                                    <ul>
+                                        {% for exercise, data in exercises.items %}
+                                            <li>
+                                                <strong>{{ exercise }}</strong> - 
+                                                Sets: {{ data.Sets }}, 
+                                                Reps: {{ data.RepScheme }}
+                                                <br>
+                                                <iframe width="200" height="150" src="{{data.VideoLink}}"> </iframe>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 {% endfor %}
             </div>
         {% else %}
             <p>No routines available. Start by adding a new routine.</p>
         {% endif %}
-        <a href="add_routine/" class="add-routine">+ Add Routine</a>
+        <a href="{% url 'add_routine' %}" class="add-routine">+ Add Routine</a>
         <script>
             function viewRoutine(routineId) {
                 window.location.href = `/view_routine/${routineId}`;
@@ -79,3 +53,4 @@
         </script>
     </div>
 </body>
+</html>

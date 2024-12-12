@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.urls import reverse
 from .utility import sendmsg
+from .utility import filePaths as fp
 from .userDataFuncs import userData as UDF
 
 def login_view(request):
@@ -103,16 +104,40 @@ def emailVerify_view(request):
 
 #c
 def dashboard_view(request):
-    """Handles user dashboard."""
-    # Placeholder for future implementation
-    return render(request, 'homepage.html')
+    username = request.session['username'] # Assuming user ID is mapped to JSON
+    user_data = UDF.getUserData(username=username)
 
+    if not user_data:
+        return HttpResponse("User not found", status=404)
+
+    routines = user_data.get("routines", [])
+    print(routines)
+    routine_details = [] 
+
+    with open(fp.fpRoutineJson(), 'r') as file:
+        routine_data = json.load(file)
+    
+    for routine in routines:
+        routine_id = list(routine.keys())[0]
+        routine_name = list(routine.values())[0]
+        routine_info = routine_data.get(routine_id, {})
+        routine_details.append({
+            "id": routine_id,
+            "name": routine_name,
+            "details": routine_info
+        })
+
+    return render(request, 'homepage.html', {
+        'user_data': user_data,
+        'routine_details': routine_details,
+    })
+ 
 def settingView(request):
     """Handles setting page"""
     #placeholder
     return render(request, 'settings.html')
 
-def addRView(request):
+def addRView(request): 
     """Handles adding the routine"""
     #placeholder
     return render(request, 'routineGenStart.html')

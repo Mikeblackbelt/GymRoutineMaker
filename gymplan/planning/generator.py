@@ -152,7 +152,7 @@ async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipment
                 videoLink = None
             repScheme = (str(sets) + random.choice(['x5-7','x6-8','x6-8','x8-10','x8-10','x10-12','x10-12','x12-15','x14-16','x15-20','x18-22'])) if goal != 'P' else (f'{sets}x{random.randint(4,8)}')
             dayR[list(exercise.keys())[0]] = {
-                "Video-Link": videoLink,
+                "VideoLink": videoLink,
                 "Sets": sets,
                 'RepScheme': repScheme
             }

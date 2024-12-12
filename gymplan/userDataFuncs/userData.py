@@ -23,7 +23,7 @@ defaultSettings = {
     'privacy_settings': {
         'logEmail': False,
     } 
-}
+} #subj to change
 class User:
     def __init__(self, name: str, username: str, password: str, *, email: str = None, uid: str = None, routines: dict = None, settings: dict = defaultSettings) -> None:
         users = _load_users()
@@ -34,7 +34,7 @@ class User:
         self.username = username
         self.password = self._hash_password(password)
         self.email = email
-        self.routines = routines or {}
+        self.routines = routines or []
         self.settings = settings or defaultSettings
         mj.logToFile('userLogs.txt', f'\n{self.id} created')
 

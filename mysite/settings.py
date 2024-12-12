@@ -69,6 +69,12 @@ TEMPLATES = [
         },
     },
 ]
+INSTALLED_APPS += ['corsheaders']
+
+MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
+
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all origins (use with caution in production!)
+
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
