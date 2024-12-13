@@ -150,7 +150,10 @@ async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipment
                 videoLink = getExerVid(list(exercise.keys())[0])
             except:
                 videoLink = None
-            repScheme = (str(sets) + random.choice(['x5-7','x6-8','x6-8','x8-10','x8-10','x10-12','x10-12','x12-15','x14-16','x15-20','x18-22'])) if goal != 'P' else (f'{sets}x{random.randint(4,8)}')
+            REPSPL = random.randint(4,8)
+            percentagesOfMax = {'4': '90%', '5': '85%', '6', '80%', '7': '78%', '8': '75%'}
+            chosenPercent = percentagesOfMax[str(REPSPL)]
+            repScheme = (str(sets) + random.choice(['x5-7','x6-8','x6-8','x8-10','x8-10','x10-12','x10-12','x12-15','x14-16','x15-20','x18-22'])) if goal != 'P' else (f'{sets}x{RANDPL} ({chosenPercent})')
             dayR[list(exercise.keys())[0]] = {
                 "VideoLink": videoLink,
                 "Sets": sets,
