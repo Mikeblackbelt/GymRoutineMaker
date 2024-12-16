@@ -106,16 +106,19 @@ def emailVerify_view(request):
 def dashboard_view(request):
     username = request.session['username'] # Assuming user ID is mapped to JSON
     user_data = UDF.getUserData(username=username)
-
+ 
     if not user_data:
         return HttpResponse("User not found", status=404)
+
+    user_settings = user_data.get('settings', {})
+    darkMode = user_settings['dark_mode']
 
     routines = user_data.get("routines", [])
     print(routines)
     routine_details = [] 
 
     with open(fp.fpRoutineJson(), 'r') as file:
-        routine_data = json.load(file)
+        routine_data = json.load(file)  
     
     for routine in routines:
         routine_id = list(routine.keys())[0]
@@ -125,11 +128,12 @@ def dashboard_view(request):
             "id": routine_id,
             "name": routine_name,
             "details": routine_info
-        })
-
+        }) 
+ 
     return render(request, 'homepage.html', {
         'user_data': user_data,
         'routine_details': routine_details,
+        'dark_mode': darkMode
     })
  
 def settingView(request):

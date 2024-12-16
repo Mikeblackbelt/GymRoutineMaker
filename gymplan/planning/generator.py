@@ -28,7 +28,7 @@ async def getMGroupExercises(section: str, group: str, subgroup: str) -> dict:
     mj.logToFile('planlogs.txt',f'{subgroup} exercises found: \n{exercises}')
     return exercises["Exercises"]
 
-async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 4, priorityMuscles: list = None):
+async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str],*, estTimePerSet: float = 4, priorityMuscles: list = None):
     if goal not in goals:
         mj.logToFile('planlogs.txt',f'\nerror, {goal} (input) not in {goals} (valid inputs)\n')
         raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
@@ -110,7 +110,9 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
                 for muscle in days.pullMuscles:
                     weeklySetStructure[3*i + 1].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 2))
                 for muscle in days.legMuscles:
+                    print(muscle)
                     weeklySetStructure[3*i + 2].append(math.ceil(newVolumeRatio[muscle[2]] * setsPerWeek / 2))
+                print(weeklySetStructure[2])
                 exlist.append(days.pushConstruct.generate(weeklySetStructure[3*i], equipmentPresent))
                 exlist.append(days.pullConstruct.generate(weeklySetStructure[3*i + 1], equipmentPresent))
                 exlist.append(days.legConstruct.generate(weeklySetStructure[3*i + 2], equipmentPresent))
@@ -134,8 +136,8 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
     mj.clearLog('planlogs.txt')
     return exlist
 
-async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], estTimePerSet: float = 4, priorityMuscles: list = None) -> None:
-    rt = await makeRoutine(goal, timePerDay, daysPerWeek, equipmentPresent, estTimePerSet, priorityMuscles)
+async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], *,estTimePerSet: float = 4, priorityMuscles: list = None) -> str:
+    rt = await makeRoutine(goal, timePerDay, daysPerWeek, equipmentPresent,estTimePerSet= estTimePerSet, priorityMuscles = priorityMuscles)
     rID = str(uuid.uuid4())
     pushedR = {}
     with open(fp.fpRoutineJson(),'r') as file:
@@ -151,7 +153,7 @@ async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipment
             except:
                 videoLink = None
             REPSPL = random.randint(4,8)
-            percentagesOfMax = {'4': '90%', '5': '85%', '6', '80%', '7': '78%', '8': '75%'}
+            percentagesOfMax = {'4': '90%', '5': '85%', '6': '80%', '7': '78%', '8': '75%'}
             chosenPercent = percentagesOfMax[str(REPSPL)]
             repScheme = (str(sets) + random.choice(['x5-7','x6-8','x6-8','x8-10','x8-10','x10-12','x10-12','x12-15','x14-16','x15-20','x18-22'])) if goal != 'P' else (f'{sets}x{RANDPL} ({chosenPercent})')
             dayR[list(exercise.keys())[0]] = {
@@ -166,4 +168,7 @@ async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipment
     with open(fp.fpRoutineJson(), 'w') as file:
         json.dump(ExistingRoutines, file, indent=4)
 
+    return rID
 
+if __name__ == "__main__":
+    asyncio.run(push_routine('B',70,6,['Bench','Dumbbell','Barbell','Incline Bench', 'Pull-up Bar', 'Dip Station']))

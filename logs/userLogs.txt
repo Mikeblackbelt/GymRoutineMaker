@@ -53,3 +53,75 @@ d54a9018-87fa-48ca-9c4d-1cc31f69a123 created
 d54a9018-87fa-48ca-9c4d-1cc31f69a123 uploaded with userdata:
 
 {'name': 'test', 'username': 'test', 'password': '$2b$12$spLcPx/Jh8tDWxb5BfUqwe4uaTdEgJ.vwLFJf90y3EqGj6r2UQHCO', 'email': 'mmatiych@icloud.com', 'routines': {}}
+f06c1593-b153-466d-be0b-b3711a6b14ee created
+f06c1593-b153-466d-be0b-b3711a6b14ee uploaded with userdata:
+
+{'name': 'staten island tech', 'username': 'SI_THS', 'password': '$2b$12$mSVOF4KkUvO7/eH9VVej3.Kdza1PUXaatT9DX4UPLszYdHet9Hbjq', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False}}
+1612a483-5cf3-475d-98ce-84563bd58e94 created
+1612a483-5cf3-475d-98ce-84563bd58e94 uploaded with userdata:
+
+{'name': 'staten island tech', 'username': 'mmatiych@icloud.com', 'password': '$2b$12$Jr/5U08DRZiffJyGKF/o7uSFnHRj70Ss8D56LLxdf2HAvjuUluyge', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+7bcf73a3-03d7-4f03-8434-745f5c84ffa4 created
+7bcf73a3-03d7-4f03-8434-745f5c84ffa4 uploaded with userdata:
+
+{'name': 'staten island tech', 'username': 'SI_THS', 'password': '$2b$12$ckv/BauKOIIJ3iDi2Eatd.rC4TJSCxjRc9lb0i6v.AFrtyHOLCs0m', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+eb9e56f4-7274-4cd0-860d-f9d0f4f10b79 created
+eb9e56f4-7274-4cd0-860d-f9d0f4f10b79 uploaded with userdata:
+
+{'name': 'staten island tech', 'username': 'SI_THS', 'password': '$2b$12$8SUQ1eWcqdPJAEnfoQcoVOWIU7PWl28e5MPvUdW/Au19Lh8K2x4yy', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+d703c1d2-5456-46ee-94ac-8135164fc9ba created
+d703c1d2-5456-46ee-94ac-8135164fc9ba uploaded with userdata:
+
+{'name': 'staten island tech', 'username': 'SI_THS', 'password': '$2b$12$nsBnwTel5i4ST6JztxnxROJWcu6pkeixivUfNuiL00WxlQqTcUAbS', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+6b6c9706-1a06-4445-b202-8d0e2ae707c6 created
+6b6c9706-1a06-4445-b202-8d0e2ae707c6 uploaded with userdata:
+
+{'name': 'Michael Matiychenko', 'username': 'm3rigfjesog', 'password': '$2b$12$Urd3eg9I8TmaVKEZRG/frem0mLtUktOP3jpnbJJGPMLlBZ7tkk7FO', 'email': '', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+5163d79f-787f-4e7b-9a5e-ae4487e02c9a created
+5163d79f-787f-4e7b-9a5e-ae4487e02c9a uploaded with userdata:
+
+{'name': 'Xhesika Sula', 'username': 'xhesika', 'password': '$2b$12$ZQItrmJvoz/uwdwGbOcsseiH1o9q2cLBMZl6COdKyXtVzPfxHTl.a', 'email': 'xsula@schools.nyc.gov', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+0813204c-d779-4956-a6cc-987634157e1a created
+0813204c-d779-4956-a6cc-987634157e1a uploaded with userdata:
+
+{'name': 'TEST3', 'username': 'T_est_3', 'password': '$2b$12$MX1JHs8Yswp9ASU594r0deoqg2GlPsY5mCp89C8hWoQMbefp.O9TK', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+4ef78ed1-5bf8-436d-8e1e-a45d4ee3cdbd created
+4ef78ed1-5bf8-436d-8e1e-a45d4ee3cdbd uploaded with userdata:
+
+{'name': 'TEST3', 'username': 'TEST3REAL', 'password': '$2b$12$RyzQIq39JSF7ocAj5eorsem11BWgs1tqGJNMIInepVe0vpUPtjQIa', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+85f1a17f-d2ed-44e7-aabe-0918148c8bb2 created
+85f1a17f-d2ed-44e7-aabe-0918148c8bb2 uploaded with userdata:
+
+{'name': 'TEST4', 'username': 'TestTestTest', 'password': '$2b$12$zh/aDPbbMUNftabj.Tl9g.3/BUttzo0j7HNEIL.f48FBjmmA0nMxe', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+ec35ccf7-c7e5-4728-a8d5-3b6e700c0f2d created
+ec35ccf7-c7e5-4728-a8d5-3b6e700c0f2d uploaded with userdata:
+
+{'name': 'Test5', 'username': 'PleaseWorkForGodsSake', 'password': '$2b$12$LQO/kBw6759l3MSryi511.H0dUuMBXJewshhncS5bRhU2aVc5rn62', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+b1c31c9a-2de2-46ad-8d9a-3ed53af94d0f created
+b1c31c9a-2de2-46ad-8d9a-3ed53af94d0f uploaded with userdata:
+
+{'name': 'help', 'username': 'OHMYFUCKINGGOD', 'password': '$2b$12$urTbf5HH6q1v6zMKjCrxbu0oNOtsoHn0GKQNleXok1PUW.SPQbOfe', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+7b412945-3f71-4eda-b4b7-5a2d78ba10dd created
+7b412945-3f71-4eda-b4b7-5a2d78ba10dd uploaded with userdata:
+
+{'name': 'help', 'username': 'helpME', 'password': '$2b$12$4AtDT1G85RF9moWtT0Pab.ZhNI5XVUQjJF42P3X90oKw79VvIDBiO', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+256c8058-4ab0-49e0-b419-728facaf12c7 created
+256c8058-4ab0-49e0-b419-728facaf12c7 uploaded with userdata:
+
+{'name': 'hope', 'username': 'please2', 'password': '$2b$12$EvDmh/HrygfxzoSWJKUXNeTs.Jf9CjwUzePiBOAL0pTq3bjf5jdp6', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+c20fbc6b-e5b9-4b15-86b4-e944a8e58ebc created
+c20fbc6b-e5b9-4b15-86b4-e944a8e58ebc uploaded with userdata:
+
+{'name': 'help', 'username': 'ThereIsHope', 'password': '$2b$12$6LRy44ddgsOTf428GWsbletcIbeIp.JQb/kLDfVKWWg8x8E9PU7z6', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+885f5c4b-7de7-4da3-a8e5-289169b041f8 created
+885f5c4b-7de7-4da3-a8e5-289169b041f8 uploaded with userdata:
+
+{'name': 'help', 'username': 'SI_THS2', 'password': '$2b$12$v06lLjd7MURCivMH0wKGteYPJtSgI/7FRaQSXbwo1OOlyTM0gvt2G', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+9aa9a298-7e9b-4be7-82d4-224709835dd2 created
+9aa9a298-7e9b-4be7-82d4-224709835dd2 uploaded with userdata:
+
+{'name': 'Test5', 'username': 'test2', 'password': '$2b$12$/otg8CCNQsdwlQw6kgfPyOlFzuPu9ZIZeQ/TcDEYUkL4weOKf4n0K', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}
+b736a481-a187-4994-aece-26e6310a9189 created
+b736a481-a187-4994-aece-26e6310a9189 uploaded with userdata:
+
+{'name': 'Admin', 'username': 'AdminAdmin', 'password': '$2b$12$VNZd5YImllssctKyAwun9eew29u.4lR2GNdkko4yflLt38blMu6ju', 'email': 'mmatiych@icloud.com', 'routines': {}, 'settings': {'2auth': False, 'dark_mode': False, 'privacy_settings': {'logEmail': False}}}

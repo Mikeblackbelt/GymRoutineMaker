@@ -35,6 +35,7 @@ defaultDirectVolumeRatios = {
 class DayType():
     def __init__(self, muscles: list[list[str,str,str]], plASC: bool = False): 
         self.muscles = muscles 
+        self.plASC = plASC
         mj.logToFile('planlogs.txt',f'\n{self} initated\n')
 
     def getCompIsol(self, muscle: list[list[str,str,str]], equipment: list[str]):
@@ -93,7 +94,7 @@ class DayType():
 
             if muscle[1] == 'c' and len(comp) != 0:
                 selected_exercise = random.choice(comp)
-                if plASC and selected_exercise in ['Deadlift', 'Squat', 'Bench Press']:
+                if self.plASC and selected_exercise in ['Deadlift', 'Squat', 'Bench Press']:
                     pass
                 else: #it already asssigns to much volume
                     exerciseList.append({selected_exercise: muscle[2]})

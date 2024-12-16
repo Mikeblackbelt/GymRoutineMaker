@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    {% if dark_mode %}
+    <link rel="stylesheet" href="{% static 'homepage_darkMode.css' %}">
+    {% else %}
     <link rel="stylesheet" href="{% static 'homepage_lightMode.css' %}">
-   
+    {% endif %}
     
 </head>
 <body>
@@ -32,7 +35,7 @@
                                                 Sets: {{ data.Sets }}, 
                                                 Reps: {{ data.RepScheme }}
                                                 <br>
-                                                <iframe width="200" height="150" src="{{data.VideoLink}}"> </iframe>
+                                                <iframe width="200" height="150" src="{{data.VideoLink}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
                                             </li>
                                         {% endfor %}
                                     </ul>
