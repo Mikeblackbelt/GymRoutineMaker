@@ -103,10 +103,7 @@ class plDayType:
 
 
 benchDay = plDayType('Bench Press', days.pushMuscles)
-sqd = days.legMuscles
-
-for n in [["lowerbody","legs","hamstrings"],['lowerbody',"legs","calves"],['lowerbody','abs','abs'],['lowerbody','abs','obliques']]:
-    days.legMuscles.remove(n)
+sqd = [['lowerbody', 'legs', 'quads'], ['lowerbody', 'legs', 'glutes']]
 
 squatDay = plDayType('Squat',sqd)
 

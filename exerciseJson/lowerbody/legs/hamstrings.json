@@ -54,6 +54,18 @@
                 "MuscleGroups": {
                     "hamstrings": 1.0
                 }
+            },
+            "Cable Leg Curl": {
+                "Equipment": ["Cable"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0
+                }
+            },
+            "Nordic Curl": {
+                "Equipment": ["Bodyweight"],
+                "MuscleGroups": {
+                    "hamstrings": 1.0
+                }
             }
         }
     }

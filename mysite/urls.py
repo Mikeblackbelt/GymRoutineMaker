@@ -7,3 +7,4 @@ urlpatterns = [
     path('gymplan/', include('gymplan.urls')),
     path('admin/', admin.site.urls),
 ]
+

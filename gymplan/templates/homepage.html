@@ -35,7 +35,11 @@
                                                 Sets: {{ data.Sets }}, 
                                                 Reps: {{ data.RepScheme }}
                                                 <br>
-                                                <iframe width="200" height="150" src="{{data.VideoLink}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+                                                {% if data.VideoLink %}
+                                                <iframe width="100" height="75" src="{{data.VideoLink}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+                                                {% else %}
+                                                <p>Video unavailable (for now)</p>
+                                                {% endif %}
                                             </li>
                                         {% endfor %}
                                     </ul>

@@ -59,6 +59,7 @@ class DayType():
         newVol = {}
         for muscle in self.muscles:
             newVol[muscle[2]] = defaultDirectVolumeRatios[muscle[2]] / dayPercentVolume
+        mj.logToFile('planlogs.txt', f"New Volume Ratios: {newVol}")
         return newVol
                                
     def generate(self, sets: list[int], equipment: list[str]):
@@ -133,7 +134,7 @@ legMuscles =   [
        ['lowerbody','abs','obliques']
 ]
 legConstruct = DayType(legMuscles)
-
+print(legConstruct.muscles)
 upperMuscles = random.choice([pushMuscles+pullMuscles,pullMuscles+pushMuscles])
 upperMuscles.remove(["upperbody", "shoulders", "reardelts"])
 upperMuscles.remove(["upperbody","arms","forearms"])
@@ -156,3 +157,4 @@ fbMuscles.remove(['lowerbody','abs','abs'])
 fullConstruct = DayType(fbMuscles)
 
 #print(pushConstruct.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
+print(legConstruct.muscles)

@@ -130,7 +130,7 @@ def dashboard_view(request):
             "details": routine_info
         }) 
  
-    return render(request, 'homepage.html', {
+    return render(request, 'homepage.html', { 
         'user_data': user_data,
         'routine_details': routine_details,
         'dark_mode': darkMode

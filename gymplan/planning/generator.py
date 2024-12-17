@@ -13,7 +13,7 @@ import uuid
 sys.path.append(os.path.abspath(b.main()))
 import gymplan.utility.filePaths as fp
 import gymplan.utility.mergeJson as mj
-
+print(f"{__name__}, 16: {days.legConstruct.muscles}")
 with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
     goals = json.load(file)
 
@@ -133,7 +133,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
                 
             while None in exlist: exlist.remove(None)
             
-    mj.clearLog('planlogs.txt')
+    #mj.clearLog('planlogs.txt')
     return exlist
 
 async def push_routine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str], *,estTimePerSet: float = 4, priorityMuscles: list = None) -> str:
