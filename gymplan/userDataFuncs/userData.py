@@ -81,6 +81,25 @@ def getUserData(*, id: str = None, name: str = None, username: str = None) -> di
         raise ValueError("User not found with the given name")
     raise ValueError("At least one identifier (id, name, username) is required")
 
+def update_settings(new_settings: dict, *, id: str = None, name: str = None, username: str = None ) -> None:
+    if not any([id,name,username]):
+        raise ValueError("At least one identifier (id, name, username) is required")
+    if id:
+        userdata = getUserData(id=id)
+    elif username:
+        userdata = getUserData(username=username)
+    else:
+        userdata = getUserData(name=name)
+    
+    userdata['settings'] = new_settings
+    fullUD = _load_users()
+    userid = next((key for key, value in fullUD.items() if value == userdata),None) if not id else id
+    fullUD[userid] = userdata
+    
+    with open(fp.fpUserJson(), "w") as f:
+            json.dump(fullUD, f)
+    
+
 
 def hauth2(username: str, password: str) -> bool:
     users = _load_users()
@@ -90,6 +109,11 @@ def hauth2(username: str, password: str) -> bool:
     raise ValueError("Username not found")
 
 if __name__ == "__main__":
-    #testuser = User('test', 'test', 'test', email='mmatiych@icloud.com')
-    #testuser.upload()
-    print(hauth2('test',"test2"))
+    update_settings({
+            "2auth": False,
+            "dark_mode": True,
+            "privacy_settings": {
+                "logEmail": True
+            }
+        },
+        username = 'AdminAdmin')

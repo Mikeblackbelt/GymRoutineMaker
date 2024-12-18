@@ -5,6 +5,7 @@ from django.urls import reverse
 from .utility import sendmsg
 from .utility import filePaths as fp
 from .userDataFuncs import userData as UDF
+from django.views.decorators.csrf import csrf_protect
 
 def login_view(request):
     """Handles user login."""
@@ -131,18 +132,35 @@ def dashboard_view(request):
         }) 
  
     return render(request, 'homepage.html', { 
+        'Username': username,
         'user_data': user_data,
         'routine_details': routine_details,
         'dark_mode': darkMode
     })
  
+@csrf_protect
 def settingView(request):
     """Handles setting page"""
-    #placeholder
-    return render(request, 'settings.html')
+    username = request.session['username']
+    userdata = UDF.getUserData(username=username)
+    
+    user_settings = userdata.get('settings', {})
+    darkMode = user_settings['dark_mode']
+
+    if request.method == 'POST':
+        # Update settings based on form data
+        userdata['settings']['2auth'] = '2auth' in request.POST
+        userdata['settings']['dark_mode'] = 'dark_mode' in request.POST
+        userdata['settings']['privacy_settings']['logEmail'] = 'logEmail' in request.POST
+
+    UDF.update_settings(userdata['settings'], username=username)
+    return render(request, 'settings.html', { 
+        'Username': username,
+        'user_data': userdata,
+        'dark_mode': darkMode
+    })
 
 def addRView(request): 
-    """Handles adding the routine"""
-    #placeholder
+
     return render(request, 'routineGenStart.html')
 

@@ -18,7 +18,7 @@ with open(f"{fp.fpPlanData()}\\goals.json",'r') as file:
     goals = json.load(file)
 
 def getExerVid(name:str) -> str:
-    with open(fp.fpVidJson(), 'r') as file:
+    with open(fp.fpVidJson(), 'r') as file: 
         videos = json.load(file)
     return videos[name]
 
