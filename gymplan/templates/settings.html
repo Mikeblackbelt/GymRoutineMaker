@@ -21,7 +21,7 @@
             <h2>User Information</h2>
             <p><strong>Name:</strong> {{ user_data.name }}</p>
             <p><strong>Username:</strong> {{ user_data.username }}</p>
-            <p><strong>Email:</strong> {% if user_data.settings.privacy_settings.logEmail %} {{ user_data.email }} {% else %} Hidden {% endif %}</p>
+            <p><strong>Email:</strong> {% if user_data.settings.privacy_settings.logEmail %} {{ user_data.email }} {% else %}  {{ user_data.email }} (Hidden) {% endif %}</p>
         </section>
 
         <section id="settings-options">
@@ -52,7 +52,7 @@
             </ul>
         </section>
     </main>
-    <a href="{%url 'homepage'}">Back to home</a>
+    <a href="{%url 'dashboard' %}">Back to home</a>
     <footer>
         <p>&copy; 2024 Workout Routine Generator</p>
     </footer>

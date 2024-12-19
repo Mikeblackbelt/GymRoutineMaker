@@ -137,30 +137,40 @@ def dashboard_view(request):
         'routine_details': routine_details,
         'dark_mode': darkMode
     })
- 
+
 @csrf_protect
 def settingView(request):
     """Handles setting page"""
-    username = request.session['username']
-    userdata = UDF.getUserData(username=username)
-    
-    user_settings = userdata.get('settings', {})
-    darkMode = user_settings['dark_mode']
+    username = request.session.get('username')
+    if not username:
+        return redirect('login')
 
+    userdata = UDF.getUserData(username=username)
+    user_settings = userdata.get('settings', {})
+    darkMode = user_settings.get('dark_mode', False)
+    print(f'Dark_Mode: {darkMode}')
     if request.method == 'POST':
-        # Update settings based on form data
+        # Safeguard nested keys
+        userdata['settings']['privacy_settings'] = userdata['settings'].get('privacy_settings', {})
         userdata['settings']['2auth'] = '2auth' in request.POST
         userdata['settings']['dark_mode'] = 'dark_mode' in request.POST
         userdata['settings']['privacy_settings']['logEmail'] = 'logEmail' in request.POST
 
-    UDF.update_settings(userdata['settings'], username=username)
+        print("POST data received:", request.POST)  # Debugging
+        print("User settings before update:", userdata['settings'])  # Debugging
+
+        UDF.update_settings(userdata['settings'], username=username)
+
+        userdata = UDF.getUserData(username=username)
+        darkMode = userdata['settings'].get('dark_mode', False)  # Refresh after POST
+        print("Reloaded user data:", userdata)  # Debugging
+
     return render(request, 'settings.html', { 
         'Username': username,
         'user_data': userdata,
-        'dark_mode': darkMode
+        'dark_mode': darkMode,  # Now reflects the updated value
     })
 
 def addRView(request): 
-
     return render(request, 'routineGenStart.html')
 

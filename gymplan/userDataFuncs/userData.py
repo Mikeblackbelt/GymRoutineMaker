@@ -91,13 +91,15 @@ def update_settings(new_settings: dict, *, id: str = None, name: str = None, use
     else:
         userdata = getUserData(name=name)
     
-    userdata['settings'] = new_settings
+    
     fullUD = _load_users()
     userid = next((key for key, value in fullUD.items() if value == userdata),None) if not id else id
+    userdata['settings'] = new_settings
+  
     fullUD[userid] = userdata
     
     with open(fp.fpUserJson(), "w") as f:
-            json.dump(fullUD, f)
+         json.dump(fullUD, f, indent=2)
     
 
 

@@ -134,7 +134,7 @@ legMuscles =   [
        ['lowerbody','abs','obliques']
 ]
 legConstruct = DayType(legMuscles)
-print(legConstruct.muscles)
+
 upperMuscles = random.choice([pushMuscles+pullMuscles,pullMuscles+pushMuscles])
 upperMuscles.remove(["upperbody", "shoulders", "reardelts"])
 upperMuscles.remove(["upperbody","arms","forearms"])
@@ -155,6 +155,3 @@ fbMuscles = [
 ]
 fbMuscles.remove(['lowerbody','abs','abs'])
 fullConstruct = DayType(fbMuscles)
-
-#print(pushConstruct.generate([5, 5, 6, 3, 4], ['Dumbbell', 'Machine', 'Barbell', 'Bench', 'Incline Bench']))
-print(legConstruct.muscles)
