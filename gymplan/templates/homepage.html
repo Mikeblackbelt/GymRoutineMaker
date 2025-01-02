@@ -19,36 +19,18 @@
             <a href="{% url 'settings' %}">Settings</a>
         </div>
         {% if routine_details %}
-            <div class="routine-list">
-                {% for routine in routine_details %}
-                    <div class="routine-item" onclick="viewRoutine('{{ routine.id }}')">
-                        <p>{{ routine.name }}</p>
-                        <small>ID: {{ routine.id }}</small>
-                        <ul>
-                            {% for day, exercises in routine.details.items %}
-                                <li>
-                                    <strong>{{ day }}:</strong>
-                                    <ul>
-                                        {% for exercise, data in exercises.items %}
-                                            <li>
-                                                <strong>{{ exercise }}</strong> - 
-                                                Sets: {{ data.Sets }}, 
-                                                Reps: {{ data.RepScheme }}
-                                                <br>
-                                                {% if data.VideoLink %}
-                                                <iframe width="100" height="75" src="{{data.VideoLink}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
-                                                {% else %}
-                                                <p>Video unavailable (for now)</p>
-                                                {% endif %}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endfor %}
-            </div>
+        <div class="routine-list">
+            {% for routine in routine_details %}
+                <div class="routine-item" onclick="viewRoutine('{{ routine.id }}')">
+                    <p><strong>{{ routine.name }}</strong></p>
+                    <small>ID: {{ routine.id }}</small>
+                    <p><small>{{ routine.details|length }} days per week</small></p>
+                    <p><small>{{ routine.setsPerDay }} average sets per day</small></p>
+                    <p><small>{{ routine.timePerDay }} minutes per day (estimated) </small></p>
+                  
+                </div>
+            {% endfor %}
+        </div>
         {% else %}
             <p>No routines available. Start by adding a new routine.</p>
         {% endif %}

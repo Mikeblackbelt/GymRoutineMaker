@@ -125,10 +125,18 @@ def dashboard_view(request):
         routine_id = list(routine.keys())[0]
         routine_name = list(routine.values())[0]
         routine_info = routine_data.get(routine_id, {})
+        if routine_info:
+            total_sets = sum(sum(routine_info[day][exercise]["Sets"] for exercise in routine_info[day]) for day in routine_info)
+            daily_est_time = round(4*total_sets/len(routine_info))
+            daily_sets = round(total_sets/len(routine_info))
+
+
         routine_details.append({
             "id": routine_id,
             "name": routine_name,
-            "details": routine_info
+            "details": routine_info,
+            "setsPerDay": daily_sets,
+            'timePerDay': daily_est_time
         }) 
  
     return render(request, 'homepage.html', { 

@@ -1,92 +1,145 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1818; /* Dark background for modern, elegant look */
-    color: #0079eb; /* Primary color for text */
-    line-height: 1.6; /* Improved readability */
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
 }
 
-/* Headings */
-h2 {
+/* Header Styles */
+header {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    color: #ffffff; /* White text for header */
+    padding: 20px;
     text-align: center;
-    color: #15e4ff; /* Vibrant color for attention */
-    font-size: 1.8em; /* Slightly larger heading size */
-    margin-bottom: 20px;
-    text-transform: uppercase; /* Adds emphasis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    
+}
+
+h2 {
+    color: #f3f3f3; /* Brighter text for section headings */
+    border-bottom: 2px solid #303030; /* Subtle underline for separation */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+p, label {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+strong {
+    color: #bb86fc; /* Accent color for important text */
+}
+
+input[type="checkbox"] {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Form Styles */
+form {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Depth for form section */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    accent-color: #03dac6; /* Bright accent for checkboxes */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #03dac6; /* Bright, modern button color */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #018786; /* Darker accent on hover */
+}
+
+/* User Routines */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    color: #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Links */
 a {
-    color: #e000a8; /* Bright and contrasting color */
+    color: #03dac6;
     text-decoration: none;
-    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effects */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #ff2dc4; /* Slightly brighter hover color */
-    text-shadow: 0 2px 4px rgba(255, 45, 196, 0.5); /* Add hover glow */
+    color: #bb86fc; /* Secondary accent color for hover state */
 }
 
-/* Labels */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #ffffff; /* Ensure labels stand out against the dark background */
-    font-size: 1em;
-}
-
-/* Buttons */
-button {
-    width: 100%;
-    padding: 12px; /* Increased padding for better usability */
-    background-color: #002d5e; /* Strong blue tone */
-    color: #ffffff; /* Text color improved for contrast */
-    border: none;
-    border-radius: 6px; /* Slightly more rounded corners for modern design */
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
-}
-
-button:hover {
-    background-color: #30567e; /* Lighter blue for hover state */
-    transform: translateY(-2px); /* Subtle lift effect */
-}
-
-/* Error Messages */
-.error {
-    color: #910000; /* Strong red for error visibility */
-    font-size: 0.95em; /* Slightly larger for emphasis */
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
     text-align: center;
-    background-color: #2a1a1a; /* Subtle background highlight for errors */
-    padding: 5px;
-    border-radius: 4px;
-    margin: 10px auto;
-    max-width: 400px;
+    border-top: 1px solid #303030;
 }
 
-/* Paragraphs */
-p {
-    text-align: center;
-    font-size: 1em; /* Standardized font size */
-    color: #d4d4d4; /* Softer text color for paragraphs */
-    margin: 10px 0;
-}
-
-/* Links Inside Paragraphs */
-p a {
-    font-weight: bold;
-    color: #15e4ff; /* Link color consistent with headings */
+/* Back to Home Link */
+#rhome {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #03dac6;
+    color: #121212;
+    border-radius: 5px;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-p a:hover {
-    color: #18ffff; /* Bright hover effect for emphasis */
-    text-decoration: underline;
+#rhome:hover {
+    background-color: #018786;
+    transform: translateY(-3px);
 }
+
+.setting {
+    text-align: center;
+    align-self: center;
+}
+

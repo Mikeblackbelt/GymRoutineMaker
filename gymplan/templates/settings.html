@@ -26,7 +26,7 @@
 
         <section id="settings-options">
             <h2>Account Settings</h2>
-            <form action="{% url 'settings' %}" method="POST">
+            <form action="{% url 'settings' %}" method="POST" class="setting">
                 {% csrf_token %}
                 <label for="2auth">Enable Two-Factor Authentication:</label>
                 <input type="checkbox" id="2auth" name="2auth" {% if user_data.settings.2auth %}checked{% endif %}><br>
@@ -52,7 +52,7 @@
             </ul>
         </section>
     </main>
-    <a href="{%url 'dashboard' %}">Back to home</a>
+    <a id="rhome" href="{%url 'dashboard' %}">Back to home</a>
     <footer>
         <p>&copy; 2024 Workout Routine Generator</p>
     </footer>
