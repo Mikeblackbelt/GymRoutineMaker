@@ -7,6 +7,11 @@ from .utility import filePaths as fp
 from .userDataFuncs import userData as UDF
 from django.views.decorators.csrf import csrf_protect
 
+
+def getGoals():
+    with open(r"C:\Users\mike.mat\Desktop\GymRoutineMaker\gymplan\planning\data\goals.json",'r') as f:
+        return json.load(f)
+
 def login_view(request):
     """Handles user login."""
     if request.method == "POST":
@@ -115,7 +120,7 @@ def dashboard_view(request):
     darkMode = user_settings['dark_mode']
 
     routines = user_data.get("routines", [])
-    print(routines)
+    #print(routines)
     routine_details = [] 
 
     with open(fp.fpRoutineJson(), 'r') as file:
@@ -180,5 +185,19 @@ def settingView(request):
     })
 
 def addRView(request): 
-    return render(request, 'routineGenStart.html')
+    username = request.session.get('username')
+    
+    if not username:
+        return redirect('login')
+
+    userdata = UDF.getUserData(username=username)
+    user_settings = userdata.get('settings', {})
+    darkMode = user_settings.get('dark_mode', False)
+
+    return render(request, 'routineGenStart.html', {
+        'Username': username,
+        'user_data': userdata,
+        'dark_mode': darkMode,  # Now reflects the updated value,
+        'goals': getGoals(),
+    })
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    {% if dark_mode %}
+    <link rel="stylesheet" href="{% static 'routineGen_darkMode.css' %}">
+    {% else %}
+    <link rel="stylesheet" href="{% static 'routineGen_lightMode.css' %}">
+    {% endif %}
+    
+</head>
+<body>
+    <h1>Choose Your Goal</h1>
+
+    {% for key, goal in goals.items %}
+    <button class="goal-button" type="button">
+        {{ goal.Type }}
+        <span>{{ goal.Description }}</span>
+    </button>
+    {% endfor %}
+
+</body>

@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    padding: 20px;
+    background-color:  #0c0e38;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.goal-button {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #00975d;
+    background-color: #004085;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.goal-button:hover {
+    background-color: #1601d4;
+}
+
+.goal-button span {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #8f0088;
+    color: #00aeff9f;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    white-space: normal;
+    font-size: 0.9rem;
+}
+
+.goal-button:hover span {
+    display: block;
+}
