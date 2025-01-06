@@ -1,48 +1,93 @@
 body {
     text-align: center;
     padding: 20px;
-    background-color:  #0c0e38;
+    background: linear-gradient(135deg, #0c0e38, #34264f, #502e6e);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h1 {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
+    background: linear-gradient(135deg, #252850, #010202);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: #29ffa3;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.header a:hover {
+    color: #00ffea;
+    transform: scale(1.1);
 }
 
 .goal-button {
     display: block;
-    width: 300px;
-    margin: 10px auto;
+    width: 320px;
+    margin: 20px auto;
     padding: 15px;
-    font-size: 1.2rem;
-    color: #00975d;
-    background-color: #004085;
+    font-size: 1.3rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a00ff, #00b3ff);
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     text-align: left;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease, transform 0.2s ease;
     position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .goal-button:hover {
-    background-color: #1601d4;
+    background: linear-gradient(135deg, #8a2cff, #33ccff);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .goal-button span {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     width: 100%;
-    background-color: #8f0088;
-    color: #00aeff9f;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     z-index: 10;
     white-space: normal;
     font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .goal-button:hover span {
     display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

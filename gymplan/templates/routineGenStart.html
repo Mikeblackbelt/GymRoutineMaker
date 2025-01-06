@@ -13,7 +13,10 @@
     
 </head>
 <body>
-    <h1>Choose Your Goal</h1>
+    <div class="header">
+        <h1>Choose Your Goal</h1>
+        <a href="{% url 'dashboard' %}">Back</a>
+    </div>
 
     {% for key, goal in goals.items %}
     <button class="goal-button" type="button">
@@ -21,5 +24,5 @@
         <span>{{ goal.Description }}</span>
     </button>
     {% endfor %}
-
+   
 </body>
