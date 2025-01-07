@@ -12,6 +12,38 @@ h1 {
     color: #343a40;
 }
 
+.header a {
+    text-decoration: none;
+    color: #0f7e00;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color:rgb(0, 137, 228);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #000ba1, #005858);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header a:hover {
+    color: #8f008f;
+    transform: scale(1.1);
+}
+
 .goal-button {
     display: block;
     width: 300px;
@@ -54,7 +86,7 @@ h1 {
 .goal-button:hover span {
     display: block;
     animation: fadeIn 0.3s ease;
-    float: right;
+    translate: 300px -50px 0px;
 }
 
 @keyframes fadeIn {

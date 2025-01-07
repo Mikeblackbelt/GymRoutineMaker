@@ -184,9 +184,8 @@ def settingView(request):
         'dark_mode': darkMode,  # Now reflects the updated value
     })
 
-def addRView(request): 
+def addRView(request):
     username = request.session.get('username')
-    
     if not username:
         return redirect('login')
 
@@ -194,10 +193,43 @@ def addRView(request):
     user_settings = userdata.get('settings', {})
     darkMode = user_settings.get('dark_mode', False)
 
+    if request.method == 'POST':
+        selected_goal = request.POST.get('goal')
+        if not selected_goal:
+            return render(request, 'routineGenStart.html', {
+                'Username': username,
+                'user_data': userdata,
+                'dark_mode': darkMode,
+                'goals': getGoals(),
+                'error': 'Please select a goal.',
+            })
+        return redirect('routine_gen_main', selected_goal=selected_goal)
+
     return render(request, 'routineGenStart.html', {
         'Username': username,
         'user_data': userdata,
-        'dark_mode': darkMode,  # Now reflects the updated value,
+        'dark_mode': darkMode,
         'goals': getGoals(),
+    })
+
+def rgm_View(request, selected_goal):
+    username = request.session.get('username')
+    if not username:
+        return redirect('login')
+
+    userdata = UDF.getUserData(username=username)
+    user_settings = userdata.get('settings', {})
+    darkMode = user_settings.get('dark_mode', False)
+
+    goals = getGoals()
+    selected_goal_data = goals.get(selected_goal, {})
+    available_days = selected_goal_data.get('Day_Options', range(2,6))  # Default options
+
+    return render(request, 'routineGenMain.html', {
+        'Username': username,
+        'user_data': userdata,
+        'dark_mode': darkMode,
+        'selected_goal': selected_goal,
+        'available_days': available_days,
     })
 

@@ -81,6 +81,7 @@ body {
 .goal-button:hover span {
     display: block;
     animation: fadeIn 0.3s ease;
+    translate: 300px -50px 0px;
 }
 
 @keyframes fadeIn {

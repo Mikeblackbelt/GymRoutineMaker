@@ -4,7 +4,7 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Routine Generator - Choose your goal</title>
     {% if dark_mode %}
     <link rel="stylesheet" href="{% static 'routineGen_darkMode.css' %}">
     {% else %}
@@ -19,10 +19,10 @@
     </div>
 
     {% for key, goal in goals.items %}
-    <button class="goal-button" type="button">
+    <button class="goal-button" id="{{goal.Type}}" type="button">
         {{ goal.Type }}
         <span>{{ goal.Description }}</span>
     </button>
     {% endfor %}
-   
+ 
 </body>

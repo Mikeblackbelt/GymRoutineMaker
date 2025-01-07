@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Generator - Enter Details</title>
+    {% if dark_mode %}
+    <link rel="stylesheet" href="{% static 'routineGen_darkMode.css' %}">
+    {% else %}
+    <link rel="stylesheet" href="{% static 'routineGen_lightMode.css' %}">
+    {% endif %}
+</head>
+<body>
+    <div class="header">
+        <h1>Enter Your Preferences</h1>
+        <a href="{% url 'routine_gen_start' %}">Back</a>
+    </div>
+
+    <form method="post" action="{% url 'generate_routine' %}">
+        {% csrf_token %}
+        <input type="hidden" name="goal" value="{{ selected_goal }}">
+
+        <label for="timePerDay">Time Per Day (Minutes):</label>
+        <input type="number" step="1" id="timePerDay" name="timePerDay" required>
+
+        <label>Days Per Week:</label>
+        <div id="days-per-week">
+            {% for day in available_days %}
+            <button type="button" class="day-button" data-value="{{ day }}">{{ day }}</button>
+            {% endfor %}
+        </div>
+        <input type="hidden" id="daysPerWeek" name="daysPerWeek" required>
+
+        <label for="equipmentPresent">Available Equipment (comma-separated):</label>
+        <input type="text" id="equipmentPresent" name="equipmentPresent" required>
+
+        <button type="submit">Generate Routine</button>
+    </form>
+
+    <script>
+        // Handle day selection buttons
+        const dayButtons = document.querySelectorAll('.day-button');
+        const daysPerWeekInput = document.getElementById('daysPerWeek');
+
+        dayButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                daysPerWeekInput.value = button.getAttribute('data-value');
+                dayButtons.forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+            });
+        });
+    </script>
+    <style>
+        .day-button { margin: 5px; padding: 10px; cursor: pointer; }
+        .day-button.selected { background-color: #4caf50; color: white; }
+    </style>
+</body>
+</html>
