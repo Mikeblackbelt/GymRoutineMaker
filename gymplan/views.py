@@ -188,11 +188,12 @@ def addRView(request):
     username = request.session.get('username')
     if not username:
         return redirect('login')
-
+    
     userdata = UDF.getUserData(username=username)
     user_settings = userdata.get('settings', {})
     darkMode = user_settings.get('dark_mode', False)
 
+    request.session['goal'] = None
     if request.method == 'POST':
         selected_goal = request.POST.get('goal')
         if not selected_goal:
@@ -212,7 +213,7 @@ def addRView(request):
         'goals': getGoals(),
     })
 
-def rgm_View(request, selected_goal):
+def rgm_View(request, goal_key):
     username = request.session.get('username')
     if not username:
         return redirect('login')
@@ -222,7 +223,7 @@ def rgm_View(request, selected_goal):
     darkMode = user_settings.get('dark_mode', False)
 
     goals = getGoals()
-    selected_goal_data = goals.get(selected_goal, {})
+    selected_goal_data = goals.get(selected_goal, {}) 
     available_days = selected_goal_data.get('Day_Options', range(2,6))  # Default options
 
     return render(request, 'routineGenMain.html', {

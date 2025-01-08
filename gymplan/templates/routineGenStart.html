@@ -24,5 +24,15 @@
         <span>{{ goal.Description }}</span>
     </button>
     {% endfor %}
- 
+
+    <script>
+
+        const goalButtons = document.querySelectorAll('.goal-button');
+        goalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const goalKey = button.getAttribute('id').replace(' ', '-').replace('/','-');
+                window.location.href = `/dashboard/add_routine/routineConfig/${goalKey}/`;
+            });
+        });
+    </script>
 </body>
