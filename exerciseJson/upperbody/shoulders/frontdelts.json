@@ -44,7 +44,7 @@
                 }
             },
             "Cable Front Raise": {
-                "Equipment": ["Cable Machine"],
+                "Equipment": ["Cable"],
                 "MuscleGroups": {
                     "frontdelts": 1.0,
                     "sideDelts": 0.3

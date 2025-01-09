@@ -26,12 +26,11 @@
     {% endfor %}
 
     <script>
-
         const goalButtons = document.querySelectorAll('.goal-button');
         goalButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const goalKey = button.getAttribute('id').replace(' ', '-').replace('/','-');
-                window.location.href = `/dashboard/add_routine/routineConfig/${goalKey}/`;
+                window.location.href = "{% url 'routine_gen' 'PLACEHOLDER' %}".replace('PLACEHOLDER', goalKey);
             });
         });
     </script>

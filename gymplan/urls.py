@@ -1,15 +1,17 @@
 from django.urls import path
-from . import views
+from .views import loginViews, mainViews, routineViews
 
 urlpatterns = [
-    path('login/', views.login_view, name='login'),
-    path('dashboard/', views.dashboard_view, name='dashboard'), 
-    path("signup/", views.signup_view, name="signup"),
-    path('emailVerify/',views.emailVerify_view, name='emailVerify'),
-    path('settings/', views.settingView, name='settings'),
-    path('dashboard/add_routine/', views.addRView, name='add_routine'),
-    path('dashboard/add_routine/routineConfig/<str:goal_key>/', views.rgm_View, name='routine_gen'),
-    path('', views.login_view, name='root'), 
+    path('login/', loginViews.login_view, name='login'),
+    path('dashboard/', mainViews.dashboard_view, name='dashboard'), 
+    path("signup/", loginViews.signup_view, name="signup"),
+    path('emailVerify/',loginViews.emailVerify_view, name='emailVerify'),
+    path('settings/', mainViews.settingView, name='settings'),
+    path('dashboard/add_routine/', routineViews.addRView, name='add_routine'),
+    path('dashboard/add_routine/routineConfig/<str:goal_key>/', routineViews.rgm_View, name='routine_gen'), #http://127.0.0.1:8000/dashboard/add_routine/routineConfig/Fitness-General-Health/
+    path('dashboard/viewRoutine/<str:routineID>/', routineViews.viewRoutine, name='routine_view'),
+    path('', loginViews.login_view, name='root'), 
 ]
 
+ 
  

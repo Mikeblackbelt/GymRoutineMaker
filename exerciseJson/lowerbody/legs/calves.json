@@ -17,7 +17,7 @@
                 }
             },
             "Smith Machine Calf Raise": {
-                "Equipment": ["Smith Machine"],
+                "Equipment": ["Machine"],
                 "MuscleGroups": {
                     "calves": 1.0
                 }

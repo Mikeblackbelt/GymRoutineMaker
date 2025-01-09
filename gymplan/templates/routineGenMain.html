@@ -14,15 +14,15 @@
 <body>
     <div class="header">
         <h1>Enter Your Preferences</h1>
-        <a href="{% url 'routine_gen_start' %}">Back</a>
+        <a href="{% url 'dashboard' %}">Back to home</a>
     </div>
 
-    <form method="post" action="{% url 'generate_routine' %}">
+    <form method="post" action="{% url 'routine_view' 'PLACEHOLDER' %}">
         {% csrf_token %}
         <input type="hidden" name="goal" value="{{ selected_goal }}">
 
         <label for="timePerDay">Time Per Day (Minutes):</label>
-        <input type="number" step="1" id="timePerDay" name="timePerDay" required>
+        <input type="number" step="1" id="timePerDay" name="timePerDay" required min="10" max="240">
 
         <label>Days Per Week:</label>
         <div id="days-per-week">
@@ -32,9 +32,21 @@
         </div>
         <input type="hidden" id="daysPerWeek" name="daysPerWeek" required>
 
-        <label for="equipmentPresent">Available Equipment (comma-separated):</label>
-        <input type="text" id="equipmentPresent" name="equipmentPresent" required>
-
+        <label for="equipmentPresent">Available Equipment :</label>
+        <div class="equipmentPresent">
+            <input type="checkbox" id="Barbell" name="Barbell">
+            <input type="checkbox" id="Dumbbell" name="Dumbbell">
+            <input type="checkbox" id="Bench" name="Bench">
+            <input type="checkbox" id="Machine" name="Machine">
+            <input type="checkbox" id="Cable" name="Cable">
+            <input type="checkbox" id="Dumbbell" name="Dumbbell">
+            <input type="checkbox" id="Decline Bench" name="Decline Bench">
+            <input type="checkbox" id="Incline Bench" name="Incline Bench">
+            <input type="checkbox" id="Dip Station" name = 'Dip Station'>
+            <input type="checkbox" id="Pull-up Bar" name="Pull-up Bar">
+            <input type="checkbox" id="Ab Wheel" name="Ab Wheel">
+        </div>
+        
         <button type="submit">Generate Routine</button>
     </form>
 

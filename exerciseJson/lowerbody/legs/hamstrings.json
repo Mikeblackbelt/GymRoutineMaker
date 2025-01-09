@@ -62,7 +62,7 @@
                 }
             },
             "Nordic Curl": {
-                "Equipment": ["Bodyweight"],
+                "Equipment": [],
                 "MuscleGroups": {
                     "hamstrings": 1.0
                 }
