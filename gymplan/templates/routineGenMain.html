@@ -10,43 +10,46 @@
     {% else %}
     <link rel="stylesheet" href="{% static 'routineGen_lightMode.css' %}">
     {% endif %}
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="header">
         <h1>Enter Your Preferences</h1>
         <a href="{% url 'dashboard' %}">Back to home</a>
     </div>
+    <br>
 
     <form method="post" action="{% url 'routine_view' 'PLACEHOLDER' %}">
         {% csrf_token %}
         <input type="hidden" name="goal" value="{{ selected_goal }}">
 
         <label for="timePerDay">Time Per Day (Minutes):</label>
-        <input type="number" step="1" id="timePerDay" name="timePerDay" required min="10" max="240">
-
-        <label>Days Per Week:</label>
+        <input type="number" step="1" id="timePerDay" name="timePerDay" required min="10" max="240"><br>
+        <br>
+        <label>Days Per Week:</label><br>
         <div id="days-per-week">
             {% for day in available_days %}
             <button type="button" class="day-button" data-value="{{ day }}">{{ day }}</button>
             {% endfor %}
-        </div>
+        </div> <br>
         <input type="hidden" id="daysPerWeek" name="daysPerWeek" required>
 
-        <label for="equipmentPresent">Available Equipment :</label>
+        <label for="equipmentPresent">Available Equipment:</label> <br>
         <div class="equipmentPresent">
-            <input type="checkbox" id="Barbell" name="Barbell">
-            <input type="checkbox" id="Dumbbell" name="Dumbbell">
-            <input type="checkbox" id="Bench" name="Bench">
-            <input type="checkbox" id="Machine" name="Machine">
-            <input type="checkbox" id="Cable" name="Cable">
-            <input type="checkbox" id="Dumbbell" name="Dumbbell">
-            <input type="checkbox" id="Decline Bench" name="Decline Bench">
-            <input type="checkbox" id="Incline Bench" name="Incline Bench">
-            <input type="checkbox" id="Dip Station" name = 'Dip Station'>
-            <input type="checkbox" id="Pull-up Bar" name="Pull-up Bar">
-            <input type="checkbox" id="Ab Wheel" name="Ab Wheel">
+            <label><input type="checkbox" id="Barbell" name="Barbell"> Barbell</label><br>
+            <label><input type="checkbox" id="Dumbbell" name="Dumbbell"> Dumbbell</label><br>
+            <label><input type="checkbox" id="Bench" name="Bench"> Bench</label><br>
+            <label><input type="checkbox" id="Machine" name="Machine"> Machine</label><br>
+            <label><input type="checkbox" id="Cable" name="Cable"> Cable</label><br>
+            <label><input type="checkbox" id="Decline Bench" name="Decline Bench"> Decline Bench</label><br>
+            <label><input type="checkbox" id="Incline Bench" name="Incline Bench"> Incline Bench</label><br>
+            <label><input type="checkbox" id="Dip Station" name="Dip Station"> Dip Station</label><br>
+            <label><input type="checkbox" id="Pull-up Bar" name="Pull-up Bar"> Pull-up Bar</label><br>
+            <label><input type="checkbox" id="Ab Wheel" name="Ab Wheel"> Ab Wheel</label><br>
         </div>
-        
+        <br>
         <button type="submit">Generate Routine</button>
     </form>
 
@@ -63,9 +66,5 @@
             });
         });
     </script>
-    <style>
-        .day-button { margin: 5px; padding: 10px; cursor: pointer; }
-        .day-button.selected { background-color: #4caf50; color: white; }
-    </style>
 </body>
 </html>

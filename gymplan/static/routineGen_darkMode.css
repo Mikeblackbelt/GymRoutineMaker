@@ -92,3 +92,42 @@ body {
         opacity: 1;
     }
 }
+
+.day-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    background: white;
+    color: #007BFF;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.day-button.selected {
+    background: #007BFF;
+    color: white;
+}
+
+.day-button:hover {
+    background: #e7f3ff;
+}
+
+/* Equipment checkbox styling */
+.equipmentPresent label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    accent-color: #58a6ff; 
+    transform: scale(1.2);
+    margin: 5px auto;
+}
+
+label {
+    font-size: 1.2rem;
+}
