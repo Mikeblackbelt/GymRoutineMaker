@@ -62,6 +62,8 @@ def rgm_View(request, goal_key):
         'available_days': available_days,
     })
 
-def viewRoutine(request, routineID):
-    return 
-    
+def genRoutine(request):
+    pass
+
+def viewRoutine(request, goal_key):
+    pass

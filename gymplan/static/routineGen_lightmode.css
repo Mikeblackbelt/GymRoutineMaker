@@ -14,7 +14,7 @@ h1 {
 
 .header a {
     text-decoration: none;
-    color: #0f7e00;
+    color: #f102be;
     font-size: 1rem;
     font-weight: bold;
     transition: color 0.3s, transform 0.2s;
@@ -23,7 +23,7 @@ h1 {
 .header h1 {
     margin: 0;
     font-size: 2rem;
-    color:rgb(0, 137, 228);
+    color:#11ffcb;
 }
 
 .header {
@@ -96,4 +96,56 @@ h1 {
     to {
         opacity: 1;
     }
+}
+
+.day-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 8px;
+    border: 2px solid #007BFF;
+    background: white;
+    color: #007BFF;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.day-button.selected {
+    background: #007BFF;
+    color: white;
+}
+
+.day-button:hover {
+    background: #e7f3ff;
+}
+
+/* Equipment checkbox styling */
+.equipmentPresent label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    accent-color: #58a6ff; 
+    transform: scale(1.2);
+    margin: 5px auto;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #0081eb; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
