@@ -3,9 +3,9 @@ import sys
 import os
 import random
 import math
-import days
+from gymplan.planning import days
 import typing
-import backupfp as b
+from gymplan.planning import backupfp as b
 sys.path.append(os.path.abspath(b.main()))
 
 import gymplan.utility.filePaths as fp

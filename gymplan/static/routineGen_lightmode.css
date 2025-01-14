@@ -149,3 +149,9 @@ button[type="submit"] {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.error {
+    color: #7a0000;
+    background: #e0fbff;
+    border: 3px solid #000000;
+}

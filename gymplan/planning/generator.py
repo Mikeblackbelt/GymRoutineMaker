@@ -4,9 +4,9 @@ import asyncio
 import sys
 import os
 import random
-import days
-import powerliftingRoutine as plr
-import backupfp as b
+from gymplan.planning import days
+from gymplan.planning import powerliftingRoutine as plr
+from gymplan.planning import backupfp as b
 import time
 import uuid
 
@@ -31,16 +31,16 @@ async def getMGroupExercises(section: str, group: str, subgroup: str) -> dict:
 async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentPresent: list[str],*, estTimePerSet: float = 4, priorityMuscles: list = None):
     if goal not in goals:
         mj.logToFile('planlogs.txt',f'\nerror, {goal} (input) not in {goals} (valid inputs)\n')
-        raise KeyError('Goal not an existing goal, please update goals.json or try a different goal.')
+        raise KeyError(f'Goal {goal} not an existing goal, please update goals.json or try a different goal.')
     elif daysPerWeek not in goals[goal]["Day_Options"]:
-        mj.logToFile(f'\nerror, {goal} has {goals[goal]["Day_Options"]} as valid day options whereas {daysPerWeek} was inputted\n')
-        raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]['Day_Options']}")
+        mj.logToFile('planlogs.txt', f'\nerror, {goal} has {goals[goal]["Day_Options"]} as valid day options whereas {daysPerWeek} was inputted\n')
+        raise KeyError(f"Invalid number of days, daysPerWeek must be in {goals[goal]['Day_Options']}, ({daysPerWeek} input)")
 
     if goal == 'A' and priorityMuscles is None:
         mj.logToFile('planlogs.txt','\nprioritymuscles updated due to goal type\n')
         priorityMuscles = ['Hamstrings', 'Calves', 'Quads', 'Glutes']
     
-    if goal in ['B', 'M', 'H', 'A']:
+    if goal in ['B', 'M', 'F', 'A']:
         match daysPerWeek:
             case 2 | 3:
                 split = 'FB'

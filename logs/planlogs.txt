@@ -2439,3 +2439,444 @@ Available isolation exercises for ['lowerbody', 'abs', 'obliques']: ['Dumbbell S
 Selected isolation exercise: Dumbbell Side Bend with 2 sets
 Final exercise list: [{'Squat': 3}, {'Dumbbell Single Leg Romanian Deadlift': 3}, {'Step-Up': 4}, {'Single Leg Calf Raise': 4}, {'V-Up': 3}, {'Dumbbell Side Bend': 2}]
 PPL Cycle 2 generated succesfully
+
+<gymplan.planning.days.DayType object at 0x000002B2DAC70350> initated
+
+<gymplan.planning.days.DayType object at 0x000002B2DAC70A10> initated
+
+<gymplan.planning.days.DayType object at 0x000002B2DAC70050> initated
+
+<gymplan.planning.days.DayType object at 0x000002B2DAC70FD0> initated
+
+<gymplan.planning.days.DayType object at 0x000002B2DAC70ED0> initated
+
+<gymplan.planning.days.DayType object at 0x000002D796B12690> initated
+
+<gymplan.planning.days.DayType object at 0x000002D796B12710> initated
+
+<gymplan.planning.days.DayType object at 0x000002D796B12790> initated
+
+<gymplan.planning.days.DayType object at 0x000002D796B127D0> initated
+
+<gymplan.planning.days.DayType object at 0x000002D796B12950> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002D796B12AD0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002D796B12B10> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002D796B12C10> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000002D796B12C50> initated
+
+<gymplan.planning.days.DayType object at 0x00000143BB7C2650> initated
+
+<gymplan.planning.days.DayType object at 0x00000143BB7C26D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000143BB7C2750> initated
+
+<gymplan.planning.days.DayType object at 0x00000143BB7C2790> initated
+
+<gymplan.planning.days.DayType object at 0x00000143BB7C2910> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000143BB7C3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000143BB7C3150> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000143BB7C3210> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x00000143BB7C3250> initated
+
+<gymplan.planning.days.DayType object at 0x0000025ADD1A2650> initated
+
+<gymplan.planning.days.DayType object at 0x0000025ADD1A26D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000025ADD1A2750> initated
+
+<gymplan.planning.days.DayType object at 0x0000025ADD1A2790> initated
+
+<gymplan.planning.days.DayType object at 0x0000025ADD1A2910> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000025ADD1A3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000025ADD1A3150> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000025ADD1A3210> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000025ADD1A3250> initated
+
+<gymplan.planning.days.DayType object at 0x000001FE1A3A2510> initated
+
+<gymplan.planning.days.DayType object at 0x000001FE1A3A2590> initated
+
+<gymplan.planning.days.DayType object at 0x000001FE1A3A2610> initated
+
+<gymplan.planning.days.DayType object at 0x000001FE1A3A2650> initated
+
+<gymplan.planning.days.DayType object at 0x000001FE1A3A27D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FE1A3A3010> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FE1A3A3050> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FE1A3A3110> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001FE1A3A3150> initated
+
+<gymplan.planning.days.DayType object at 0x000002C513602510> initated
+
+<gymplan.planning.days.DayType object at 0x000002C513602590> initated
+
+<gymplan.planning.days.DayType object at 0x000002C513602610> initated
+
+<gymplan.planning.days.DayType object at 0x000002C513602650> initated
+
+<gymplan.planning.days.DayType object at 0x000002C5136027D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002C513603010> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002C513603050> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002C513603110> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000002C513603150> initated
+
+<gymplan.planning.days.DayType object at 0x000001D0B81A2610> initated
+
+<gymplan.planning.days.DayType object at 0x000001D0B81A2690> initated
+
+<gymplan.planning.days.DayType object at 0x000001D0B81A2710> initated
+
+<gymplan.planning.days.DayType object at 0x000001D0B81A2750> initated
+
+<gymplan.planning.days.DayType object at 0x000001D0B81A28D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001D0B81A30D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001D0B81A3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001D0B81A31D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001D0B81A3210> initated
+
+<gymplan.planning.days.DayType object at 0x000001CD88D52550> initated
+
+<gymplan.planning.days.DayType object at 0x000001CD88D525D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001CD88D52650> initated
+
+<gymplan.planning.days.DayType object at 0x000001CD88D52690> initated
+
+<gymplan.planning.days.DayType object at 0x000001CD88D52810> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001CD88D53050> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001CD88D53090> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001CD88D53150> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001CD88D53190> initated
+
+<gymplan.planning.days.DayType object at 0x0000020A94CC24D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000020A94CC2550> initated
+
+<gymplan.planning.days.DayType object at 0x0000020A94CC25D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000020A94CC2610> initated
+
+<gymplan.planning.days.DayType object at 0x0000020A94CC2790> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000020A94CC2FD0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000020A94CC3010> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000020A94CC30D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000020A94CC3110> initated
+
+<gymplan.planning.days.DayType object at 0x0000021BB42924D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000021BB4292550> initated
+
+<gymplan.planning.days.DayType object at 0x0000021BB42925D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000021BB4292610> initated
+
+<gymplan.planning.days.DayType object at 0x0000021BB4292790> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000021BB4292FD0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000021BB4293010> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000021BB42930D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000021BB4293110> initated
+
+error, Powerlifting (input) not in {'B': {'Type': 'Bodybuilding', 'Description': 'Lose fat whilst maintaining muscle OR Build Muscle whilst gaining weight (cardio and nutrition should be focused on separately)', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 180}, 'P': {'Type': 'Powerlifting', 'Description': 'Gain strength in the 3 powerlifts (squat, bench press, deadlift) whilst not focusing on any changes in body composition.', 'Day_Options': [3, 4, 6], 'Est_Weekly_MinTime': 180}, 'F': {'Type': 'Fitness/General Health', 'Description': 'Enhance overall health via weightlifting (cardio should be incorporated separately)', 'Day_Options': [2, 3, 4, 5], 'Est_Weekly_MinTime': 120}, 'A': {'Type': 'Athleticism', 'Description': 'Focus on sport-specific training to improve performance in a particular sport. Actual training for the given sport should be designed by your coach.', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 90}, 'M': {'Type': 'Maintence', 'Description': 'Maintaining muscle whilst not in a calorie defecit', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 60}} (valid inputs)
+
+<gymplan.planning.days.DayType object at 0x0000025559792390> initated
+
+<gymplan.planning.days.DayType object at 0x0000025559792410> initated
+
+<gymplan.planning.days.DayType object at 0x0000025559792490> initated
+
+<gymplan.planning.days.DayType object at 0x00000255597924D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000255597927D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000255597932D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000025559793310> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000025559793450> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000025559793490> initated
+
+error, Powerlifting (input) not in {'B': {'Type': 'Bodybuilding', 'Description': 'Lose fat whilst maintaining muscle OR Build Muscle whilst gaining weight (cardio and nutrition should be focused on separately)', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 180}, 'P': {'Type': 'Powerlifting', 'Description': 'Gain strength in the 3 powerlifts (squat, bench press, deadlift) whilst not focusing on any changes in body composition.', 'Day_Options': [3, 4, 6], 'Est_Weekly_MinTime': 180}, 'F': {'Type': 'Fitness/General Health', 'Description': 'Enhance overall health via weightlifting (cardio should be incorporated separately)', 'Day_Options': [2, 3, 4, 5], 'Est_Weekly_MinTime': 120}, 'A': {'Type': 'Athleticism', 'Description': 'Focus on sport-specific training to improve performance in a particular sport. Actual training for the given sport should be designed by your coach.', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 90}, 'M': {'Type': 'Maintence', 'Description': 'Maintaining muscle whilst not in a calorie defecit', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 60}} (valid inputs)
+
+<gymplan.planning.days.DayType object at 0x000002261E7F2390> initated
+
+<gymplan.planning.days.DayType object at 0x000002261E7F2410> initated
+
+<gymplan.planning.days.DayType object at 0x000002261E7F2490> initated
+
+<gymplan.planning.days.DayType object at 0x000002261E7F24D0> initated
+
+<gymplan.planning.days.DayType object at 0x000002261E7F27D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002261E7F32D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002261E7F3310> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002261E7F3450> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000002261E7F3490> initated
+
+error, Fitness-General-Health (input) not in {'B': {'Type': 'Bodybuilding', 'Description': 'Lose fat whilst maintaining muscle OR Build Muscle whilst gaining weight (cardio and nutrition should be focused on separately)', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 180}, 'P': {'Type': 'Powerlifting', 'Description': 'Gain strength in the 3 powerlifts (squat, bench press, deadlift) whilst not focusing on any changes in body composition.', 'Day_Options': [3, 4, 6], 'Est_Weekly_MinTime': 180}, 'F': {'Type': 'Fitness/General Health', 'Description': 'Enhance overall health via weightlifting (cardio should be incorporated separately)', 'Day_Options': [2, 3, 4, 5], 'Est_Weekly_MinTime': 120}, 'A': {'Type': 'Athleticism', 'Description': 'Focus on sport-specific training to improve performance in a particular sport. Actual training for the given sport should be designed by your coach.', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 90}, 'M': {'Type': 'Maintence', 'Description': 'Maintaining muscle whilst not in a calorie defecit', 'Day_Options': [2, 3, 4, 5, 6], 'Est_Weekly_MinTime': 60}} (valid inputs)
+
+<gymplan.planning.days.DayType object at 0x0000019EB79A2650> initated
+
+<gymplan.planning.days.DayType object at 0x0000019EB79A26D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000019EB79A2750> initated
+
+<gymplan.planning.days.DayType object at 0x0000019EB79A2790> initated
+
+<gymplan.planning.days.DayType object at 0x0000019EB79A2910> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000019EB79A3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000019EB79A3150> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000019EB79A3210> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000019EB79A3250> initated
+
+<gymplan.planning.days.DayType object at 0x000001637B5061D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001637B506310> initated
+
+<gymplan.planning.days.DayType object at 0x000001637B506390> initated
+
+<gymplan.planning.days.DayType object at 0x000001637B5063D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001637B5066D0> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001637B507210> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001637B507250> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001637B507390> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001637B5073D0> initated
+
+error, P has [3, 4, 6] as valid day options whereas 3 was inputted
+
+<gymplan.planning.days.DayType object at 0x00000227B64C6210> initated
+
+<gymplan.planning.days.DayType object at 0x00000227B64C6350> initated
+
+<gymplan.planning.days.DayType object at 0x00000227B64C63D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000227B64C6410> initated
+
+<gymplan.planning.days.DayType object at 0x00000227B64C6710> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000227B64C7250> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000227B64C7290> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000227B64C73D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x00000227B64C7410> initated
+
+<gymplan.planning.days.DayType object at 0x0000017DEB626210> initated
+
+<gymplan.planning.days.DayType object at 0x0000017DEB626350> initated
+
+<gymplan.planning.days.DayType object at 0x0000017DEB6263D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000017DEB626410> initated
+
+<gymplan.planning.days.DayType object at 0x0000017DEB626710> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000017DEB627250> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000017DEB627290> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000017DEB6273D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000017DEB627410> initated
+
+<gymplan.planning.days.DayType object at 0x000002389DDB2250> initated
+
+<gymplan.planning.days.DayType object at 0x000002389DDB2390> initated
+
+<gymplan.planning.days.DayType object at 0x000002389DDB2410> initated
+
+<gymplan.planning.days.DayType object at 0x000002389DDB2450> initated
+
+<gymplan.planning.days.DayType object at 0x000002389DDB2750> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002389DDB3290> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002389DDB32D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002389DDB3410> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000002389DDB3450> initated
+
+<gymplan.planning.days.DayType object at 0x000001B7BA412290> initated
+
+<gymplan.planning.days.DayType object at 0x000001B7BA4123D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001B7BA412450> initated
+
+<gymplan.planning.days.DayType object at 0x000001B7BA412490> initated
+
+<gymplan.planning.days.DayType object at 0x000001B7BA412790> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B7BA228C50> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B7BA4132D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B7BA413390> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001B7BA413450> initated
+
+error, F has [2, 3, 4, 5] as valid day options whereas 3 was inputted
+
+<gymplan.planning.days.DayType object at 0x000002338E6A25D0> initated
+
+<gymplan.planning.days.DayType object at 0x000002338E6A2650> initated
+
+<gymplan.planning.days.DayType object at 0x000002338E6A26D0> initated
+
+<gymplan.planning.days.DayType object at 0x000002338E6A2710> initated
+
+<gymplan.planning.days.DayType object at 0x000002338E6A2890> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002338E6A30D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002338E6A3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000002338E6A31D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000002338E6A3210> initated
+
+<gymplan.planning.days.DayType object at 0x000001FFEC0C26D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001FFEC0C2750> initated
+
+<gymplan.planning.days.DayType object at 0x000001FFEC0C27D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001FFEC0C2810> initated
+
+<gymplan.planning.days.DayType object at 0x000001FFEC0C2990> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FFEC0C3190> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FFEC0C31D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FFEC0C3290> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001FFEC0C32D0> initated
+
+PL split chosen with 19 weekly sets
+
+Volume ratios:
+
+{'chest': 0.1, 'lats': 0.08, 'midback': 0.08, 'frontdelts': 0.04, 'sidedelts': 0.09, 'reardelts': 0.04, 'biceps': 0.08, 'triceps': 0.07, 'calves': 0.06, 'quads': 0.1, 'hamstrings': 0.09, 'glutes': 0.06, 'abs': 0.05, 'obliques': 0.03, 'forearms': 0.04}
+
+powerlifting sets per day: 4
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001FFEC0C3190>.generate(4,None is being run)
+<gymplan.planning.days.DayType object at 0x0000013338DF25D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000013338DF2650> initated
+
+<gymplan.planning.days.DayType object at 0x0000013338DF26D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000013338DF2710> initated
+
+<gymplan.planning.days.DayType object at 0x0000013338DF2890> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000013338DF30D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000013338DF3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000013338DF31D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000013338DF3210> initated
+
+<gymplan.planning.days.DayType object at 0x0000023937CE25D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000023937CE2650> initated
+
+<gymplan.planning.days.DayType object at 0x0000023937CE26D0> initated
+
+<gymplan.planning.days.DayType object at 0x0000023937CE2710> initated
+
+<gymplan.planning.days.DayType object at 0x0000023937CE2890> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x0000023937CE3210> initated
+
+PL split chosen with 19 weekly sets
+
+Volume ratios:
+
+{'chest': 0.1, 'lats': 0.08, 'midback': 0.08, 'frontdelts': 0.04, 'sidedelts': 0.09, 'reardelts': 0.04, 'biceps': 0.08, 'triceps': 0.07, 'calves': 0.06, 'quads': 0.1, 'hamstrings': 0.09, 'glutes': 0.06, 'abs': 0.05, 'obliques': 0.03, 'forearms': 0.04}
+
+powerlifting sets per day: 4
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.generate(4,['Barbell', 'Dumbbell', 'Bench'] is being run)
+Choose 1 accessories.
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.getCompIsol returned 
+[['Bench Press', 'Push-Ups', 'Dumbbell Press', 'Decline Push-Ups'], ['Chest Fly (Dumbbell)']]
+
+Accessories updated:
+ + ['Bench Press', 'Push-Ups', 'Dumbbell Press', 'Decline Push-Ups']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press'], ['Front Raise (Dumbbell)']]
+
+Accessories updated:
+ + ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.getCompIsol returned 
+[[], ['Lateral Raise']]
+
+Accessories updated:
+ + []
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Overhead Tricep Extension']]
+
+Accessories updated:
+ + ['Close-Grip Bench Press']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.getAccessories(['Barbell', 'Dumbbell', 'Bench']) returned:
+ [['Push-Ups', 'Dumbbell Press', 'Decline Push-Ups'], ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press'], ['Close-Grip Bench Press']]
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE30D0>.generate() returned routine:
+ [{'Bench Press': 3}, {'Overhead Press': 1}]
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110>.generate(4,['Barbell', 'Dumbbell', 'Bench'] is being run)
+Choose 1 accessories.
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110>.getCompIsol returned 
+[['Squat', 'Lunge'], []]
+
+Accessories updated:
+ + ['Squat', 'Lunge']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge']]
+
+Accessories updated:
+ + ['Hip Thrust', 'Step-Up']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110>.getAccessories(['Barbell', 'Dumbbell', 'Bench']) returned:
+ [['Lunge'], ['Hip Thrust', 'Step-Up']]
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE3110>.generate() returned routine:
+ [{'Squat': 4}, {'Step-Up': 0}]
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.generate(4,['Barbell', 'Dumbbell', 'Bench'] is being run)
+Choose 1 accessories.
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Dumbbell Single Leg Romanian Deadlift'], ['Nordic Curl']]
+
+Accessories updated:
+ + ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Dumbbell Single Leg Romanian Deadlift']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.getCompIsol returned 
+[[], []]
+
+Accessories updated:
+ + []
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.getCompIsol returned 
+[["Farmer's Walk", 'Rack Pull'], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Accessories updated:
+ + ["Farmer's Walk", 'Rack Pull']
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.getAccessories(['Barbell', 'Dumbbell', 'Bench']) returned:
+ [['Romanian Deadlift', 'Good Morning', 'Dumbbell Single Leg Romanian Deadlift'], ["Farmer's Walk", 'Rack Pull']]
+
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x0000023937CE31D0>.generate() returned routine:
+ [{'Deadlift': 5}, {'Rack Pull': -1}]
+
+PL cycle 1 generated successfully<gymplan.planning.days.DayType object at 0x0000023937CE3210>.generate([4, 4, 4, 4, 4, 4, 4, 4, 4],['Barbell', 'Dumbbell', 'Bench'] is being run)Generated ciStructure (compounds and isolations split): [[['lowerbody', 'legs', 'hamstrings'], 'c', 4], [['upperbody', 'back', 'midback'], 'c', 4], [['upperbody', 'arms', 'forearms'], 'i', 4], [['upperbody', 'chest', 'chest'], 'c', 4], [['upperbody', 'shoulders', 'frontdelts'], 'i', 4], [['upperbody', 'shoulders', 'sidedelts'], 'i', 4], [['upperbody', 'arms', 'triceps'], 'i', 4], [['lowerbody', 'legs', 'quads'], 'c', 4], [['lowerbody', 'legs', 'glutes'], 'c', 4]]
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Dumbbell Single Leg Romanian Deadlift'], ['Nordic Curl']]
+
+Available compound exercises for ['lowerbody', 'legs', 'hamstrings']: ['Deadlift', 'Romanian Deadlift', 'Good Morning', 'Dumbbell Single Leg Romanian Deadlift']
+
+Available isolation exercises for ['lowerbody', 'legs', 'hamstrings']: ['Nordic Curl']
+
+Selected compound exercise: Deadlift with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[[], []]
+
+Available compound exercises for ['upperbody', 'back', 'midback']: []
+
+Available isolation exercises for ['upperbody', 'back', 'midback']: []
+
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[["Farmer's Walk", 'Rack Pull'], ['Wrist Curl', 'Reverse Wrist Curl']]
+
+Available compound exercises for ['upperbody', 'arms', 'forearms']: ["Farmer's Walk", 'Rack Pull']
+
+Available isolation exercises for ['upperbody', 'arms', 'forearms']: ['Wrist Curl', 'Reverse Wrist Curl']
+
+Selected isolation exercise: Wrist Curl with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Bench Press', 'Push-Ups', 'Dumbbell Press', 'Decline Push-Ups'], ['Chest Fly (Dumbbell)']]
+
+Available compound exercises for ['upperbody', 'chest', 'chest']: ['Bench Press', 'Push-Ups', 'Dumbbell Press', 'Decline Push-Ups']
+
+Available isolation exercises for ['upperbody', 'chest', 'chest']: ['Chest Fly (Dumbbell)']
+
+Selected compound exercise: Decline Push-Ups with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press'], ['Front Raise (Dumbbell)']]
+
+Available compound exercises for ['upperbody', 'shoulders', 'frontdelts']: ['Overhead Press', 'Seated Dumbbell Press', 'Seated Barbell Press']
+
+Available isolation exercises for ['upperbody', 'shoulders', 'frontdelts']: ['Front Raise (Dumbbell)']
+
+Selected isolation exercise: Front Raise (Dumbbell) with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[[], ['Lateral Raise']]
+
+Available compound exercises for ['upperbody', 'shoulders', 'sidedelts']: []
+
+Available isolation exercises for ['upperbody', 'shoulders', 'sidedelts']: ['Lateral Raise']
+
+Selected isolation exercise: Lateral Raise with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Close-Grip Bench Press'], ['Overhead Tricep Extension']]
+
+Available compound exercises for ['upperbody', 'arms', 'triceps']: ['Close-Grip Bench Press']
+
+Available isolation exercises for ['upperbody', 'arms', 'triceps']: ['Overhead Tricep Extension']
+
+Selected isolation exercise: Overhead Tricep Extension with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Squat', 'Lunge'], []]
+
+Available compound exercises for ['lowerbody', 'legs', 'quads']: ['Squat', 'Lunge']
+
+Available isolation exercises for ['lowerbody', 'legs', 'quads']: []
+
+Selected compound exercise: Squat with 4 sets
+<gymplan.planning.days.DayType object at 0x0000023937CE3210>.getCompIsol returned 
+[['Hip Thrust', 'Step-Up'], ['Glute Bridge', 'Dumbbell Glute Bridge']]
+
+Available compound exercises for ['lowerbody', 'legs', 'glutes']: ['Hip Thrust', 'Step-Up']
+
+Available isolation exercises for ['lowerbody', 'legs', 'glutes']: ['Glute Bridge', 'Dumbbell Glute Bridge']
+
+Selected compound exercise: Step-Up with 4 sets
+Final exercise list: [{'Deadlift': 4}, {'Wrist Curl': 4}, {'Decline Push-Ups': 4}, {'Front Raise (Dumbbell)': 4}, {'Lateral Raise': 4}, {'Overhead Tricep Extension': 4}, {'Squat': 4}, {'Step-Up': 4}]
+asc is [{'Deadlift': 4}, {'Wrist Curl': 4}, {'Decline Push-Ups': 4}, {'Front Raise (Dumbbell)': 4}, {'Lateral Raise': 4}, {'Overhead Tricep Extension': 4}, {'Squat': 4}, {'Step-Up': 4}]

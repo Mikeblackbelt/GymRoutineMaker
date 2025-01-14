@@ -1,7 +1,9 @@
 import json
+import asyncio
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.urls import reverse
+from gymplan.planning import generator
 from gymplan.utility import sendmsg
 from gymplan.utility import filePaths as fp
 from gymplan.userDataFuncs import userData as UDF
@@ -54,16 +56,39 @@ def rgm_View(request, goal_key):
     selected_goal_data = goals.get(goal_key[0], {}) 
     available_days = selected_goal_data.get('Day_Options', range(2,6))  # Default options
 
+    if request.method == "POST":
+        if not request.POST.get('timePerDay') or not request.POST.get('daysPerWeek'):
+            return render(request, 'routineGenMain.html', {
+                'Username': username,
+                'user_data': userdata,
+                'dark_mode': darkMode,
+                'selected_goal': goal_key,
+                'available_days': available_days,
+                'error': "Input missing"
+            })
+            
+        try:
+            routine_id = asyncio.run(generator.push_routine(goal_key[0], int(request.POST.get('timePerDay')), int(request.POST.get('daysPerWeek')), request.POST.getlist('equipmentPresent') ))
+            return redirect('routine_view', routineID = routine_id)
+
+        except Exception as e:
+            return render(request, 'routineGenMain.html', {
+                'Username': username,
+                'user_data': userdata,
+                'dark_mode': darkMode,
+                'selected_goal': goal_key,
+                'available_days': available_days,
+                'error': e,
+            })
+
     return render(request, 'routineGenMain.html', {
         'Username': username,
         'user_data': userdata,
         'dark_mode': darkMode,
         'selected_goal': goal_key,
         'available_days': available_days,
+
     })
 
-def genRoutine(request):
-    pass
-
-def viewRoutine(request, goal_key):
+def viewRoutine(request, routine_id):
     pass

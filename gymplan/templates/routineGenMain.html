@@ -21,7 +21,7 @@
     </div>
     <br>
 
-    <form method="post" action="{% url 'routine_view' 'PLACEHOLDER' %}">
+    <form method="post">
         {% csrf_token %}
         <input type="hidden" name="goal" value="{{ selected_goal }}">
 
@@ -38,21 +38,23 @@
 
         <label for="equipmentPresent">Available Equipment:</label> <br>
         <div class="equipmentPresent">
-            <label><input type="checkbox" id="Barbell" name="Barbell"> Barbell</label><br>
-            <label><input type="checkbox" id="Dumbbell" name="Dumbbell"> Dumbbell</label><br>
-            <label><input type="checkbox" id="Bench" name="Bench"> Bench</label><br>
-            <label><input type="checkbox" id="Machine" name="Machine"> Machine</label><br>
-            <label><input type="checkbox" id="Cable" name="Cable"> Cable</label><br>
-            <label><input type="checkbox" id="Decline Bench" name="Decline Bench"> Decline Bench</label><br>
-            <label><input type="checkbox" id="Incline Bench" name="Incline Bench"> Incline Bench</label><br>
-            <label><input type="checkbox" id="Dip Station" name="Dip Station"> Dip Station</label><br>
-            <label><input type="checkbox" id="Pull-up Bar" name="Pull-up Bar"> Pull-up Bar</label><br>
-            <label><input type="checkbox" id="Ab Wheel" name="Ab Wheel"> Ab Wheel</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Barbell"> Barbell</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Dumbbell"> Dumbbell</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Bench"> Bench</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Machine"> Machine</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Cable"> Cable</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Decline Bench"> Decline Bench</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Incline Bench"> Incline Bench</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Dip Station"> Dip Station</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Pull-up Bar"> Pull-up Bar</label><br>
+            <label><input type="checkbox" name="equipmentPresent" value="Ab Wheel"> Ab Wheel</label><br>
         </div>
         <br>
         <button type="submit">Generate Routine</button>
     </form>
-
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
     <script>
         // Handle day selection buttons
         const dayButtons = document.querySelectorAll('.day-button');
