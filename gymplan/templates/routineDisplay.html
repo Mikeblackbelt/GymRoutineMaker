@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Details</title>
+</head>
+<body>
+    <h1>Routine Details</h1>
+    <h2>Routine ID: {{ routine_id }}</h2>
+    
+    {% for day, exercises in routine.items %}
+        <h3>{{ day }}</h3>
+        <ul>
+            {% for exercise, details in exercises.items %}
+                <li>
+                    <strong>{{ exercise }}</strong><br>
+                    Sets: {{ details.Sets }}<br>
+                    Rep Scheme: {{ details.RepScheme }}<br>
+                    <a href="{{ details.VideoLink }}" target="_blank">Video Link</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>

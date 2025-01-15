@@ -20,6 +20,7 @@ def dashboard_view(request):
         return HttpResponse("User not found", status=404)
 
     user_settings = user_data.get('settings', {})
+    print(user_settings)
     darkMode = user_settings['dark_mode']
 
     routines = user_data.get("routines", [])
