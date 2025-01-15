@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routine Details</title>
+    {% if dark_mode %}
+    <link rel="stylesheet" href="{% static 'routineGen_darkMode.css' %}">
+    {% else %}
+    <link rel="stylesheet" href="{% static 'routineGen_lightMode.css' %}"> <!--need to make css-->
+    {% endif %}
 </head>
 <body>
     <h1>Routine Details</h1>
@@ -17,7 +23,7 @@
                     <strong>{{ exercise }}</strong><br>
                     Sets: {{ details.Sets }}<br>
                     Rep Scheme: {{ details.RepScheme }}<br>
-                    <a href="{{ details.VideoLink }}" target="_blank">Video Link</a>
+                    <embed type="Video" src="{{ details.VideoLink }}" width="200px" height="150px "></embed>
                 </li>
             {% endfor %}
         </ul>

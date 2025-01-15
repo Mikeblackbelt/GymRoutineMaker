@@ -101,7 +101,24 @@ def update_settings(new_settings: dict, *, id: str = None, name: str = None, use
     with open(fp.fpUserJson(), "w") as f:
          json.dump(fullUD, f, indent=2)
     
-
+def update_UD(new_data: dict, *, id: str = None, name: str = None, username: str = None ) -> None:
+    if not any([id,name,username]):
+        raise ValueError("At least one identifier (id, name, username) is required")
+    if id:
+        userdata = getUserData(id=id)
+    elif username:
+        userdata = getUserData(username=username)
+    else:
+        userdata = getUserData(name=name)
+    
+    fullUD = _load_users()
+    userid = next((key for key, value in fullUD.items() if value == userdata),None) if not id else id
+    userdata = new_data
+  
+    fullUD[userid] = userdata
+    
+    with open(fp.fpUserJson(), "w") as f:
+         json.dump(fullUD, f, indent=2)
 
 def hauth2(username: str, password: str) -> bool:
     users = _load_users()

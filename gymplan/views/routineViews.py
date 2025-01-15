@@ -74,7 +74,7 @@ def rgm_View(request, goal_key):
         try:
             routine_id = asyncio.run(generator.push_routine(goal_key[0], int(request.POST.get('timePerDay')), int(request.POST.get('daysPerWeek')), request.POST.getlist('equipmentPresent') ))
             userdata["routines"].append({routine_id: f"{userdata['name']}'s routine {len(userdata['routines'])}"})
-            #UDF.update_settings(userdata, username=username)
+            UDF.update_UD(userdata, username=username)
             return redirect('routine_view', routineID = routine_id)
 
         except Exception as e:
