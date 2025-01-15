@@ -112,7 +112,8 @@ def viewRoutine(request, routineID):
             'Username': username,
             'user_data': userdata,
             'dark_mode': darkMode,
-            'routine': routineData[routineID]
+            'routine': routineData[routineID],
+            "routine_id": routineID
         })
 
     else:

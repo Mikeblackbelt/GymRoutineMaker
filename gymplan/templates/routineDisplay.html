@@ -12,19 +12,29 @@
     {% endif %}
 </head>
 <body>
-    <h1>Routine Details</h1>
-    <h2>Routine ID: {{ routine_id }}</h2>
+    <div class="header">
+        <h1>Routine Display</h1>
+        <a href="{% url 'dashboard' %}">Back to home</a>
+    </div>
+    <br>
+    <h3>ID: {{routine_id}}</h3>
+    
     
     {% for day, exercises in routine.items %}
         <h3>{{ day }}</h3>
         <ul>
             {% for exercise, details in exercises.items %}
-                <li>
+                <div class="exer">
                     <strong>{{ exercise }}</strong><br>
                     Sets: {{ details.Sets }}<br>
                     Rep Scheme: {{ details.RepScheme }}<br>
-                    <embed type="Video" src="{{ details.VideoLink }}" width="200px" height="150px "></embed>
-                </li>
+                    {% if details.VideoLink %}
+                    <iframe width="100" height="75" src="{{details.VideoLink}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"> </iframe>
+                    {% else %}
+                    <p>Video unavailable (for now)</p>
+                    {% endif %}
+                    
+                </div>
             {% endfor %}
         </ul>
     {% endfor %}

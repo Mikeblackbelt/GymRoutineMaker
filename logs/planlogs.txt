@@ -4689,3 +4689,59 @@ Available isolation exercises for ['lowerbody', 'legs', 'glutes']: ['Glute Bridg
 Selected compound exercise: Hip Thrust with 4 sets
 Final exercise list: [{'Romanian Deadlift': 4}, {'Wrist Curl': 4}, {'Decline Push-Ups': 4}, {'Seated Dumbbell Press': 4}, {'Lateral Raise': 4}, {'Close-Grip Bench Press': 4}, {'Lunge': 4}, {'Hip Thrust': 4}]
 asc is [{'Romanian Deadlift': 4}, {'Wrist Curl': 4}, {'Decline Push-Ups': 4}, {'Seated Dumbbell Press': 4}, {'Lateral Raise': 4}, {'Close-Grip Bench Press': 4}, {'Lunge': 4}, {'Hip Thrust': 4}]
+
+<gymplan.planning.days.DayType object at 0x00000225A6732950> initated
+
+<gymplan.planning.days.DayType object at 0x00000225A67329D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000225A6732A50> initated
+
+<gymplan.planning.days.DayType object at 0x00000225A64E7E10> initated
+
+<gymplan.planning.days.DayType object at 0x00000225A6732A90> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000225A6733410> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000225A6733450> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000225A6646190> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x00000225A6733510> initated
+
+<gymplan.planning.days.DayType object at 0x000001A9438265D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001A943826650> initated
+
+<gymplan.planning.days.DayType object at 0x000001A9438266D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001A943826710> initated
+
+<gymplan.planning.days.DayType object at 0x000001A943826890> initated
+
+<gymplan.planning.days.DayType object at 0x000001B13BB665D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001B13BB66650> initated
+
+<gymplan.planning.days.DayType object at 0x000001B13BB666D0> initated
+
+<gymplan.planning.days.DayType object at 0x000001B13BB66710> initated
+
+<gymplan.planning.days.DayType object at 0x000001B13BB66890> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B13BB66A50> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B13BB66A90> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x000001B13BB66B90> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x000001B13BB66BD0> initated
+
+<gymplan.planning.days.DayType object at 0x00000262A8A02950> initated
+
+<gymplan.planning.days.DayType object at 0x00000262A8A029D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000262A8A02A50> initated
+
+<gymplan.planning.days.DayType object at 0x00000262A87B7E10> initated
+
+<gymplan.planning.days.DayType object at 0x00000262A8A02A90> initated
+
+<gymplan.planning.days.DayType object at 0x00000159BD9D2950> initated
+
+<gymplan.planning.days.DayType object at 0x00000159BD9D29D0> initated
+
+<gymplan.planning.days.DayType object at 0x00000159BD9D2A50> initated
+
+<gymplan.planning.days.DayType object at 0x00000159BD787E10> initated
+
+<gymplan.planning.days.DayType object at 0x00000159BD9D2A90> initated
+<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000159BD9D2D90> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000159BD9D2DD0> initated (plDayType)*<gymplan.planning.powerliftingRoutine.plDayType object at 0x00000159BD9D2ED0> initated (plDayType)*
+<gymplan.planning.days.DayType object at 0x00000159BD9D2F10> initated
