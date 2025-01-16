@@ -127,7 +127,7 @@ async def makeRoutine(goal: str, timePerDay: float, daysPerWeek: int, equipmentP
                 mj.logToFile('planlogs.txt',f'\nPL cycle {i+1} generated successfully')
             print(daysPerWeek) #3
             if daysPerWeek % 3 != 0:
-                ascessories = plr.ascDay.generate([math.ceil(1.5*len(plr.ascM)/spd)]*len(plr.ascM),equipmentPresent)
+                ascessories = plr.ascDay.generate([math.ceil(len(plr.ascM)/spd)]*len(plr.ascM),equipmentPresent)
                 mj.logToFile('planlogs.txt',f"\nasc is {ascessories}\n")
                 exlist.append(ascessories)
                 

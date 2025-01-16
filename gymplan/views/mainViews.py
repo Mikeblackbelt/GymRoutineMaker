@@ -36,7 +36,7 @@ def dashboard_view(request):
         routine_info = routine_data.get(routine_id, {})
         if routine_info:
             total_sets = sum(sum(routine_info[day][exercise]["Sets"] for exercise in routine_info[day]) for day in routine_info)
-            daily_est_time = round(4*total_sets/len(routine_info))
+            daily_est_time = round(5*total_sets/len(routine_info))
             daily_sets = round(total_sets/len(routine_info))
 
 

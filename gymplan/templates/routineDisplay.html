@@ -18,7 +18,7 @@
     </div>
     <br>
     <h3>ID: {{routine_id}}</h3>
-    
+
     
     {% for day, exercises in routine.items %}
         <h3>{{ day }}</h3>
@@ -33,6 +33,7 @@
                     {% else %}
                     <p>Video unavailable (for now)</p>
                     {% endif %}
+                    <br>
                     
                 </div>
             {% endfor %}
